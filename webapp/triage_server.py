@@ -53,11 +53,20 @@ load_config()  # must run before the env-derived constants below
 
 # Test bed is BUNDLED in the repo (portable). Override only to point elsewhere.
 TESTBED_DIR = os.environ.get("TESTBED_DIR") or os.path.join(PROJECT_DIR, "testbed")
-# pmn-shared (code-RCA source) is cloned from its git repo into a local cache if missing —
-# no hardcoded machine path. Override PMN_SHARED_DIR to reuse an existing clone.
+# pmn-shared (code-RCA source): kept as a lightweight, always-current cache — a blobless +
+# sparse partial clone that is refreshed to the latest branch HEAD each run (a `git ls-remote`
+# check skips the fetch entirely when nothing changed). No hardcoded machine path.
+# Set PMN_SHARED_DIR to reuse an existing full clone; then it is used READ-ONLY (never fetched/reset).
 PMN_SHARED_REPO = os.environ.get("PMN_SHARED_REPO", "https://github.com/nice-cxone/cxone-cxdvi-pmn-shared")
 PMN_SHARED_BRANCH = os.environ.get("PMN_SHARED_BRANCH", "develop")
+PMN_SHARED_DIR_OVERRIDDEN = bool(os.environ.get("PMN_SHARED_DIR"))
 PMN_SHARED_DIR = os.environ.get("PMN_SHARED_DIR") or os.path.join(PROJECT_DIR, ".external", "cxone-cxdvi-pmn-shared")
+# Only these subtrees are checked out, keeping the managed cache small. Set to "*" for a full
+# checkout, or a ";"-separated list of directories to widen coverage.
+_SPARSE_DEFAULT = ("ClearView Shared Framework;Data Visualization API;"
+                   "ClearView WebPortal/AppCode/Api;ClearView Data Models;"
+                   "ClearView Source/src/app/dashboard")
+PMN_SHARED_SPARSE = os.environ.get("PMN_SHARED_SPARSE", _SPARSE_DEFAULT)
 JIRA_SCRIPT = os.path.join(PROJECT_DIR, ".claude", "skills", "jira-get-issue", "scripts", "get_jira_issue.py")
 JIRA_BASE = os.environ.get("JIRA_BASE_URL", "https://nice-ce-cxone-prod.atlassian.net").rstrip("/")
 JIRA_BROWSE_BASE = JIRA_BASE + "/browse/"
@@ -131,29 +140,82 @@ def find_claude():
 CLAUDE_BIN = find_claude()
 
 
+def _git(gitargs, cwd=None, timeout=300):
+    return subprocess.run(["git", *gitargs], cwd=cwd, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", timeout=timeout)
+
+
+def _log(msg):
+    sys.stderr.write("[triage] " + msg + "\n")
+
+
 def ensure_pmn_shared():
-    """Clone the pmn-shared source repo (code-RCA source) into PMN_SHARED_DIR if it's missing.
-    Returns True if the source is available. A failed clone (e.g. no GitHub access) is non-fatal:
-    code RCA is skipped/limited but every other stage still works."""
-    if os.path.isdir(PMN_SHARED_DIR) and os.listdir(PMN_SHARED_DIR):
-        return True
-    if not PMN_SHARED_REPO:
-        return False
-    os.makedirs(os.path.dirname(PMN_SHARED_DIR) or ".", exist_ok=True)
-    cmd = ["git", "clone", "--depth", "1"]
-    if PMN_SHARED_BRANCH:
-        cmd += ["--branch", PMN_SHARED_BRANCH]
-    cmd += [PMN_SHARED_REPO, PMN_SHARED_DIR]
-    sys.stderr.write(f"[triage] cloning pmn-shared ({PMN_SHARED_REPO} @ {PMN_SHARED_BRANCH or 'default'}) — one-time setup…\n")
+    """Keep the pmn-shared code-RCA source available and CURRENT in minimal time.
+
+    - If PMN_SHARED_DIR was set explicitly (an existing clone), use it READ-ONLY — never fetch/reset.
+    - Otherwise manage a lightweight cache: a blobless + sparse partial clone (only the widget
+      subtrees). Each run, `git ls-remote` reads the branch HEAD; if it matches the local HEAD,
+      do NOTHING (zero download). If it changed (or the cache is absent), clone/fetch just the
+      delta and reset to the latest branch HEAD.
+    Non-fatal: any failure simply limits code RCA."""
+    # A user-provided clone is respected as-is — we never mutate it.
+    if PMN_SHARED_DIR_OVERRIDDEN or not PMN_SHARED_REPO:
+        return os.path.isdir(PMN_SHARED_DIR) and bool(os.listdir(PMN_SHARED_DIR))
+
+    sparse_dirs = [p.strip() for p in PMN_SHARED_SPARSE.split(";") if p.strip() and p.strip() != "*"]
+    use_sparse = PMN_SHARED_SPARSE.strip() != "*" and bool(sparse_dirs)
+    has_clone = os.path.isdir(os.path.join(PMN_SHARED_DIR, ".git"))
+
+    # 1. Cheap remote-HEAD check (one network round-trip, no download).
+    remote_sha = None
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900)
+        r = _git(["ls-remote", PMN_SHARED_REPO, PMN_SHARED_BRANCH], timeout=60)
+        if r.returncode == 0 and r.stdout.strip():
+            remote_sha = r.stdout.split()[0]
+    except Exception:
+        pass
+
+    # 2. Already at the latest? Skip every download.
+    if has_clone and remote_sha:
+        try:
+            loc = _git(["rev-parse", "HEAD"], cwd=PMN_SHARED_DIR, timeout=30)
+            if loc.returncode == 0 and loc.stdout.strip() == remote_sha:
+                return True
+        except Exception:
+            pass
+
+    try:
+        if not has_clone:
+            os.makedirs(os.path.dirname(PMN_SHARED_DIR) or ".", exist_ok=True)
+            _log(f"setting up pmn-shared cache ({'sparse, ' if use_sparse else ''}blobless) "
+                 f"from {PMN_SHARED_REPO}@{PMN_SHARED_BRANCH} — one-time…")
+            clone = ["clone", "--filter=blob:none", "--depth", "1", "--branch", PMN_SHARED_BRANCH]
+            if use_sparse:
+                clone.append("--sparse")
+            clone += [PMN_SHARED_REPO, PMN_SHARED_DIR]
+            c = _git(clone, timeout=1200)
+            if c.returncode != 0:
+                _log(f"pmn-shared clone failed; code RCA limited: {(c.stderr or '').strip()[:300]}")
+                return False
+            if use_sparse:
+                s = _git(["sparse-checkout", "set", "--cone", *sparse_dirs], cwd=PMN_SHARED_DIR, timeout=300)
+                if s.returncode != 0:
+                    _log(f"sparse-checkout warning: {(s.stderr or '').strip()[:200]}")
+            return True
+
+        # 3. Cache exists but is stale — pull just the delta and reset to the branch HEAD.
+        _log(f"refreshing pmn-shared cache to latest {PMN_SHARED_BRANCH}…")
+        f = _git(["fetch", "--depth", "1", "origin", PMN_SHARED_BRANCH], cwd=PMN_SHARED_DIR, timeout=900)
+        if f.returncode != 0:
+            _log(f"pmn-shared fetch failed; using existing cache: {(f.stderr or '').strip()[:200]}")
+            return bool(os.listdir(PMN_SHARED_DIR))
+        _git(["reset", "--hard", f"origin/{PMN_SHARED_BRANCH}"], cwd=PMN_SHARED_DIR, timeout=300)
+        if use_sparse:
+            _git(["sparse-checkout", "set", "--cone", *sparse_dirs], cwd=PMN_SHARED_DIR, timeout=300)
+        return True
     except Exception as e:
-        sys.stderr.write(f"[triage] pmn-shared clone failed ({e}); code RCA will be limited.\n")
-        return False
-    if r.returncode != 0:
-        sys.stderr.write(f"[triage] pmn-shared clone failed; code RCA will be limited: {(r.stderr or '').strip()[:300]}\n")
-        return False
-    return True
+        _log(f"pmn-shared setup error ({e}); code RCA limited.")
+        return os.path.isdir(PMN_SHARED_DIR) and bool(os.listdir(PMN_SHARED_DIR))
 
 SCHEMA = """{
   "bug_summary": "<one-line restatement of the bug>",
@@ -605,8 +667,10 @@ def main():
     print(f" claude.exe   : {CLAUDE_BIN or 'NOT FOUND — set CLAUDE_BIN'}")
     print(f" project dir  : {PROJECT_DIR}")
     print(f" test bed     : {TESTBED_DIR} ({'ok' if os.path.isdir(TESTBED_DIR) else 'MISSING'})")
-    pmn_ok = ensure_pmn_shared()  # clone the code-RCA source if missing (one-time, non-fatal)
-    print(f" pmn-shared   : {PMN_SHARED_DIR} ({'ok' if pmn_ok else 'unavailable — code RCA limited'})")
+    pmn_ok = ensure_pmn_shared()  # blobless+sparse managed cache, or read-only if PMN_SHARED_DIR is set
+    _mode = "override, read-only" if PMN_SHARED_DIR_OVERRIDDEN else "managed cache (sparse+blobless, auto-refreshed)"
+    print(f" pmn-shared   : {PMN_SHARED_DIR}")
+    print(f"                {'ok' if pmn_ok else 'unavailable — code RCA limited'} · {_mode}")
     missing = [k for k in ("XRAY_CLIENT_ID", "XRAY_CLIENT_SECRET", "CONFLUENCE_USERNAME", "CONFLUENCE_TOKEN")
                if not os.environ.get(k)]
     print(f" creds        : {'all set' if not missing else 'MISSING ' + ', '.join(missing)}")

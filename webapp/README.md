@@ -21,7 +21,7 @@ Two files, no build step, no `pip install`:
 - **Claude CLI** — auto-detected from the VS Code extension (`…/anthropic.claude-code-*/resources/native-binary/claude.exe`) or `PATH`; override with `CLAUDE_BIN`.
 - **Credentials** — all live in one file, **`config.env`** (see below).
 - **Test bed** — bundled in the repo at `testbed/`; nothing to fetch.
-- **pmn-shared** (code-RCA source) — **auto-cloned** on first run from `https://github.com/nice-cxone/cxone-cxdvi-pmn-shared` into `.external/` (needs GitHub access to the private nice-cxone org). Set `PMN_SHARED_DIR` in `config.env` to reuse an existing local clone instead.
+- **pmn-shared** (code-RCA source) — kept as a lightweight, **always-current cache** in `.external/`: a blobless + sparse partial clone of only the widget subtrees, refreshed to the latest `develop` HEAD on each start (a `git ls-remote` check skips the download when nothing changed, so it's near-instant). Needs GitHub access to the private nice-cxone org. Set `PMN_SHARED_DIR` in `config.env` to reuse an existing full clone instead (used read-only).
 
 ## Configuration — one file for all credentials
 
@@ -102,9 +102,10 @@ the `XRAY_CLIENT_ID/SECRET` env vars.
 | `TRIAGE_PORT` | `8756` | Web server port. |
 | `TRIAGE_TIMEOUT` | `1200` | Max seconds per triage before the backend gives up. |
 | `TRIAGE_ALLOW_DANGEROUS` | *(off)* | `1` → run the agent with `--dangerously-skip-permissions`. |
-| `PMN_SHARED_REPO` | `github.com/nice-cxone/cxone-cxdvi-pmn-shared` | Code-RCA source repo (auto-cloned). |
-| `PMN_SHARED_BRANCH` | `develop` | Branch to clone. |
-| `PMN_SHARED_DIR` | `<project>/.external/cxone-cxdvi-pmn-shared` | Local clone path (override to reuse an existing clone). |
+| `PMN_SHARED_REPO` | `github.com/nice-cxone/cxone-cxdvi-pmn-shared` | Code-RCA source repo (partial-cloned). |
+| `PMN_SHARED_BRANCH` | `develop` | Branch tracked for the cache. |
+| `PMN_SHARED_DIR` | `<project>/.external/cxone-cxdvi-pmn-shared` | Cache path. Set it to an existing full clone → used read-only. |
+| `PMN_SHARED_SPARSE` | *(widget subtrees)* | `;`-separated dirs checked out; `*` = full checkout. |
 | `TESTBED_DIR` | `<project>/testbed` | Bundled Xray test-bed snapshot. |
 | `JIRA_BASE_URL` | `https://nice-ce-cxone-prod.atlassian.net` | Base for building existing-test links. |
 
