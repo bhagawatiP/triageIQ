@@ -17,6 +17,9 @@ env/
 Thumbs.db
 .idea/
 
+# === Cloned external source (code-RCA repo, auto-cloned at runtime) ===
+.external/
+
 # === Runtime / scratch artifacts ===
 *.log
 reports/*-triage.tmp

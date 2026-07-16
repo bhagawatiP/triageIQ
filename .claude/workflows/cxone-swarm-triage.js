@@ -12,13 +12,17 @@ export const meta = {
   ],
 }
 
-const KB_PATH = 'C:/Code/sparkathon/ps2-triage-commander/cxone-dashboard-kb.md'
-const JIRA_SCRIPT = 'C:/Code/sparkathon/ps2-triage-commander/.claude/skills/jira-get-issue/scripts/get_jira_issue.py'
-const CONFLUENCE_SCRIPT = 'C:/Code/sparkathon/ps2-triage-commander/.claude/skills/confluence-get-page/scripts/get_confluence_page.py'
-const TEAM_ASSIGNMENT_PATH = 'C:/Code/sparkathon/ps2-triage-commander/team-assignment.md'
-const TESTCASE_PERSONA_PATH = 'C:/Code/sparkathon/ps2-triage-commander/.claude/testcase-creation.prompt1.md'
-const TESTBED_DIR = 'C:/Code/sparkathon/cxdv-test-repository'
-const PMN_SHARED_DIR = 'C:/Code/cxone-cxdvi-pmn-shared'
+// Portable paths — relative to the repo root (the cwd when you run this workflow from the
+// cloned repo). Override any of them via Workflow args: { root, testbedDir, pmnDir }.
+const ROOT = (typeof args === 'object' && args && args.root) ? String(args.root).replace(/[\\/]+$/, '') : '.'
+const P = rel => `${ROOT}/${rel}`
+const KB_PATH = P('cxone-dashboard-kb.md')
+const JIRA_SCRIPT = P('.claude/skills/jira-get-issue/scripts/get_jira_issue.py')
+const CONFLUENCE_SCRIPT = P('.claude/skills/confluence-get-page/scripts/get_confluence_page.py')
+const TEAM_ASSIGNMENT_PATH = P('team-assignment.md')
+const TESTCASE_PERSONA_PATH = P('.claude/testcase-creation.prompt1.md')
+const TESTBED_DIR = (typeof args === 'object' && args && args.testbedDir) || P('testbed')
+const PMN_SHARED_DIR = (typeof args === 'object' && args && args.pmnDir) || P('.external/cxone-cxdvi-pmn-shared')
 const CODE_RCA_TEAMS = ['Titans', 'Sapphire', 'Waves']
 
 const PRIORITY_LADDER = `
@@ -564,7 +568,7 @@ Return ONLY JSON matching the schema.`,
 
 phase('Render')
 
-const REPORTS_DIR = 'C:/Code/sparkathon/ps2-triage-commander/reports'
+const REPORTS_DIR = P('reports')
 
 const RENDER_SCHEMA = {
   type: 'object',

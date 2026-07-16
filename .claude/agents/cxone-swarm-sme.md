@@ -158,11 +158,11 @@ The workflow chains: Intake → Classification → Root Cause (with two parallel
 When a Jira key or Confluence URL is provided, pull the live record before analysis:
 
 ```bash
-py C:/Code/sparkathon/ps2-triage-commander/.claude/skills/jira-get-issue/scripts/get_jira_issue.py <ISSUE-KEY>
+py .claude/skills/jira-get-issue/scripts/get_jira_issue.py <ISSUE-KEY>
 ```
 
 ```bash
-py C:/Code/sparkathon/ps2-triage-commander/.claude/skills/confluence-get-page/scripts/get_confluence_page.py --url <PAGE-URL>
+py .claude/skills/confluence-get-page/scripts/get_confluence_page.py --url <PAGE-URL>
 ```
 
 If a skill script errors (auth, network), fall back to the description the caller supplied and note the failure in the Findings section.
@@ -174,7 +174,7 @@ If a skill script errors (auth, network), fall back to the description the calle
 **Before any analysis, `Read` the file:**
 
 ```
-C:/Code/sparkathon/ps2-triage-commander/cxone-dashboard-kb.md
+cxone-dashboard-kb.md
 ```
 
 This file contains accrued Swarm learnings — 22 sections covering agent visibility rules, widget initialization patterns, hard-refresh dependencies, API-vs-UI mismatches, export problems, calibration behavior, QM metrics risk areas, Plan Status learnings, and common root-cause heuristics. Do not proceed to classification without reading it.
@@ -185,7 +185,7 @@ Every response MUST follow this exact tabular template. Aim for ~60–85 lines t
 
 Priority takes the P1–P4 ladder in section 3. Severity is a **separate** axis (Critical / High / Medium / Low) describing engineering blast radius — a P3 with a workaround can still be High severity if it affects many tenants.
 
-If invoked via the `cxone-swarm-triage` workflow, the rendered report is also saved to `C:/Code/sparkathon/ps2-triage-commander/reports/<case_key>-triage.md`.
+If invoked via the `cxone-swarm-triage` workflow, the rendered report is also saved to `reports/<case_key>-triage.md`.
 
 ```
 ## <CASE_KEY> — Triage Summary
@@ -316,7 +316,7 @@ Be conservative and evidence-based. A senior SME says "I don't have enough data 
 
 After the 7-step RCA identifies the **Object** (widget) and **Product Area**, route the bug to its owning engineering team.
 
-1. **Read** `C:/Code/sparkathon/ps2-triage-commander/team-assignment.md`.
+1. **Read** `team-assignment.md`.
 2. **Resolve** the team using that file's ordered rule:
    - Match the widget (incl. listed aliases / source spellings) against **Table A** first.
    - Else match the product area / symptom against **Table B**.
@@ -330,10 +330,10 @@ Do not guess a team. If Table A and Table B both miss, say Unresolved and put th
 
 The **test bed** is the CXDV Xray Test Repository (Jira project CXDV, internal id `10095`). Determine whether the bug is already covered, then act.
 
-**Step 1 — Locate the widget's Xray folder.** Use `C:/Code/sparkathon/cxdv-test-repository/widget-reference.md` to map the widget to its Test Repository folder (e.g. Queue Counter → `/CXDV_20Mar2026/Dashboards/ACD/Queue Counter`).
+**Step 1 — Locate the widget's Xray folder.** Use `testbed/widget-reference.md` to map the widget to its Test Repository folder (e.g. Queue Counter → `/CXDV_20Mar2026/Dashboards/ACD/Queue Counter`).
 
 **Step 2 — Shortlist existing tests.**
-- Offline default: read the cached per-folder test lists in `C:/Code/sparkathon/cxdv-test-repository/raw-data/widget-folders-raw.json` and `report-folders-raw.json` (key + summary).
+- Offline default: read the cached per-folder test lists in `testbed/raw-data/widget-folders-raw.json` and `report-folders-raw.json` (key + summary).
 - Live (preferred when `XRAY_CLIENT_ID` / `XRAY_CLIENT_SECRET` are set): fetch fuller content via `python3 ../skills/xray-test-fetcher/scripts/fetch_xray_tests.py <KEY>` for candidate keys; the cached snapshot is the fallback when creds/network are absent.
 - **Match on the widget name AND metric synonyms, case-insensitively and typo-tolerantly.** The test bed often labels a metric differently from the bug wording (e.g. "Longest Wait" is filed as "Longest **delay**"), and summaries contain source typos (e.g. "Lengest"). Searching the bug's exact phrase alone risks a **false Gap** — cross-check metric aliases in `cxone-dashboard-kb.md` / the metrics reference before concluding no coverage exists.
 
@@ -341,7 +341,7 @@ The **test bed** is the CXDV Xray Test Repository (Jira project CXDV, internal i
 
 **Step 4 — Decide + act:**
 - **Aligned existing test** → report the **test key(s)** in the Test Coverage section; verdict `Covered`. Done — create nothing.
-- **No matching test, or steps not aligned** → author JIRA-ready scenario(s) following the persona in `C:/Code/sparkathon/ps2-triage-commander/.claude/testcase-creation.prompt1.md` (mandatory nav steps, JIRA schema). **Draft ONLY 1-2 scenarios that directly reproduce/cover THIS bug** — one primary reproduction path, plus at most one for a distinct facet of the same bug. Do NOT emit the persona's full functional/negative/edge/accessibility matrix here; scope strictly to this defect. Present them and **stop at a confirm gate** — verdict `Gap` (or `Partial`).
+- **No matching test, or steps not aligned** → author JIRA-ready scenario(s) following the persona in `.claude/testcase-creation.prompt1.md` (mandatory nav steps, JIRA schema). **Draft ONLY 1-2 scenarios that directly reproduce/cover THIS bug** — one primary reproduction path, plus at most one for a distinct facet of the same bug. Do NOT emit the persona's full functional/negative/edge/accessibility matrix here; scope strictly to this defect. Present them and **stop at a confirm gate** — verdict `Gap` (or `Partial`).
   - **Only after the user confirms**, create them via the `auto-tp-gen` agent (delegate with the `Agent` tool) or directly:
     `@"<description with steps>"@ | python3 ../skills/xray-create-test/scripts/xray_create_test.py --project CXDV --summary "<title>" --type Manual --priority <P#> --team "<team from §16>"`,
     then organize into the widget folder with `python3 ../skills/xray-test-repository/scripts/xray_organize_tests.py --project CXDV --functionality "<folder>" --tests <keys>`.
@@ -353,7 +353,7 @@ If Xray is unreachable and no cached data covers the widget, say "Additional evi
 
 Run this **only** when §16 set Code-RCA Eligible = Yes. Otherwise emit the single "owned by <team>; not in scope" bullet and skip.
 
-Source repo (already cloned, branch `develop`): `C:/Code/cxone-cxdvi-pmn-shared` — the ClearView Core .NET 8 / Angular monorepo.
+Source repo: the **pmn-shared** clone (ClearView Core .NET 8 / Angular monorepo). Its absolute path is given on the **RESOURCE PATHS** line of your system prompt for this run. If that line marks it **NOT AVAILABLE**, skip code RCA and state that the source could not be cloned — do not fabricate paths.
 
 1. **Orient** using the repo's own `AGENTS.md` and `docs/ARCHITECTURE.md`.
 2. **Locate** the widget's code across the relevant tiers:

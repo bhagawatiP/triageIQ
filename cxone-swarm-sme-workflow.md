@@ -144,14 +144,14 @@ How the `cxone-swarm-sme` agent and the `cxone-swarm-triage` workflow work toget
 
 | Artifact | Path |
 |----------|------|
-| SME agent | `C:/Code/sparkathon/ps2-triage-commander/.claude/agents/cxone-swarm-sme.md` |
-| Workflow script | `C:/Code/sparkathon/ps2-triage-commander/.claude/workflows/cxone-swarm-triage.js` |
-| Knowledge base | `C:/Code/sparkathon/ps2-triage-commander/cxone-dashboard-kb.md` |
-| Team ownership map | `C:/Code/sparkathon/ps2-triage-commander/team-assignment.md` |
-| Test-case persona | `C:/Code/sparkathon/ps2-triage-commander/.claude/testcase-creation.prompt1.md` |
-| Test-creation agent | `C:/Code/sparkathon/ps2-triage-commander/.claude/agents/auto-tp-gen.md` |
-| Test-bed snapshot | `C:/Code/sparkathon/cxdv-test-repository/` |
-| pmn-shared source (code RCA) | `C:/Code/cxone-cxdvi-pmn-shared/` (branch `develop`) |
-| Sample reports | `C:/Code/sparkathon/ps2-triage-commander/reports/` |
-| Jira skill *(not bundled)* | `C:/Code/sparkathon/ps2-triage-commander/.claude/skills/jira-get-issue/scripts/get_jira_issue.py` |
-| Confluence skill *(not bundled)* | `C:/Code/sparkathon/ps2-triage-commander/.claude/skills/confluence-get-page/scripts/get_confluence_page.py` |
+| SME agent | `.claude/agents/cxone-swarm-sme.md` |
+| Workflow script | `.claude/workflows/cxone-swarm-triage.js` |
+| Knowledge base | `cxone-dashboard-kb.md` |
+| Team ownership map | `team-assignment.md` |
+| Test-case persona | `.claude/testcase-creation.prompt1.md` |
+| Test-creation agent | `.claude/agents/auto-tp-gen.md` |
+| Test-bed snapshot | `testbed/` (bundled in the repo) |
+| pmn-shared source (code RCA) | `.external/cxone-cxdvi-pmn-shared/` — auto-cloned from `https://github.com/nice-cxone/cxone-cxdvi-pmn-shared` |
+| Sample reports | `reports/` |
+| Jira skill *(not bundled)* | `.claude/skills/jira-get-issue/scripts/get_jira_issue.py` |
+| Confluence skill *(not bundled)* | `.claude/skills/confluence-get-page/scripts/get_confluence_page.py` |

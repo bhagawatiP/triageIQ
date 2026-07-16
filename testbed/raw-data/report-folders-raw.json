@@ -1,0 +1,4996 @@
+{
+  "/CXDV_20Mar2026/Dragonfly/Report Queries": {
+    "total": 388,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-22879",
+          "summary": "SQL > Campaign Summary > Verify that Contacts Summary - Campaign Level  total values matches with Contact by Campaign for specific campaign and date and time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25669",
+          "summary": "SQL > Contact History > Contact Details > Verify data when setting a specific contact No filter."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25661",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting Agent Full Name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22896",
+          "summary": "SQL > List of Teams > Current Team Details - Verify the data when the Team is updated by Impersonation user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22872",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying Direction name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22902",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify the data when filtering by Team Status"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22869",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying Campaign name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25598",
+          "summary": "SQL > Contact History > Contact List > Verify data when having ACD / DFO contacts Rejected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25603",
+          "summary": "SQL > Contact History > Contact List > Verify data generated for Personal Connection contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22862",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed when applying Campaign name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25596",
+          "summary": "SQL > Contact History > Contact List > Verify data when having Conference/Consult data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22976",
+          "summary": "SQL > Campaign Summary > Contacts Over Time > Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22859",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data generated for ACD and DFO contacts for specific date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25686",
+          "summary": "SQL > Contact History > Agent Contact Tags > Verify data when having Tags for ACD/ DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25678",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having Transfer contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23053",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify the data when filtering by unavailable code ACW?"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25667",
+          "summary": "SQL > Contact History > Contact List > Verify data when Agent changes team assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25602",
+          "summary": "SQL > Contact History > Contact List > Verify data when having ACD / DFO Abandons contacts generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22980",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22890",
+          "summary": "SQL > List of Teams > Current Team Details - Verify the data for the current teams that belongs to the tenant"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25677",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having ACD / DFO contacts Rejected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25663",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting Skill Name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22875",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Verify data generated for DFO contacts are being displayed for IN SLA and OUT SLA"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22894",
+          "summary": "SQL > List of Teams > Current Team Details - Verify the data when filtering by Enabled filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22866",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data generated for ACD and DFO contacts for specific date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25674",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data for basic Inbound /Outbound ACD contacts."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23055",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify the data when the unavailable code is updated by Impersonation user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23049",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify the data for the current users that belongs to the tenant"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22878",
+          "summary": "SQL > Campaign Summary > Verify that Contacts Summary - Campaign Level  total values matches with Contact by Campaign for specific campaign and date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25681",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having Callback contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25673",
+          "summary": "SQL > Contact History > Contact Details > Verify data when having Tags for ACD / DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22861",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed when applying a mix of filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25685",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data for DFO contacts that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25684",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify contacts data generated by studio scripts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25680",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having Re skilled contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23060",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the data when filtering by unavailable code status"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25599",
+          "summary": "SQL > Contact History > Contact List > Verify data when having Transfer contacts generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23056",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the data when there is not any filter applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25687",
+          "summary": "SQL > Contact History > Contact Disposition Notes > Verify data when having Disposition for ACD / DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25670",
+          "summary": "SQL > Contact History > Contact Details > Verify data when setting more than one contact No filter."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25660",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting a mix of filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23061",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the historic data when the unavailable code is updated by Impersonation user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22871",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying Channel name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22858",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Campaign Level - Verify data displayed when applying Direction name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22898",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify how data is displayed after activating  New  teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22895",
+          "summary": "SQL > List of Teams > Current Team Details - Verify the data when filtering by team status"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22856",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Campaign Level - Verify data displayed when applying Skill name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22868",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying a mix of filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22867",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data generated for ACD and DFO contacts for specific date and time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22882",
+          "summary": "SQL > Campaign Summary > Verify the data when there is a contact that has more than one skill assigned in the life"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25605",
+          "summary": "SQL > Contact History > Contact List > Verify data generated for DFO contacts that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23051",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify how data is displayed for the Inactive unavailable code"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25676",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having Conference/Consults data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23076",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify how data is displayed for the system unavailable codes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22891",
+          "summary": "SQL > List of Teams > Current Team Details - Verify how data is displayed for the New and Active teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22865",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed when applying Direction name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23054",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify the data when filtering by unavailable code status"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22900",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify the historic data when the team's name has been updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22977",
+          "summary": "SQL > Campaign Summary > Contacts by Campaign > Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22893",
+          "summary": "SQL > List of Teams > Current Team Details - Verify how data is displayed when the team's name has been updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22897",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify the data when there is not any filter applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25671",
+          "summary": "SQL > Contact History > Exploratory testing"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25600",
+          "summary": "SQL > Contact History > Contact List > Verify data when having Re Skill contacts generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25601",
+          "summary": "SQL > Contact History > Contact List > Verify data when having Callback contacts generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25668",
+          "summary": "SQL > Contact History > Contact Details > Verify data when there are changes in the skill and agent that generated contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22864",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed when applying Channel name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25666",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting Team Name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25594",
+          "summary": "SQL > Contact History > Contact List > Verify data generated for basic ACD contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22880",
+          "summary": "SQL > Campaign Summary > Verify that total Contacts displayed for Contact summary query matches with the total of contacts displayed per Contact Summary"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23050",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify how data is displayed for the new unavailable code"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25679",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having Terminated contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22873",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying Contact No filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25672",
+          "summary": "SQL > Contact History > Contact Details > Verify data when having Disposition for ACD / DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25659",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting a specific date TIME filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22874",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Verify data generated for ACD contacts are being displayed for IN SLA and OUT SLA"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25595",
+          "summary": "SQL > Contact History > Contact List > Verify data generated for basic Handled DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23075",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify how data is displayed for the system unavailable codes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23057",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the historic data when the unavailable code's name has been updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22901",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify the data when filtering by Enabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22863",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data displayed when applying Skill name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23058",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the historic data when the unavailable code's status has been updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22857",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Campaign Level - Verify data displayed when applying Channel name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25664",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting Channel Name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22979",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Campaign Level - Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22877",
+          "summary": "SQL > Campaign Summary > Compare the total contact generated per day and filtered by campaign matches with the contacts displayed into Contacts by campaign for specific campaign"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22892",
+          "summary": "SQL > List of Teams > Current Team Details - Verify how data is displayed for the Inactive teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25606",
+          "summary": "SQL > Contact History > Contact List > Verify data when setting a specific contact No filter."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23059",
+          "summary": "SQL > List of Unavailable Codes > Historical Unavailable Codes Details - Verify the data when filtering by unavailable code ACW?"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22899",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify how data is displayed when having Inactive teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22860",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Skill Level - Verify data generated for ACD and DFO contacts for specific date and time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22876",
+          "summary": "SQL > Campaign Summary > Contacts Summary > Verify DFO abandons, and Other abandons are not displayed into the data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25683",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data for Personal Connection contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23052",
+          "summary": "SQL > List of Unavailable Codes > Current Unavailable Codes Details - Verify how data is displayed when the unavailable code's name has been updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25682",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data when having ACD / DFO Abandons contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25675",
+          "summary": "SQL > Contact History > Contact Lifetime > Verify data for basic Handled DFO contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25604",
+          "summary": "SQL > Contact History > Contact List > Verify data generated by studio scripts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22903",
+          "summary": "SQL > List of Teams > Historical Team Details - Verify the historic data when the team is updated by Impersonation user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22870",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed when applying Skill name filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22981",
+          "summary": "SQL > Campaign Summary > Contacts Detail > Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22978",
+          "summary": "SQL > Campaign Summary > Campaign KPIs > Verify data displayed in the query when there is a Digital contact that does not have a skill assigned"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Custom Reporting": {
+    "total": 33,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-79758",
+          "summary": "[QA][Custom Reporting] Add Filters - Select All in value dropdown selects all values; Clear button removes all selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79741",
+          "summary": "[QA][Custom Reporting] Add Filters - Metric Group operator dropdown: 6 options verification and all operators enable Next"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79752",
+          "summary": "[QA][Custom Reporting] Add Filters - Enter non-numeric value in Metric filter value field, verify Next is disabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79740",
+          "summary": "[QA][Custom Reporting] Add Filters - Change logical connector between two attribute filters from and to or"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76477",
+          "summary": "[QA][Custom Reporting] Category Grouping"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76436",
+          "summary": "[QA][Custom Reporting] Filter Operators - AND/OR operators work correctly"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79755",
+          "summary": "[QA][Custom Reporting] Add Filters - Add maximum allowed filter rows and verify system handles limit gracefully"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79751",
+          "summary": "[QA][Custom Reporting] Add Filters - Add Attribute filter without selecting a value, verify Next is disabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79748",
+          "summary": "[QA][Custom Reporting] Add Filters - Remove a filter row and verify remaining rows are intact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79737",
+          "summary": "[QA][Custom Reporting] Add Filters - Attribute filter with equals (=) single value and not-equals (<>) multiple values"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76480",
+          "summary": "[QA][Custom Reporting] Header Create and Modify - Optional field"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79736",
+          "summary": "[QA][Custom Reporting] Add Filters - Add single Attribute filter with equals operator and single value, verify Next enables"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76509",
+          "summary": "[QA][Custom Reporting] Maximum Attributes Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79744",
+          "summary": "[QA][Custom Reporting] Add Filters - Group Selection checkbox behavior (single/multiple selection) and filter row removal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79750",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify metric dropdown in Metric Group shows only metrics selected in Step 2"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79739",
+          "summary": "[QA][Custom Reporting] Add Filters - Add two Attribute filters and verify logical connector appears with and/or options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79735",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify Next button is enabled with no filters added (filters are optional)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79757",
+          "summary": "[QA][Custom Reporting] Add Filters - Search within Attribute value dropdown with partial text and verify filtered results"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76481",
+          "summary": "[QA][Custom Reporting] Header Edge Cases - Special characters, max length, reuse"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76475",
+          "summary": "[QA][Custom Reporting] Category Create and Modify"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79734",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify Step 3 loads with empty Attribute Group and Metric Group"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79749",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify second Attribute filter row field dropdown excludes already-used fields"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79738",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify Attribute value dropdown shows multi-select with Search, Select All, and Clear"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76443",
+          "summary": "[QA][Custom Reporting] Filter Validation - Invalid filter Input values show validation messages"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76478",
+          "summary": "[QA][Custom Reporting] Category Deactivation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76476",
+          "summary": "[QA][Custom Reporting] Category Required Field"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76442",
+          "summary": "[QA][Custom Reporting] Modify Filters - Filter values modifiable in existing template"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79754",
+          "summary": "[QA][Custom Reporting] Add Filters - Select only 1 filter row checkbox and verify Group Selection remains disabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79742",
+          "summary": "[QA][Custom Reporting] Add Filters - Verify Metric Group operator dropdown contains all 6 comparison operators"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79743",
+          "summary": "[QA][Custom Reporting] Add Filters - Next enabled with no filters, only Attribute, only Metric, and combined filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76479",
+          "summary": "[QA][Custom Reporting] Category Edge Cases - Special characters and max length"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79756",
+          "summary": "[QA][Custom Reporting] Add Filters - Remove all filter rows and verify each group shows only the Add Filter button"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79745",
+          "summary": "[QA][Custom Reporting] Add Filters - Group 2 filter rows into sub-group and Ungroup back to flat list"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Reporting Template ACD Permissions-Waves": {
+    "total": 31,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-24433",
+          "summary": "[Contact History Report permissions]- Verify \"Contact History\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20886",
+          "summary": "[Skill Proficiency Report permissions]- Verify \"Skill Proficiency\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-64287",
+          "summary": "Verify Change Audit Permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20916",
+          "summary": "[Evaluator Analysis Report permissions]- Verify \"Evaluator Analysis\" report permission for Administrator"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24374",
+          "summary": "[Agent Contact Performance Report permissions]- Verify \"Agent Contact Performance\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58937",
+          "summary": "[List of Unavailable Codes Report permissions]- Verify \"List of Unavailable Codes\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25459",
+          "summary": "[ACD- QM template permissions]- Verify ACD-QM template Permissions for administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20883",
+          "summary": "[Abandons By Skill Report permissions]- Verify \"Abandons By Skill\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41920",
+          "summary": "[List of Skills Report  permissions]- Verify List of Skills report  permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58945",
+          "summary": "[Agent Behavior Insights Report permissions]- Verify \"Agent Behavior Insights\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58944",
+          "summary": "[Coaching Transaction Report permissions]- Verify \"Coaching Transaction\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24432",
+          "summary": "[Contact States by Interval Report permissions]- Verify \"Contact States by Interval\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58941",
+          "summary": "[Calibration Report permissions]- Verify \"Calibration\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24373",
+          "summary": "[Agent Contact History Report permissions]- Verify \"Agent Contact History\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41921",
+          "summary": "[List of Teams Report  permissions]- Verify List of Teams report  permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24375",
+          "summary": "[Campaign Summary Report permissions]- Verify \"Campaign Summary\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-64286",
+          "summary": "Verify Activity Audit Permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18926",
+          "summary": "[Agent contact performance permissions]- Verify Agent contact performance report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58942",
+          "summary": "[Evaluation Details Report permissions]- Verify \"Evaluation Details\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20890",
+          "summary": "[Evaluations By Team Report permissions]- Verify \"Evaluations By Team\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58940",
+          "summary": "[Evaluation Question and Answer Details Report permissions]- Verify \"Evaluation Question and Answer Details\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58938",
+          "summary": "[Evaluation Question Details Report permissions]- Verify \"Evaluation Question Details\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18927",
+          "summary": "[Digital message Report permissions]- Verify Digital message report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28566",
+          "summary": "[List of Agents details permission] - Verify List of Agents details permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18923",
+          "summary": "[Agent Session Permissions] - Verify agent session report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18916",
+          "summary": "[Callback Detail Report  permissions]- Verify callback report  permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58946",
+          "summary": "[Evaluation Question and Answer Analysis Report permissions]- Verify \"Evaluation Question and Answer Analysis\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20884",
+          "summary": "[Agent Skill Assignments Report permissions]- Verify \"Agent Skill Assignments\" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18924",
+          "summary": "[Agent Contact History permissions]- Verify Agent Contact History report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24434",
+          "summary": "[Agent Summary Report permissions]- Verify \"Agent Summary \" report permission for Administrator role"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20917",
+          "summary": "[Evaluation by Section and Question Report permissions]- Verify \"Evaluation by Section and Question\" report permission for Administrator"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Dragonfly/25.3_QA/ACD Reports": {
+    "total": 114,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-73573",
+          "summary": "[QA] Functional Validation- List of Agents Report- Verify Division Billing Code as filter and column present in Current List of Agents and Historical List of Agents"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52344",
+          "summary": "Evaluation Details Report > Create New Evaluations for Tickets and Verify Average Quality Score in Quality Score Widget and Metric Widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48134",
+          "summary": "Agent Skill assignment>Verify that widgets can be duplicate, remove and hide columns using widget options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47762",
+          "summary": "[Smoke] Evaluation Details Report > Verify that all columns are displayed for Evaluation Details widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46939",
+          "summary": "Agent session report > Verify that rows can be filtered with Agent filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47049",
+          "summary": "Interaction Summary Report > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47314",
+          "summary": "Functional Validation > Evaluations By Team > Verify Evaluations By Team Template Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47548",
+          "summary": "Functional Validation > Evaluations By Team >  Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46982",
+          "summary": "Agent session report > Verify that rows can be maximized/minimized and can be filtered with Search option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46937",
+          "summary": "Agent session report  > Verify that all columns are displayed for Agent session report widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47560",
+          "summary": "E2E > Evaluator Analysis > Verify 'Evaluator Analysis' updates correctly when new evaluations and QPs are created"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46983",
+          "summary": "Agent session report > Verify that columns can be moved and sorted"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47319",
+          "summary": "[Smoke][Permission] Evaluations By Team > Review that template is visible when have permission enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48129",
+          "summary": "Agent Skill Assignment>Verify that rows can be filtered with Contact Group filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46978",
+          "summary": "Agent session report > Verify that widgets can be duplicate, remove and hide columns using widget options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47780",
+          "summary": "Evaluation Details Report > Verify that widgets can hide, filter and pin columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47035",
+          "summary": "Interaction Summary Report > Verify Interaction Summary Widget Settings Additional Filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48136",
+          "summary": "Agent Skill assignment>Verify Chart display option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48132",
+          "summary": "Agent Skill assignment> Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47981",
+          "summary": "List of Agents> Verify that rows can be maximized/minimized and can be filtered with Search option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47092",
+          "summary": "Agent session report > Verify Chart display option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47322",
+          "summary": "Agent session report > Verify that dashboard template can be shared"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53990",
+          "summary": "Quality Evaluation and Coaching Trend > Create New Segment Evaluations and Verify Quality Evaluation and Coaching Trend widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53985",
+          "summary": "Desktop Discovery activity Report > Verify data on UI after updating some data in any category"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47779",
+          "summary": "Evaluation Details Report > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53762",
+          "summary": "Desktop Discovery Report > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52345",
+          "summary": "Evaluation Details Report > Create New Evaluations for Segments and Verify Average Quality Score in Quality Score Widget and Metric Widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52337",
+          "summary": "Evaluation Details Report > Create New Evaluations for Segments and Tickets and Verify Evaluation Details Report Data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47761",
+          "summary": "Evaluation Details Report > Verify that Evaluation Details Report is visible in Report Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47547",
+          "summary": "Functional Validation > Evaluations By Team >  Verify that dashboard can be exported"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48119",
+          "summary": "List of Agents> Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47763",
+          "summary": "Evaluation Details Report > Verify Column Filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53986",
+          "summary": "[Localization] Desktop Discovery activity Report > Verify that dashboard template can be available in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48138",
+          "summary": "Agent Skill assignment>Verify Legend position option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48128",
+          "summary": "Agent Skill Assignment> Verify that rows can be filtered with Employee Group filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47031",
+          "summary": "Interaction Summary Report > Verify Date Range dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47562",
+          "summary": "E2E > Evaluator Analysis > Verify 'Evaluator Analysis' updates correctly when Evaluator, Agent and QP details are updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53760",
+          "summary": "Desktop Discovery Report > Verify Desktop Discovery Report Widget Setting Employee Groups Filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47033",
+          "summary": "Interaction Summary Report > Verify Interaction Summary Widget Setting Employee Groups Filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-73589",
+          "summary": "[QA]  List of Agents > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61944",
+          "summary": "E2E FunctionalValidation>List of Agent details>ALL Widget>default functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47558",
+          "summary": "[Localization] Evaluator Analysis > Verify that dashboard template can be shared"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53755",
+          "summary": "[Smoke] Desktop Discovery Report > Verify that all columns are displayed for Desktop Discovery report"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47778",
+          "summary": "Evaluation Details Report > Verify Evaluation Details Widget Settings Additional Filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52338",
+          "summary": "Evaluation Details Report > Create New Evaluations for Segments and Tickets and Verify Average Quality Score in Quality Score Widget and Metric Widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48135",
+          "summary": "Agent Skill assignment> Verify widget display option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47058",
+          "summary": "Interaction Summary Report > Verify date range options displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48117",
+          "summary": "List of Agents> Verify that all columns are displayed for current and historical widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47551",
+          "summary": "Functional Validation > Evaluator Analysis > Verify that dashboard can be created with Evaluations By Team template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47549",
+          "summary": "[Localization] Evaluations By Team > Verify that dashboard template can be shared"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53991",
+          "summary": "Quality Evaluation and Coaching Trend > Create New Ticket Evaluations and Verify Quality Evaluation and Coaching Trend widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47781",
+          "summary": "Evaluation Details Report > Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47556",
+          "summary": "Functional Validation > Evaluator Analysis >  Verify that dashboard can be exported"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47775",
+          "summary": "Evaluation Details Report > Verify widget names and refresh option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48125",
+          "summary": "Agents Skill Assignment> Verify that rows can be maximized/minimized and can be filtered with Search option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53765",
+          "summary": "Desktop Discovery Report > Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48133",
+          "summary": "Agent Skill assignment> Verify that all columns are displayed for Agent Skill assignment widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47980",
+          "summary": "List of Agents> Verify widget names and refresh option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46932",
+          "summary": "[Permission] Agent session report > Review that template is not visible when have permission disable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48121",
+          "summary": "List of Agents> Verify that widgets can be duplicate, remove and hide columns using widget options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47034",
+          "summary": "Interaction Summary Report > Verify Interaction Summary Widget Setting Contact Groups dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47554",
+          "summary": "[Smoke] Evaluator Analysis > Verify that all columns are displayed for Evaluator Analysis Template"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47760",
+          "summary": "[Permission] Evaluation Details > Review that report is not visible when the permission is turned off"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46976",
+          "summary": "Agent session report > Verify date range options displayed for Agent session report widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47091",
+          "summary": "Agent session report > Verify widget display option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46981",
+          "summary": "Agent session report > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47050",
+          "summary": "Interaction Summary Report  > Verify that widgets can hide, filter and pin columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-73617",
+          "summary": "[QA] [Localization] List of Agents Report > Verify that dashboard can be updated in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47979",
+          "summary": "List of Agents> Verify that dashboard can be created with \"List of Agents\" template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47776",
+          "summary": "Evaluation Details Report > Verify Evaluation Details Widget Settings Employee Groups dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47313",
+          "summary": "Functional Validation > Evaluations By Team > Verify that dashboard can be created with Evaluations By Team template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-73615",
+          "summary": "[QA] [Smoke][Permission] List of Agents Report> Review that template is visible when have permission enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-73572",
+          "summary": "[QA] Functional Validation-List of Agent Report- Verify Data of Current List of Agent and Historical List of Agent"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47080",
+          "summary": "[Localization] Agent session report > Verify that dashboard template can be available in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47089",
+          "summary": "Agent session report > Verify Data format set to X-axis and Y-axis when chart display option is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53764",
+          "summary": "Desktop Discovery Report > Verify that widgets can hide, pin columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47320",
+          "summary": "[Smoke] Evaluations By Team > Verify that all columns are displayed for Evaluations By Team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47316",
+          "summary": "E2E > Evaluations By Team > Verify 'Evaluations By Team' updates correctly when new evaluations are created"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47051",
+          "summary": "Interaction Summary Report > Verify widget duplicate/remove and export (CSV and Excel)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47088",
+          "summary": "Agent session report > Search Agent Session No and validate data."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53758",
+          "summary": "Desktop Discovery activity Report > Verify Date Range dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47782",
+          "summary": "Evaluation Details Report > Verify Translation of Report Columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48123",
+          "summary": "Agents Skill Assignment> Verify widget names and refresh option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-73571",
+          "summary": "[QA] List of Agents > Verify that dashboard can be exported Global Level and Widget level"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47056",
+          "summary": "Interaction Summary Report > Verify CXone Recording Play Icon"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47759",
+          "summary": "[Smoke][Permission] Evaluation Details > Review that report is visible when the permission is turned on"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-66245",
+          "summary": "[QA] [Localization] Validation for List of Agent Details"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47555",
+          "summary": "Functional Validation > Evaluator Analysis > Verify Evaluator Analysis Template Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48122",
+          "summary": "Agent Skill assignment> Verify that dashboard can be created with \"Agent Skill assignment\" template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47550",
+          "summary": "[Smoke][Permission] Evaluator Analysis > Review that template is visible when have permission enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47777",
+          "summary": "Evaluation Details Report > Verify Evaluation Details Widget Settings Contact Groups dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53807",
+          "summary": "Desktop Discovery Report > Verify grouping with columns are displayed for Desktop Discovery report"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47057",
+          "summary": "[Localization] Interaction Summary Report > Verify Translation of Template Columns and Title"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53993",
+          "summary": "Quality Evaluation and Coaching Trend > Create New Employee Evaluations and Verify Quality Evaluation and Coaching Trend widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53753",
+          "summary": "Desktop Discovery activity Report > Verify that Desktop Discovery activity Report set added to widget and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47983",
+          "summary": "List of Agents> Verify that rows can be filtered with Employee Group filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46977",
+          "summary": "Agent session report > Verify that dashboard can be exported"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47557",
+          "summary": "Functional Validation > Evaluator Analysis  >  Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47546",
+          "summary": "E2E > Evaluations By Team > Verify 'Evaluations By Team' updates correctly when Team or Agent details are updated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53818",
+          "summary": "Evaluator Analysis > Verify Evaluator Dropdown When Evaluator is Moved to Inactive"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Dragonfly/25.4_QA/QM Reports": {
+    "total": 125,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-58920",
+          "summary": "Functional Validation >Evaluation Details Report > Verify that widgets can be exported in CSV and Excel format"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58931",
+          "summary": "Evaluation Details Report >Verify that widget can be maximized/minimized and can be filtered with Search option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57345",
+          "summary": "[QA] [Localization] ABI > Verify That Dashboard Template Columns Are Localized"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57338",
+          "summary": "[QA] Functional > ABI > Verify Dashboard Export Functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58926",
+          "summary": "Evaluation Details Report > Verify data when global filters are applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57614",
+          "summary": "Permission Validation>Evaluation by Section and Question report>Review that Report is visible when the permission is enabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57400",
+          "summary": "[QA] Calibration Report Functional Validation > Evaluator Details View > Columns display, filter and sort"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59082",
+          "summary": "[Functional][dataValidation]Coaching Transactional Report >Coaching Session Type Summary widget>Verify widgets loads data with correct metrics>Validate View By, % and count are accurate"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58927",
+          "summary": "Evaluation Details Report > Verify that columns can be moved and sorted"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58294",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Agent Question Details Widget>Validate the internal widget used as Quality Evaluation Widget with the report set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57337",
+          "summary": "[QA] E2E > ABI > Verify Behavior Score widget for Agents"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57360",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Average Quality Score by Team Widget>Verify Average Score Calculation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58288",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Agent Question Details Widget>Validate default date range (7 days)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58105",
+          "summary": "Localization>Evaluation by Section and Question Report (QM)>Verify All Widgets and functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58665",
+          "summary": "[Smoke] Evaluation Details Report> Verify that all columns are displayed and can be moved and sorted for Evaluation Details Report"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59086",
+          "summary": "[Functional]Coaching Transactional Report >Coaching Session Type (Doughnut Chart)Summary widgets >Filter validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59071",
+          "summary": "[AllWidget] Coaching Transactional Report >All Widgets> Verify that widgets can be minimized ,maximized,duplicated and exported ,shared and auto refresh the data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58965",
+          "summary": "[QA] Data Validation > Calibration Report  >Verify 'Calibration Report' data when evaluator or form is deleted"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58664",
+          "summary": "Functional Validation >Evaluation Details Report>Verify that dashboard can be created with Evaluation Details Report template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57330",
+          "summary": "[QA] Functional > ABI > Verify Interaction Behavioural Summary Widget Threshold Settings When Sentiment View Is ON"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59217",
+          "summary": "E2E> Evaluation Details Report> Verify 'Evaluation Details' updates correctly for employee evaluation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57333",
+          "summary": "[QA] Functional > ABI > Verify Widget Duplicate and Remove Options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57344",
+          "summary": "[QA] Functional > ABI > Verify \"My Agents\" Widget Data Display Format."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59207",
+          "summary": "Functional Validation >Evaluation Details Report > Verify Evaluation Details Template Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59067",
+          "summary": "[Smoke][GblobalFilters]Coaching Transactional Report> Validate Global Filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57388",
+          "summary": "[QA][Smoke] Calibration Report > Functional Validation > Verify All widgets displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58649",
+          "summary": "E2E FunctionalValidation>Evaluation by Section and Question report>ALL Widget>default functionality for any evaluation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57753",
+          "summary": "[QA] Data Validation > Calibration Report > Rule Manager at data consumption"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57359",
+          "summary": "FunctionalValidation>Evaluation by Section and Question report>Average Quality Score by Team Widget>Default function validation(Min,Max,export)>ViewByTeam and Daterange"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57332",
+          "summary": "[QA] E2E > ABI > Verify My Agents Data When Calls are Placed for an Agent"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58964",
+          "summary": "[QA] [Localization] Calibration Report > Verify that dashboard can be updated in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58662",
+          "summary": "[Smoke][Permission]Evaluation Details Report> Review that template is visible when have permission enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57485",
+          "summary": "[QA] [Smoke][Permission] Calibration Report > Validate feature toggle"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57611",
+          "summary": "Functional Filter Validation>Evaluation by Section and Question report>Agent Question Details Widget>Data Validation after filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57466",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Evaluation > Zero variance"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58295",
+          "summary": "FunctionalValidation>Evaluation by Section and Question report>Section and Question Scores Widget>validate same questions can fall in two different sections >Emp evaluation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58921",
+          "summary": "[Global]Functional Validation >Evaluation Details > Verify that dashboard can be exported"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58289",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Agent Question Details Widget>Validate Play interaction functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57328",
+          "summary": "[QA] Functional > ABI > Verify Maximize/Minimize and Search Functionality for All Widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57341",
+          "summary": "[QA] [Smoke] ABI > Verify that all columns are displayed for Interaction Behavioural Summary Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57469",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Form> Positive variance"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57348",
+          "summary": "[QA] E2E > ABI > Verify My Agent Widget Threshold Setting"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57331",
+          "summary": "[QA] E2E > ABI > Verify Behavior Score Widget Data When an Agent Is Moved to a New Team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57349",
+          "summary": "FunctionalValidation>Evaluation by Section and Question report>Section and Question Scores Widget>Verify Expandable sections Rows >validate hidden question"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59189",
+          "summary": "[Functional][FilterValidation]Coaching Transactional Report >Coaching Session Focus Area Summary widget>Filter validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59062",
+          "summary": "[Smoke][Permission]Coaching Transactional Report> Review that template is visible when have permission enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58242",
+          "summary": "Evaluation Question and Answer Analysis Report> Verify widget names and refresh option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58533",
+          "summary": "Test Cucumber"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57343",
+          "summary": "CXCV-59203 | Agent Behavior Insights display columns in sequence"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58286",
+          "summary": "Evaluation Question and Answer Analysis > Verify data when column filters are applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59216",
+          "summary": "[Functional][dataValidation]Coaching Transactional Report >Coaching Transaction Details Widget (Quality Evaluation Widget)>Filter validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57549",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Agent Question Details Widget>Verify that the widget loads when selecting an agent in the \"Average Score by Agent\" widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57487",
+          "summary": "[QA] E2E > Calibration Report  >Verify 'Calibration Report' data updates correctly when new evaluations are created"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57347",
+          "summary": "[QA] Functional > ABI > Verify that after change dashboard time zone, data in widgets is updated according to selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58259",
+          "summary": "[Smoke][Permission] Evaluation Question and Answer Analysis > Review that template is not visible when have permission disable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58292",
+          "summary": "[E2E][Playvox-Segment]Functional Validation>Validate Segment Interaction behavior for >Evaluation by Section and Question report>All Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58967",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Form> Validate behavior of Section NA, Question without section, and rules logic"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57465",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Evaluation > Negative variance"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58922",
+          "summary": "[Localization] Evaluation Details Report > Verify that dashboard can be updated in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57470",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Form> Negative variance"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58155",
+          "summary": "[QA] E2E > ABI > Verify My Agents Widget Data When an Agent Is Moved to a New Team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58261",
+          "summary": "[Smoke] Evaluation Question and Answer Analysis Report> Verify that all columns are displayed for Evaluation Question Details widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57464",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Evaluation > Positive variance"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57342",
+          "summary": "[QA] E2E > ABI > Verify Interaction Trend Widget Display and Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58929",
+          "summary": "Evaluation Details Report>Verify Date Range dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57334",
+          "summary": "[QA] Functional > ABI > Verify Interaction Behavioural Summary Widget Threshold Settings When Sentiment View Is OFF"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59186",
+          "summary": "E2E> Evaluation Details Report> Verify 'Evaluation Details' updates correctly for self assessment"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59219",
+          "summary": "[Sanity][Regression] E2E Functional Validation>Coaching Transactional Report>ALL Widget>validate default functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58158",
+          "summary": "[QA] E2E  > ABI  > Verify Interactions Trend Widget Date Range Dropdown Options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59202",
+          "summary": "[Functional][filterValidation]Coaching Transactional Report >Assigned Session Status Summary widget>Filter validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58290",
+          "summary": "Evaluation Question and Answer Analysis Report> Verify that widget can be maximized/minimized and can be filtered with Search option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59066",
+          "summary": "Functional [Persona]Validation >Coaching Transactional Report>Verify that dashboard can be created with Coaching Transactional Report template and display data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58960",
+          "summary": "[QA] Calibration Report > Verify Global filters and export"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57507",
+          "summary": "FunctionalValidation>Evaluation by Section and Question report>Agent Question Details Widget>Verify Widget Display and Layout default functionality>Columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57339",
+          "summary": "[QA] E2E > ABI > Verify Interaction Trend widget for Agents"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57450",
+          "summary": "FunctionalValidation>Evaluation by Section and Question report>Average  Score by Agent Widget>Functional and filters validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57396",
+          "summary": "[QA] Smoke > Functional Validation > Forms Calibration fields"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59069",
+          "summary": "[Localization] Coaching Transactional Report > Verify that dashboard can be updated in selected language"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58159",
+          "summary": "[QA] E2E  > ABI  > Verify Interaction Behavioural Summary Widget Date Range Dropdown Options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57340",
+          "summary": "[QA] E2E > ABI > Verify Behavior Score Widget Display and Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58157",
+          "summary": "[QA] E2E  > ABI  > Verify Behaviour Score Widget Date Range Dropdown Options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59199",
+          "summary": "E2E> Evaluation Details Report > Verify 'Evaluation Details' updates correctly for calibration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57751",
+          "summary": "[QA] Data Validation > Calibration Report > Null score for evaluation and questions"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59193",
+          "summary": "[Functional][dataValidation]Coaching Transactional Report >Assigned Session Status Summary widget>Verify widgets loads data with correct metrics>Validate View By and count are accurate"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57447",
+          "summary": "Functional Validation>Evaluation by Section and Question report>Average Quality Score by Team Widget>Verify Average Score Calculation with no evaluation data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57401",
+          "summary": "[QA] Calibration Report > Functional Validation > Form Detail View > Columns display, filter and sort"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57496",
+          "summary": "Data Validation>Evaluation by Section and Question report>Average Score by Agent Widget >Verify Data Accuracy (Average Score Calculation)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57335",
+          "summary": "[QA] E2E  > ABI  > Verify My Agents widget Setting Menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57329",
+          "summary": "[QA] Functional > ABI > Verify Column Actions (Pin, Filter, Hide) and Persistence After Refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57492",
+          "summary": "Functional Validation>Evaluation by Section and Question report>All Widgets >Verify widget behavior for no evaluation data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57613",
+          "summary": "Functional data Validation>Evaluation by Section and Question report>Agent Question Details Widget>Check evaluation question and answer mapping"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58914",
+          "summary": "E2E> Evaluation Details Report> Verify 'Evaluation Details' updates correctly when new evaluations are created"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59182",
+          "summary": "[Functional][dataValidation]Coaching Transactional Report >Coaching Session Focus Area Summary widget>Verify widgets loads data with correct metrics>Validate View By, % and count are accurate"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57395",
+          "summary": "[QA]Smoke > Functional Validation > Evaluator Calibration fields"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57612",
+          "summary": "Functional Filter Validation>Evaluation by Section and Question report>Agent Question Details Widget>Verify support for On-the-Fly Evaluations (ad-hoc)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57346",
+          "summary": "[QA] E2E > ABI > Verify Interaction Behavioural Summary Widget Data When New Interactions Are Posted"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59211",
+          "summary": "[Functional][dataValidation]Coaching Transactional Report >Coaching Transaction Details Widget (Quality Evaluation Widget)>Verify widgets loads data with correct metrics>Validate View By and count are accurate"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58663",
+          "summary": "[Smoke][Permission]Evaluation Details Report> Review that template is not visible when have permission disable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59070",
+          "summary": "[GlobalFilters] Coaching Transactional Report > Verify that dashboard can exported and shared"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57471",
+          "summary": "[QA] Data Validation > Calibration Report > Calibration Type Form > ZERO variance"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView reports": {
+    "total": 103,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-52493",
+          "summary": "Dashboards > Reports > List of Teams > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51788",
+          "summary": "HL - Dashboards > Reports > Verify global data filter when having a new agent configured for selected teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52507",
+          "summary": "HL - Dashboards > Reports > Verify the Confirmation behavior when switching dashboards and global filter is not saved"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52225",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify that Old Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52456",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify that new Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51787",
+          "summary": "HL - Dashboards > Reports > When setting Teams filter, verify that Agents displayed into the Report, belong to the team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52480",
+          "summary": "Dashboards > Reports > List of Skills > RBAC - Verify the filter values when Team View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52315",
+          "summary": "Dashboards > Reports > List of Agents Detail > RBAC - Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52454",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that dashboards (new and existing) support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52661",
+          "summary": "Dashboards > Reports > Verify that ‘Apply' button should be enabled if new configured filters added/changed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51793",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric name and description from Metrics section"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52660",
+          "summary": "Dashboards > Reports > When reopening the filter panel, verify that the user sees the previously configured filters, with the 'Apply' button enabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52505",
+          "summary": "HL - Dashboards > Reports > Verify the 'Clear All' button"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52473",
+          "summary": "Dashboards > Reports > List of Campaigns > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52504",
+          "summary": "HL - Dashboards > Reports > Verify the 'Add Criteria' Button Text"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52488",
+          "summary": "Dashboards > Reports > List of Teams > Verify that  Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52450",
+          "summary": "Dashboards > Reports > Skill Proficiency > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52457",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify that Old Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52486",
+          "summary": "Dashboards > Reports > List of Teams > Verify that new Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52485",
+          "summary": "Dashboards > Reports > List of Skills > RBAC - Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52394",
+          "summary": "Dashboards > Metrics > Verify \"ASA w/o Callback Time\" metric data displayed when scheduled callback contact is generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52503",
+          "summary": "HL - Dashboards > Reports > Verify the Global filters button Consistency"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52497",
+          "summary": "HL - Dashboards > Reports > Ensure the top and bottom spacing of the global filter panel is equal."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51797",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric is not displayed as available when is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52659",
+          "summary": "Dashboards > Reports > Verify that configured filters remain in their configured state, even if the user closes the filter panel without applying them"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52474",
+          "summary": "Dashboards > Reports > List of Campaigns > Verify that global filter can be applied when doing Impersonation over existent dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53945",
+          "summary": "Dashboards > Metrics > Verify \"Speed of Ans w/o CB Time\" metric data displayed when a normal phone call without a callback is generated."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52501",
+          "summary": "HL - Dashboards > Reports > Verify that ‘Apply' button should be enabled if new configured filters added/changed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52467",
+          "summary": "Dashboards > Reports > List of Campaigns > Verify that Old Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52446",
+          "summary": "Dashboards > Reports > When having RBAC set for the Agent, Teams filter displays only the teams configured in the Teams view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51794",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric name and description changes the language when applying Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51768",
+          "summary": "HL - Dashboards > Reports > RBAC - Verify the filter values when Team View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52487",
+          "summary": "Dashboards > Reports > List of Teams > Verify that Old Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53942",
+          "summary": "Dashboards > Metrics > Verify \"Speed of Ans w/o CB Time\" metric data displayed when scheduled callback contact is generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52690",
+          "summary": "Dashboards > Reports > Verify the 'Clear All' button should not appear"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51772",
+          "summary": "HL - Dashboards > Reports > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52451",
+          "summary": "Dashboards > Reports > Skill Proficiency > RBAC - Verify the filter values when Team View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52499",
+          "summary": "HL - Dashboards > Reports > When reopening the filter panel, verify that the user sees the previously configured filters, with the 'Apply' button enabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52453",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52476",
+          "summary": "Dashboards > Reports > List of Skills > Verify that new Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52460",
+          "summary": "Dashboards > Reports > Agent Skill Assignment> RBAC - Verify the filter values when Team View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51789",
+          "summary": "HL - Dashboards > Reports > Verify global data filter when having a edited agent for selected teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52658",
+          "summary": "Dashboards > Reports > Ensure the top and bottom spacing of the global filter panel is equal."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52509",
+          "summary": "HL - Dashboards > Reports > Verify the SOL icon and design consistency for the components displayed into global filters section"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52452",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52494",
+          "summary": "Dashboards > Reports > List of Teams > Verify that global filter can be applied when doing Impersonation over existent dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52272",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52481",
+          "summary": "Dashboards > Reports > List of Skills > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52482",
+          "summary": "Dashboards > Reports > List of Skills > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52271",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51767",
+          "summary": "HL - Dashboards > Reports > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52479",
+          "summary": "Dashboards > Reports > List of Skills > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52228",
+          "summary": "Dashboards > Reports > List of Agents Detail > RBAC - Verify the filter values when Team View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52269",
+          "summary": "Dashboards > Reports > List of Agents Detail > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52227",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52455",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that new Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52436",
+          "summary": "Dashboards > Reports > Verify global data filter when having a new agent configured for selected teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52484",
+          "summary": "Dashboards > Reports > List of Skills > Verify that global filter can be applied when doing Impersonation over existent dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52463",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52477",
+          "summary": "Dashboards > Reports > List of Skills > Verify that Old Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52508",
+          "summary": "HL - Dashboards > Reports > Verify the notification is displayed when trying to duplicate a dashboard that has been edited in the same time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52693",
+          "summary": "Dashboards > Reports > Verify the SOL icon and design consistency for the components displayed into global filters section"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52391",
+          "summary": "Dashboards > Metrics > Verify \"ASA w/o Callback Time\" metric name and description changes the language when applying Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51769",
+          "summary": "HL - Dashboards > Reports > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52502",
+          "summary": "HL - Dashboards > Reports > Verify that ‘Apply' button should be disabled if the user didn’t do any changes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52489",
+          "summary": "Dashboards > Reports > List of Teams > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52316",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51800",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric data displayed when a normal phone call without a callback is generated."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51798",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric data displayed when scheduled callback contact is generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51795",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric is displayed as available when View by Skill and Channel is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52462",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52449",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51799",
+          "summary": "HL - Dashboards > Metrics > Verify \"ASA with Callback Time Exclusion\" metric data is not displayed when inbound callback is generated."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53959",
+          "summary": "Dashboards > QM widgets > When setting Teams filter, verify that Agents displayed into the dashboard, belong to the team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52465",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > RBAC - Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52226",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify that  Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51770",
+          "summary": "HL - Dashboards > Reports > RBAC - Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52448",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53940",
+          "summary": "Dashboards > Metrics > Verify \"Speed of Ans w/o CB Time\" metric is displayed as available when View by Skill and Channel is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51790",
+          "summary": "HL - Dashboards > Reports > Verify global data filter when having an agent for edited teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52498",
+          "summary": "HL - Dashboards > Reports > Verify that configured filters remain in their configured state, even if the user closes the filter panel without applying them"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52464",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Reports > Verify that global filter can be applied when doing Impersonation over existen dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52458",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify that Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52692",
+          "summary": "Dashboards > Reports > Verify the notification is displayed when trying to duplicate a dashboard that has been edited in the same time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52459",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > Verify data displayed in the report when Global and Internal(widget filters) filters are set"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52495",
+          "summary": "Dashboards > Reports > RBAC - Verify the filter values when Team and Skill views are configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52492",
+          "summary": "Dashboards > Reports > List of Teams > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51771",
+          "summary": "HL - Dashboards > Reports > Verify that Shared dashboards can get Global filters applied"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52688",
+          "summary": "Dashboards > Reports > Verify the Global filters button Consistency"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52691",
+          "summary": "Dashboards > Reports > Verify the Confirmation behavior when switching dashboards and global filter is not saved"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51773",
+          "summary": "HL - Dashboards > Reports > Verify that global filter can be applied when doing Impersonation over existen dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52687",
+          "summary": "Dashboards > Reports > Verify that ‘Apply' button should be disabled if the user didn’t do any changes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52491",
+          "summary": "Dashboards > Reports > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52483",
+          "summary": "Dashboards > Reports > List of Skills > Verify that global filter can be applied when doing Impersonation over own dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52447",
+          "summary": "Dashboards > Reports > Skill Proficiency > Verify that global filter can be applied when doing Impersonation over existen dashboard reports"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52461",
+          "summary": "Dashboards > Reports > Agent Skill Assignment > RBAC - Verify the filter values when Skill View configured"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52223",
+          "summary": "Dashboards > Reports > List of Agents Detail > Verify that new Dashboards support and respond to global filter selections"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51766",
+          "summary": "HL - Dashboards > Reports > Verify that  Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52478",
+          "summary": "Dashboards > Reports > List of Skills > Verify that  Reports function as expected when no filters are applied."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52490",
+          "summary": "Dashboards > Reports > RBAC - Verify the filter values when Team View configured"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Functional": {
+    "total": 168,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-32448",
+          "summary": "Dashboards > KPI Trend > Verify Horizontal objective color bar is displaying properly when only one range is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21876",
+          "summary": "Dashboard > Verify that after enable agent zoom permission, agent state details is displayed and can be opened"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55227",
+          "summary": "Dashboard > Report > Verify that \"Agent Contact Detail\" doesn't have negative numbers and not congruent datetime value"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34498",
+          "summary": "Dashboard > ACD > Report > Dashboard that contains Report widget can be exported"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56067",
+          "summary": "Dashboard > ACD > Verify that [None] value is displayed in ACD widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21734",
+          "summary": "Impersonation > Dashboard > Metrics breakdown > Verify is widget is displayed in the dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20181",
+          "summary": "Dashboard > Service Level > Review data when have DFO contact is reassigned to another queue"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47105",
+          "summary": "Dashboards > Service Level > Verify Direction filter functionality after migration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30288",
+          "summary": "Dashboard > ACD > Report > Widget should display data when change report to Contact Detail mode"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21873",
+          "summary": "Dashboards > Check if the viewer for a dashboard he doesn't own can update column options (resize, sort and filter)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20608",
+          "summary": "CV Dashboard > Agent List > Table mode > Verify that widget is updated after check and uncheck visualization options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30475",
+          "summary": "Dashboards > Agent State Counter > Verify Hide legends in the widget's options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41979",
+          "summary": "[AppLink] Dashboards > Metrics > Exploratory Testing"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34057",
+          "summary": "Dashboards > Report widget > When exporting CSV files with specific languages containing special characters, the text is NOT converted to symbols."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21875",
+          "summary": "Dashboard > Verify that after disable agent zoom permission, agent state details is hidden"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21894",
+          "summary": "Dasboards > Verify if selected data attributes are loading after close and open widget settings modal again"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55230",
+          "summary": "Dashboard > Report > Verify that \"Contact Detail\" doesn't have negative numbers and not congruent datetime value"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47397",
+          "summary": "Dashboard > Metric Breakdown > Verify that mapping is working for filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20611",
+          "summary": "CV Dashboard > Agent List > Table and Chart mode > Verify that widget is updated after check and uncheck visualization options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31546",
+          "summary": "Dashboard >QM > Verify that all widgets can be exported by dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21697",
+          "summary": "Dashboard > Verify if ACD and DFO metrics has the same values when change the time from View All to include (12:00 AM - 12:00 AM)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21696",
+          "summary": "Impersonation > Dashboard > Manage Dashboards > Verify if dashboards are not duplicated in Manage Dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30488",
+          "summary": "Dashboards > KPI Trend > Verify if Skills, or Campaigns is selected in the View By selector, no more than 5 elements can be selected in the corresponding group selector"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-54615",
+          "summary": "Dashboard > Metrics Interval > Verify that user can create coaching sessions using widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47095",
+          "summary": "[25.2] CV Dashboard > Contact List > Verify that all widget filters are displayed and working correctly"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21693",
+          "summary": "Dashboard > Metrics Summary > Verify if Threshold is working for Count, Time and Percentage metrics"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23553",
+          "summary": "Dashboard > Verify that Media SubType is not displayed in Data Attributes for all widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20179",
+          "summary": "Dashboard > Service Level > Review data when have DFO contact without in-queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-33607",
+          "summary": "Dashboard > Metric Breakdown > After change Widget Display and refresh page, publish bar is not displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58382",
+          "summary": "[Dashboard] - Global filter - hide when add widget bar is open"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56210",
+          "summary": "[Exploratory] Dashboards > Verify generic functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55251",
+          "summary": "[Exploratory] Dashboard > Review shared dashboards or previously created dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47094",
+          "summary": "[25.2] CV Dashboard > Contact List > Verify that new names and column customization options are working as expected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42012",
+          "summary": "[AppLink] Dashboards > Coaching > Exploratory Testing"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24932",
+          "summary": "Dashboard > After scrolling right and refresh widgets, widgets are saving position"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32447",
+          "summary": "Dashboard > When sharing a dashboard with an agent as an owner, the 'Edit Details' option is shown to these agents."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29318",
+          "summary": "Dashboards > Metrics Interval > Agent State details display Data related to the state change for the selected user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30914",
+          "summary": "Dashboards > Agent State Counter > Verify Available Dialer state is displayed for PC contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-54616",
+          "summary": "Dashboard > Leaderboard > Verify that user can create coaching sessions using widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30783",
+          "summary": "Dashboards > Metrics > Metric button position review on Metric widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47399",
+          "summary": "Dashboard > KPI > Verify that mapping is working for filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56211",
+          "summary": "[Exploratory] Dashboards > Verify Exporting functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32429",
+          "summary": "Dashboards > KPI Trend > Verify  POC option is available in view by dropdown and data is displayed due to this option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30479",
+          "summary": "Dashboards > Callback Requests > Verify Hide legends in the widget's options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21695",
+          "summary": "Dashboard > Manage Dashboards > Verify if dashboards are not duplicated in Manage Dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56080",
+          "summary": "Dashboard > Agent State Summary > Verify that \"Refused\" and \"Held Party Abandoned\" states are displayed in widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55055",
+          "summary": "Dashboard > Report > When Hover over the reporting sets, a description is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32443",
+          "summary": "[Create Data Feed] - \"create\" button is disabled even after data field search input is removed on the new data feed page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34398",
+          "summary": "Dashboard > Gauge > After select a metric with objective and change widget display to detailed, after refresh page the widget keeps all sections visible"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56213",
+          "summary": "[Exploratory] Dashboards > RBAC > Verify Templates functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21930",
+          "summary": "Dashboards > Verify that metrics widget doesn't have media subtype as view and data attributes option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21868",
+          "summary": "Dashboard > Metrics Summary > Check if the widget displays data in 'Table', 'Chart' and 'Table and Chart' modes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47289",
+          "summary": "Dashboard > Verify that [Not Available] option is displayed in Channel, Disposition and Direction filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46953",
+          "summary": "[25.2] Dashboard > Global Filter should not be available in dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39046",
+          "summary": "Dashboard > When create a new user and access for the first to dashboard, all shared dashboards are displayed in the dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21879",
+          "summary": "Dashboard > Verify if all widgets contains a unique and different widget ID"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47357",
+          "summary": "Dashboard > Metrics > When select a metric, widget is displaying Channel, Dispositions, Tags Name and Direction as standalone filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47018",
+          "summary": "Report > Skill Proficiency > \"Group rows by\" option should not be visible in widget settings"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53319",
+          "summary": "Dashboard > Service Level > Verify that contacts with PlaceCall state is not displayed in Service Level widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42009",
+          "summary": "[AppLink] Dashboards > ACD > Exploratory Testing"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21869",
+          "summary": "Dashboard > Metrics Interval > Check if the widget displays data in 'Table', 'Chart' and 'Table and Chart' modes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47396",
+          "summary": "Dashboard > Queue Counter > Verify that mapping is working for filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30484",
+          "summary": "[Negative Testing] Dashboard > ACD > Report > Widget should display data when change report to Contact Detail mode"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31839",
+          "summary": "[Exploratory] Dashboards > Verify Dashboard functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31559",
+          "summary": "Dashboard > Contact List > When change the browser language to another than English, the format of DNIS and ANI phone number should change"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21874",
+          "summary": "Dashboards > Check if the viewer for a dashboard he doesn't own can update date duration filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47290",
+          "summary": "Dashboard > Verify that <Not Available> is displayed when select view by Channel, Disposition and Direction filters in metric widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32456",
+          "summary": "Dashboards > Agent List > Verify Available State Shows as Red Color when using German Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32436",
+          "summary": "Dashboard > Metric Breakdown > Publish bar should not appear after Metric breakdown widget changes from Table to chart mode and refresh page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46370",
+          "summary": "Dashboard > The user only sees the data of his tenant when reusing a username from another tenant"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53318",
+          "summary": "Dashboard > Service Level > Verify that Service level is displayed for abandons that have \"Count Abandons Against Service Level\" enable in skill"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-23554",
+          "summary": "Dashboard > Verify that Media SubType is not displayed in View By option for all widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47104",
+          "summary": "Dashboards > Service Level > Verify Channel filter functionality after migration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34496",
+          "summary": "Dashboard > ACD > Report > Widget can be exported on CSV and Excel when it is on Agent Contact Detail mode"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47107",
+          "summary": "Dashboards > Service Level > Verify that the \"Channel\" and \"Direction\" filters are available in the widget settings"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30489",
+          "summary": "Dashboards > KPI Trend > Verify if Points of Contact is selected in the View By selector, no more than 5 elements can be selected in the corresponding group selector"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34415",
+          "summary": "[Dashboard]- Verify that instead of Media Subtype, Channel is displayed in Data Attributes for ACD widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30919",
+          "summary": "Dashboards > Verify the Total is displayed at the end of the Metrics Summary and Metrics Interval widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21872",
+          "summary": "Dashboards > QM > Plan Status > Verify that link redirects to evaluator assignments page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47398",
+          "summary": "Dashboard > Gauge > Verify that mapping is working for filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31588",
+          "summary": "Dashboards > KPI Trend > Verify that after select a View By option, filters are reset according to the view selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47356",
+          "summary": "[Exploratory] Dashboard > Metrics > Verify that Media Type, Channel, Direction, Disposition and Tags Name is not displayed in Data Attributes"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20610",
+          "summary": "CV Dashboard > Agent List > Chart mode > Verify that widget is updated after check and uncheck visualization options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56068",
+          "summary": "Dashboard > Metrics > Verify that [None] value is displayed in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-50651",
+          "summary": "[CallbackRequest] Dashboards >  Verify the Callback Request widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30478",
+          "summary": "Dashboards > Service Level > Verify Hide legends in the widget's options."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29319",
+          "summary": "Dashboards > Metrics Summary > Agent State details display Data related to the state change for the selected user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56212",
+          "summary": "[Exploratory] Dashboards > Verify Global Filters functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42011",
+          "summary": "[AppLink] Dashboards > Analytics > Exploratory Testing"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21880",
+          "summary": "Dashboards > Verify if dashboard can add only 20 widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56209",
+          "summary": "[Exploratory] Dashboards > Verify Templates functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21870",
+          "summary": "Dashboard > Metrics Interval > Check if the widget in 'Chart' mode displays data in 'vertical bar', 'horizontal bar' and 'line' chart type"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53313",
+          "summary": "[25.3] Dashboard > Quality Score > Verify that channel option is available in View By dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34495",
+          "summary": "Dashboard > ACD > Report > Widget can be exported on CSV and Excel when it is on Contact Detail mode"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21871",
+          "summary": "Dashboard > Metrics Summary > Check if the widget in 'Chart' mode displays data in 'vertical bar', 'horizontal bar' and 'line' chart type"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21878",
+          "summary": "Dashboard > Verify that all pages in Dashboard app contains Gainsight enable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34406",
+          "summary": "Dashboard > Metric Breakdown > After move browser to a screen with different size, widget is displayed correctly"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21692",
+          "summary": "Dashboard > Verify if widget is not displaying filtered columns after a refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24931",
+          "summary": "Dashboard > After scrolling down and refresh widgets, widgets are saving position"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32445",
+          "summary": "Dashboards > KPI Trend > Verify Trend arrow is displayed when previous and current metric value is same"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/RBAC Data Restriction": {
+    "total": 58,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-36668",
+          "summary": "Dashboard > RBAC > When review a shared dashboard with a user without views, data in all Metrics is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36653",
+          "summary": "Dashboard  > RBAC > Teams > When review a shared dashboard with a user with views, data in Coaching widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36626",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36655",
+          "summary": "Dashboard  > RBAC > Skills > When review a shared dashboard with a user with views, data in ACD widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36648",
+          "summary": "Dashboard  > RBAC > Teams > When review a shared dashboard with a user with views, data in ACD widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25890",
+          "summary": "Dashboard > RBAC > Skills > Verify that ACD widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25920",
+          "summary": "PM > Dashboard > RBAC > Teams > Verify that user with a view assigned only see data of selected teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36651",
+          "summary": "Dashboard  > RBAC > Teams > When review a shared dashboard with a user with views, data in QM widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36618",
+          "summary": "Dashboard > RBAC > Skills > Verify that user with assigned view only can see data of selected skills in Coaching widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36647",
+          "summary": "Dashboard  > RBAC > Skills > Verify that users without views can see all data in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36690",
+          "summary": "[DFO] Dashboard > RBAC > Skills > When have contacts without skill, contact should be displayed in widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36659",
+          "summary": "Dashboard  > RBAC > Skills > When review a shared dashboard with a user with views, data in Coaching widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36632",
+          "summary": "Dashboard > RBAC > Teams > Verify that Analytics widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25889",
+          "summary": "Impersonation > RBAC > Dashboard/Manage Dashboards > Verify that impersonation user can see all teams and agents when share a dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36619",
+          "summary": "Dashboard > RBAC > Teams > Verify that user with assigned view only can see data of selected teams in Analytics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25906",
+          "summary": "Dashboard > RBAC > Teams > Verify that user with assigned view only can see data of selected teams in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36669",
+          "summary": "Dashboard > RBAC > When review a shared dashboard with a user without views, data in all Analytics is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36631",
+          "summary": "Dashboard > RBAC > Skills > Verify that Coaching widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36645",
+          "summary": "Dashboard > RBAC > Skills > Verify that users without views can see all data in Analytics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36644",
+          "summary": "Dashboard  > RBAC > Skills > Verify that users without views can see all data in QM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36630",
+          "summary": "Dashboard > RBAC > Teams > Verify that Coaching widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36646",
+          "summary": "Dashboard  > RBAC > Skills > Verify that users without views can see all data in Coaching widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36638",
+          "summary": "Dashboard > RBAC > Teams > Verify when user has no assigned views, they can access all data in QM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36643",
+          "summary": "Dashboard > RBAC > Skills > Verify that users without views can see all data in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36614",
+          "summary": "Dashboard > RBAC > Teams > Verify that user with assigned view only can see data of selected teams in QM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36675",
+          "summary": "[Exploratory] Dashboard > RBAC > Skills > Review that filters and exports are applying RBAC functionality for skills"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25884",
+          "summary": "Dashboard > RBAC > Teams > Verify when user has no assigned views, they can access all data in ACD widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36674",
+          "summary": "[Exploratory] Dashboard > RBAC > Teams > Review that filters and exports are applying RBAC functionality for teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36671",
+          "summary": "Dashboard > RBAC > When there is a shared dashboard, a user without views configured can see all data in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36670",
+          "summary": "Dashboard > RBAC > When review a shared dashboard with a user without views, data in all Coaching is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36658",
+          "summary": "Dashboard  > RBAC > Skills > When review a shared dashboard with a user with views, data in Analytics, QM, Metrics, ACD widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36624",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in Coaching widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36641",
+          "summary": "Dashboard  > RBAC > Teams > Verify that users without views can see all data in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36617",
+          "summary": "Dashboard > RBAC > Teams > Verify that user with assigned view only can see data of selected teams in Coaching widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36625",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in Analytics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25891",
+          "summary": "Dashboard > RBAC > Teams > Verify that ACD widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36634",
+          "summary": "Dashboard > RBAC > Teams > Verify that PM widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36664",
+          "summary": "Dashboard > RBAC > When review a shared dashboard with a user without views, data in all QM is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36611",
+          "summary": "PM > Dashboard > RBAC > Skills > Verify that user with a view assignated only see data of selected skills"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36636",
+          "summary": "Dashboard > RBAC > Skills > Verify that users with two or more views can only see skills selected in views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36620",
+          "summary": "Dashboard > RBAC > Skills > Verify that user with assigned view only can see data of selected skills in Analytics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36633",
+          "summary": "Dashboard > RBAC > Skills > Verify that Analytics widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25882",
+          "summary": "[Exploratory] Dashboard > RBAC > Verify data restriction functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36622",
+          "summary": "Dashboard > RBAC > Skills > Verify that user with assigned view only can see data of selected skills in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36623",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in QM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36613",
+          "summary": "Dashboard > RBAC > Skills > Verify that user with assigned view only can see data of selected skills in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36621",
+          "summary": "Dashboard > RBAC > Teams > Verify that user with assigned view only can see data of selected teams in PM widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36661",
+          "summary": "Dashboard  > RBAC > Skills > When review a shared dashboard with a user with views, data in PM widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36635",
+          "summary": "Dashboard > RBAC > Skills > Verify that PM widget settings are limited according to view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25898",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36640",
+          "summary": "Dashboard  > RBAC > Teams > Verify that users without views can see all data in Coaching widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36656",
+          "summary": "Dashboard  > RBAC > Skills > When review a shared dashboard with a user with views, data in Metrics widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36652",
+          "summary": "Dashboard  > RBAC > Teams > When review a shared dashboard with a user with views, data in Analytics widgets are matching according to views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36761",
+          "summary": "[Exploratory] Dashboard > RBAC > Review that filters and exports are applying RBAC functionality for skills and teams"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25885",
+          "summary": "Dashboard > RBAC > Teams > Verify when user has no assigned views, they can access all data in Metrics widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25897",
+          "summary": "Impersonation > Dashboard > RBAC > Verify when user has no assigned views, they can access all data in ACD widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36662",
+          "summary": "Dashboard > RBAC > When review a shared dashboard with a user without views, data in all ACD is displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36650",
+          "summary": "Dashboard  > RBAC > Teams > When review a shared dashboard with a user with views, data in Metrics widgets are matching according to views"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Widget Metrics": {
+    "total": 184,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-37039",
+          "summary": "[NRT] DFO > Generate a Chat with assignation and Escalated state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35026",
+          "summary": "[NRT] Agent > Generate Agent Preview State"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35008",
+          "summary": "[NRT] ACD > Generate Prequeued Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35020",
+          "summary": "[NRT] ACD > Generate Email Forward"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19887",
+          "summary": "Digital > Configuration and generation > Live Chat Contacts with Disposition"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13529",
+          "summary": "ACD > Historical > % Queued"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35017",
+          "summary": "[NRT] ACD > Generate Interrupted Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35014",
+          "summary": "[NRT] ACD > Generate Scheduled Callback"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28603",
+          "summary": "Digital > Generate contact with CXone Line channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28608",
+          "summary": "Digital > Generate contact with CXone Whatsapp channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53783",
+          "summary": "Digital > Generate Digital Contacts with ACW"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20191",
+          "summary": "Service Level > Generate DFO Contact with all states without skill ID"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28580",
+          "summary": "Digital > Generate contact with CXone Telegram channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46352",
+          "summary": "[NRT] Agent Contact > Generate DFO without focus contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46351",
+          "summary": "[NRT] Agent Contact > Generate Basic DFO Interaction"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13534",
+          "summary": "Digital > Negative Contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46354",
+          "summary": "[NRT] Agent Contact > Generate Preview Accepted"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46350",
+          "summary": "[NRT] Agent Contact > Generate IB contact with refuse"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35023",
+          "summary": "[NRT] Agent > Generate Agent Dialer"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20393",
+          "summary": "DFO > Historical > OUT SLA"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35011",
+          "summary": "[NRT] ACD > Generate Outbound Email"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31475",
+          "summary": "[NRT] ACD > Generate Abandoned Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35005",
+          "summary": "[NRT] DFO > Generate a Chat without Queue"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35016",
+          "summary": "[NRT] ACD > Generate Personal Connection Preview"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13532",
+          "summary": "ACD > Historical > Inâ€‹Queue Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35003",
+          "summary": "[NRT] DFO > Generate a Chat without assignation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13524",
+          "summary": "ACD > Historical > Generate all Queued group metrics"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13531",
+          "summary": "ACD > Historical > Routing Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28579",
+          "summary": "Digital > Generate contact with CXone LinkedIn channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28864",
+          "summary": "ACD > Real Time > In Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13520",
+          "summary": "ACD > Historical > Outbound Handled count"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35024",
+          "summary": "[NRT] Agent > Generate Agent Outbound Contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35007",
+          "summary": "[NRT] ACD > Generate Callback with Agent"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29310",
+          "summary": "Digital > Real Time > Active ESCALATED state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13518",
+          "summary": "ACD > Historical > Inbound Handled count"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29305",
+          "summary": "Digital > Real Time > NEW state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28966",
+          "summary": "Digital > Real Time > In Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20594",
+          "summary": "Digital > Configuration and generation > Live Chat Contacts with Tags"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35010",
+          "summary": "[NRT] ACD > Generate Refused Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35004",
+          "summary": "[NRT] DFO > Generate a Chat with assignation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13530",
+          "summary": "ACD > Historical > Preâ€‹Queue Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28607",
+          "summary": "Digital > Generate contact with CXone Instagram channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13523",
+          "summary": "ACD > Historical > Login Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35012",
+          "summary": "[NRT] ACD > Generate Conference with Skill"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28605",
+          "summary": "Digital > Generate contact with CXone Facebook Public channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34541",
+          "summary": "ACD > Historical > Agent with different states"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39486",
+          "summary": "ACD > Configuration and generation > Chat Contacts with Random Disposition"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13525",
+          "summary": "ACD > Historical > Avg Inâ€‹Queue Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41425",
+          "summary": "Digital > Configuration and generation > Chat contacts with Follow-On Response"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20400",
+          "summary": "DFO > Historical > OUT SLA with Studio script"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-33133",
+          "summary": "Digital > Real Time > In PreQueue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18643",
+          "summary": "Digital > Historical > Generate contact with Live Chat channel for Contact FRT Metric"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35025",
+          "summary": "[NRT] Agent > Generate Agent ACW state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28604",
+          "summary": "Digital > Generate contact with CXone YouTube channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35019",
+          "summary": "[NRT] ACD > Generate Email Reply"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35018",
+          "summary": "[NRT] ACD > Generate Inbound Email Parked"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34607",
+          "summary": "Dashboards > Metrics Summary review when adding INBOUND and OUTBOUND HANDLED metrics"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28606",
+          "summary": "Digital > Generate contact with CXone  Facebook Messenger channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31477",
+          "summary": "[NRT] DFO > Generate an answered Messaging Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20392",
+          "summary": "DFO > Historical > IN SLA"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31476",
+          "summary": "[NRT] Agent > Generate Agent Inbound Contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13533",
+          "summary": "ACD > Historical > Generate all Callback group metrics"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20195",
+          "summary": "Service Level > Generate DFO Contact with two Queues"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-18650",
+          "summary": "Digital > Historical > Generate contact with Live Chat channel for resolution Metric"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19872",
+          "summary": "ACD > Configuration and generation > Chat Contacts with Disposition"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13521",
+          "summary": "Digital > Resolution Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-14028",
+          "summary": "Digital > Digital Abandons"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35013",
+          "summary": "[NRT] ACD > Generate Transfer with Skill"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35015",
+          "summary": "[NRT] ACD > Generate Inqueue Preview"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35006",
+          "summary": "[NRT] ACD > Generate Active Chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20399",
+          "summary": "DFO > Historical > IN SLA with Studio Script"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20194",
+          "summary": "Service Level > Generate DFO Contact without in-queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28867",
+          "summary": "ACD > Real Time > Generate a contact with active state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13517",
+          "summary": "Digital > Message Count"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13527",
+          "summary": "Digital > Closed Contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46353",
+          "summary": "[NRT] Agent Contact > Generate OB phone call"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13519",
+          "summary": "ACD > Historical > Avg Abandon Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20188",
+          "summary": "Service Level > Generate DFO contact with pre-queue state skill ID empty"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39487",
+          "summary": "Digital > Configuration and generation > Live Chat Contacts with Random Disposition"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46349",
+          "summary": "[NRT] Agent Contact > Generate ACW state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35009",
+          "summary": "[NRT] ACD > Generate Outbound Busy"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13515",
+          "summary": "ACD > Historical > Speed of Answer"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34641",
+          "summary": "Dashboards > Metrics Summary review when adding %HANDLED TIME metrics"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29307",
+          "summary": "Digital > Real Time > Active PENDING state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28970",
+          "summary": "Digital > Real Time > Post Agent state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13522",
+          "summary": "ACD > Historical > Short Abandons count"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29306",
+          "summary": "Digital > Real Time > OPEN state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28967",
+          "summary": "Digital > Real Time > Active RESOLVED state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29302",
+          "summary": "ACD > Real Time > Active Refused state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35021",
+          "summary": "[NRT] ACD > Generate PostQueue contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13516",
+          "summary": "ACD > Historical > Longest Delay"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29303",
+          "summary": "ACD > Real Time > Active Interrupted state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28609",
+          "summary": "Digital > Generate contact with CXone X channel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13526",
+          "summary": "ACD > Historical > OUT SLA"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53784",
+          "summary": "Digital > Configure Digital skill and channels with ACW and Disposition"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46343",
+          "summary": "[NRT] ACD > Generate Short abandoned chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13528",
+          "summary": "ACD > Historical > Working Time"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46342",
+          "summary": "[NRT] ACD > Generate Long abandoned chat"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46341",
+          "summary": "[NRT] ACD > Generate Contact with Held Party Abandoned"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35022",
+          "summary": "[NRT] ACD > PC > Generate Outbound Party Hang Up"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Permissions": {
+    "total": 8,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-21685",
+          "summary": "Dashboard > After disabling PM permissions at role level verify if user can create dashboards and add widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21687",
+          "summary": "Impersonation > Dashboard > After disabling PM app in the tenant verify if user can create dashboards and add widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30207",
+          "summary": "[Negative Testing] Dashboards > Templates > Verify that Template option and permissions are not displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21688",
+          "summary": "Dashboard > After disabling PM app in the tenant, verify if user can create dashboards and add widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21686",
+          "summary": "Impersonation > Dashboard > After disabling PM permissions at role level verify if user can create dashboards and add widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21516",
+          "summary": "Performance Management > Dashboard > Verify if user can access to CV Dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21514",
+          "summary": "Dashboard > Verify if user can access to CV Dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21515",
+          "summary": "[Impersonation] Dashboard > Verify if user can access to CV Dashboards"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Timezone": {
+    "total": 1,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-24383",
+          "summary": "Dashboard > Verify if Dashboard is listing 3 or more time zones in Dashboard Timezone list"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Localization": {
+    "total": 28,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-47910",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Evaluation and Coaching Trend > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47905",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Call Arrival > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47929",
+          "summary": "[Localization - Hebrew] Dashboard > Performance Management > Challenges > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47926",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > Metrics Interval > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47909",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Category Over Time > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47914",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Forms Calibration > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47915",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Plan status > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47911",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Evaluation and Coaching Events > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47900",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Contact States By Skill > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47906",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Dispositions > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47932",
+          "summary": "[Localization - Hebrew] Dashboard > Performance Management > Games Tracker > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47927",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > Metrics Review > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47925",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > Metric Breakdown > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47924",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > Leaderboard > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47921",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > Gauge > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47903",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Queue Counter > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47904",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Report > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47901",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Callback Requests > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47912",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Evaluator Calibration > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47898",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Contact List > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47902",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Service Level > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47899",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Agent State Counter > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47923",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > KPI Trend > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47913",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Evaluator Performance > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47916",
+          "summary": "[Localization - Hebrew] Dashboard > QM > Quality Score > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47930",
+          "summary": "[Localization - Hebrew] Dashboard > Performance Management > Games > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47922",
+          "summary": "[Localization - Hebrew] Dashboard > Metrics > KPI > Verify that widget is correctly located"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47897",
+          "summary": "[Localization - Hebrew] Dashboard > ACD > Agent List > Verify that widget is correctly located"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Navigation": {
+    "total": 6,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-19532",
+          "summary": "[Exploratory] Dashboard > QM > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19531",
+          "summary": "[Exploratory] Dashboard > Analytics > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19529",
+          "summary": "[Exploratory] Dashboard > Coaching > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19528",
+          "summary": "[Exploratory] Dashboards > Performance Management > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19527",
+          "summary": "[Exploratory] Dashboards > Verify Manage Dashboards functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19521",
+          "summary": "[Exploratory] Dashboards > Verify that navigation and projection is working"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Smoke": {
+    "total": 12,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-13435",
+          "summary": "[Smoke][Real Time] Dashboards > Agent List review with agent's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13406",
+          "summary": "[Smoke][Real Time] Dashboards > Agent List review with contact's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16303",
+          "summary": "Dashboards > Metrics review when having a metric with handled historical data selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46975",
+          "summary": "[25.2][Smoke] Dashboards > Agent List > Agent state detail review with agent's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13416",
+          "summary": "[Smoke] Dashboards > KPI Trend review when having a metric with data selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13425",
+          "summary": "[Smoke] [Real Time] Dashboards > Agent State Counter review with agent data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13421",
+          "summary": "[Smoke] Dashboards > Contact List review with contact data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13419",
+          "summary": "[Smoke][Real Time] Dashboards > Agent State Counter review with Preview and Waiting data generated [Personal Connection]"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13426",
+          "summary": "[Smoke][Real Time] Dashboards > Agent State Counter review with contact data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13409",
+          "summary": "[Smoke] Dashboards > Agent State Counter review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13433",
+          "summary": "[Smoke] Dashboards > Contact States by Skill review with ACD data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13422",
+          "summary": "[Smoke] Dashboards > Agent List review without data"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Edit Mode": {
+    "total": 15,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-26229",
+          "summary": "Dashboard > Metrics > When add Metrics widgets, select metrics and wait for refresh, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26238",
+          "summary": "Dashboard > Coaching/ Analytics > After adding any widget with a grid displayed, publish bar should not be displayed after save dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26224",
+          "summary": "Dashboard > When navigate to any dashboard, publish bar is not displayed in all navigated dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26217",
+          "summary": "Dashboard > Agent List, Contact List, Contact States By Skill > Verify that after generating a contact, empty widgets do not activate the publish bar when they are refreshed and have contact displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26240",
+          "summary": "Dashboard > Leaderboard> After add Leaderboard widget with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26247",
+          "summary": "Dashboard > QM > After adding widgets and wait for automatic refresh, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26233",
+          "summary": "Dashboard > ACD > When expand and reduced all widgets, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56843",
+          "summary": "Dashboard > Metrics Summary > After add Metrics Summary widget with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26249",
+          "summary": "Dashboard > Analytics & Coaching > After adding widgets and wait for automatic refresh, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26221",
+          "summary": "Supervisor > Dashboard > After adding any widget with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26234",
+          "summary": "Dashboard > Metrics > When expand and reduced all widgets, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56840",
+          "summary": "Dashboard > Metrics Interval > After add Metrics Interval widget with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56841",
+          "summary": "Dashboard > Metrics Review > After add Metrics Review widget with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26248",
+          "summary": "Dashboard > Metrics > After adding widgets and wait for automatic refresh, publish bar should not to be displayed"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26241",
+          "summary": "Dashboard > QM > After adding all QM widgets with a displayed grid and saving before the widget is fully loaded, dashboard should not display publish bar when access to the dashboard or refresh the page"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/Guardians (Only for Reference)/ClearView widgets/Date Picker": {
+    "total": 27,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-24972",
+          "summary": "[Exploratory] Dashboard > Metrics > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24956",
+          "summary": "Dashboard > Metrics > KPI Trend > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24960",
+          "summary": "Dashboard > Metrics > Metric Breakdown > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24957",
+          "summary": "Dashboard > Metrics > KPI Trend > Verify that after selecting Last Week, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24959",
+          "summary": "Dashboard > Metrics > Leaderboard > Verify that after selecting Last Month, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24951",
+          "summary": "Dashboard > Metrics > Gauge > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24963",
+          "summary": "Dashboard > Metrics > Metrics Interval > Verify that after selecting Last 30 Days, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24943",
+          "summary": "Dashboard > QM > Category Over Time > Verify if date picker is correctly aligned, contains all expected options and have last 7 days selected by default"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24953",
+          "summary": "Dashboard > Metrics > KPI > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24971",
+          "summary": "[Exploratory] Dashboard > ACD > Verify widgets functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24969",
+          "summary": "Dashboard > ACD > Verify that after change time zone, data is displayed according to the selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24968",
+          "summary": "Dashboard > ACD > Agent State Summary > Verify that after change time zone, data is displayed according to the selected time zone"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24962",
+          "summary": "Dashboard > Metrics > Metrics Interval > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24955",
+          "summary": "Dashboard > Metrics > KPI > Verify that after selecting Last 90 Days, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24948",
+          "summary": "Dashboard > ACD > Agent State Summary > Verify that after select a past date, data is displayed correctly for that date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24952",
+          "summary": "Dashboard > Metrics > Gauge > Verify that after selecting Last 30 days, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24966",
+          "summary": "Dashboard > Metrics > Metrics Summary > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24964",
+          "summary": "[Exploratory] Dashboard > Verify date picker functionality in different browsers"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24961",
+          "summary": "Dashboard > Metrics > Metric Breakdown > Verify that after selecting Custom Range, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24950",
+          "summary": "Dashboard > ACD > Report > Verify that after selecting Custom Range, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24949",
+          "summary": "Dashboard > ACD > Report > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24958",
+          "summary": "Dashboard > Metrics > Leaderboard > Verify that after selecting Yesterday, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24942",
+          "summary": "Dashboard > ACD > Report > Verify if date picker is correctly aligned, contains all expected options and have Today selected by default"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24944",
+          "summary": "Dashboard > Coaching > Coaching Status > Verify if date picker is correctly aligned, contains all expected options and have Today selected by default"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24954",
+          "summary": "Dashboard > Metrics > KPI > Verify that after selecting Last 7 days, data is displayed for the selected date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24973",
+          "summary": "[Logs] Dashboard > Verify the logs when change date picker option in any widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24965",
+          "summary": "[Localization] Dashboard > Verify if date picker is working with localization"
+        }
+      }
+    ]
+  }
+}

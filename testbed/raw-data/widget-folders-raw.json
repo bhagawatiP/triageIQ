@@ -1,0 +1,3468 @@
+{
+  "/CXDV_20Mar2026/Dashboards/ACD": {
+    "total": 95,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-58511",
+          "summary": "[Agent Contact View Widget] - Verify the default column available in the grid of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37849",
+          "summary": " [Agent State Summary] - Verify search functionality and column rearrangement in widget grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28643",
+          "summary": "[Agent State Summary ] [Settings] -'Show Unavailable States' Check box funcationality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58535",
+          "summary": "[Agent Contact View Widget] -Verify Display Name in settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58508",
+          "summary": "[Agent Contact View Widget] - Verify No data avaliable State of the Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42753",
+          "summary": "CXCV-25070 TC2 -\tToggling fullscreen on AG Grid widgets does not trigger the publish bar - Contact List"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-63610",
+          "summary": "[Agent Contact View  Widget] - E2E --> Review widget with Agent's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60024",
+          "summary": "[Agent List Widget]- Verify the 'Expand All Row Groups' and 'Collapse All Rows Groups' functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43629",
+          "summary": "CV Dashboards > Agent List > Verify data within the Multi-Channel and Skill View"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58514",
+          "summary": "[Agent Contact View Widget] - Verify multi sorting"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48850",
+          "summary": "[Interaction Summary Widget -Settings]- Verify \"direction\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20401",
+          "summary": "[Smoke] Dashboards > Service Level review with DFO data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11998",
+          "summary": "[Call Arrival widget]- verify legend position"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28448",
+          "summary": "[Agent State Summary ] - Verify Duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13351",
+          "summary": "Dashboards > Contact States by Skill review with ACD data generated for PostQueue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13415",
+          "summary": "[Smoke] Dashboards > Service Level review with ACD data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13423",
+          "summary": "[Smoke] Dashboards > Service Level review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20028",
+          "summary": "Dashboards > Omnichannel - Verify DFO and ACD contacts with dispositions are displayed for Service Level in all Metric widgets"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28958",
+          "summary": "Dashboards > Contact States by Skill review with Digital data generated for Prequeue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79414",
+          "summary": "Dashboards > Queue Counter review with data for  Longest delay callback"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-49144",
+          "summary": "[25.2][Smoke] Dashboards > Contact States by Skill review with ACD data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13420",
+          "summary": "[Smoke] Dashboards > Contact List review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46861",
+          "summary": "[25.2][Smoke] Dashboards > Agent List review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76214",
+          "summary": "Verify Digital Email transcript"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-76221",
+          "summary": "Verify Digital Chat transcript"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58512",
+          "summary": "[Agent Contact View Widget] - Verify 'Show Only ACW Contact State' Check box in the settings panel"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-52589",
+          "summary": "CXCV-50743 – Dashboard > Widgets > Interaction Summary > Contact Detail Report > Transcript > Each contact in the Transcriptions tab of the Contact Detail Report can be expanded to show transcript details. Expanded contacts persist when changing page tabs"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-50406",
+          "summary": "Dashboards > Agent State Counter > Verify Available & Dialer state is displayed for PC contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43817",
+          "summary": "CV Dashboard > Agent List > Verify sorting behavior for the Agent State column"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-20402",
+          "summary": "Dashboards > Service Level > Review In and out SLA DFO contacts queued by Studio Script"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13436",
+          "summary": "[Smoke] Dashboards > Contact States by Skill review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13412",
+          "summary": "[Smoke] Dashboards > Callback Request review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30492",
+          "summary": "[Smoke] Dashboards > Dispositions review with DFO data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13434",
+          "summary": "[Smoke][Historical] Dashboards > Agent State Summary review with data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29296",
+          "summary": "[Real Time] Dashboards > Contact List > Contact Zoom > Review contact states displayed for DFO New Contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13417",
+          "summary": "[Smoke] Dashboards > Queue Counter review with data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-72209",
+          "summary": "[Table View] Verify the Call Arrival widget 'Table', 'Chart', 'Table & Chart' view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-50403",
+          "summary": "[Sanity] Dashboards > Call Arrival > Review a call contact is in the InQueue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58506",
+          "summary": "[Agent Contact View Widget] - Verify manual refresh of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43816",
+          "summary": "CV Dashboard > Agent List > Verify that the widget accurately shows the Available & Dialer State"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13411",
+          "summary": "[Smoke] Dashboards > Callback Request review with real time data (In queue)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55050",
+          "summary": "[Smoke] Dashboards > Interaction Summary > Interaction Summary without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46947",
+          "summary": "[25.2][Smoke][Real Time] Dashboards > Agent State Counter review with contact data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29291",
+          "summary": "[Real Time] Dashboards > Contact List > Contact Zoom > Review contact states displayed for Callback Contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-72547",
+          "summary": "Verify graph X-axis date and time format updates based on selected date format In Call arrival widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42936",
+          "summary": "Dashboards > Queue Counter > Review when applying \"Channel\" filter on it"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53399",
+          "summary": "Dashboards > Service Level >  Verify SLA value when Short Abandon Threshold is not enabled."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-63324",
+          "summary": "[Agent List Widget] Validate Copy functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58545",
+          "summary": "[Agent Contact View Widget] - Verify max 10000 entries in the table"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51002",
+          "summary": "Dashboards > Contact States by Skill review with ACD data generated for Skill on Pre Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46864",
+          "summary": "CV Dashboard > Agent List > Multi-Channel and Skill View > Verify the data that is showing for the ACW state."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79415",
+          "summary": "Dashboards > Legend validation for Callback Request widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48980",
+          "summary": "Dashboards > Contact States by Skill review with Digital data generated for Post Queue State"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79411",
+          "summary": "Dashboards > Legend validation for Service Level widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58543",
+          "summary": "[Agent Contact View Widget]- Verify sorting for the grid columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58520",
+          "summary": "[Agent Contact View Widget] - Verify Channel Icons are coming proper according to channel name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-72515",
+          "summary": "Verify that the selected date format is displayed on the Contact List widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-51001",
+          "summary": "Dashboards > Contact States by Skill review with ACD data generated for Skill on Out Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48979",
+          "summary": "Dashboards > Contact States by Skill review with Digital data generated on With Agent State"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38071",
+          "summary": "[Agent State Summary ] - Verify Custom Date Range Limitations"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37856",
+          "summary": "[Agent State Summary -Settings ] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-59038",
+          "summary": "[Agent Contact View Widget]-  Verify the Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79416",
+          "summary": "Dashboards > Agent List widget name can be modified"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-49664",
+          "summary": "[Interaction Summary Widget]-  Verify the Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46827",
+          "summary": "[25.2][Real Time] Dashboards > Agent List review with contact's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46863",
+          "summary": "CV Dashboard > Agent List > Verify that the Agent List widget is displaying Working state with an Digital contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79409",
+          "summary": "[Regression]Dashboards > Validate graph and legends for Agent State Counter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60909",
+          "summary": "Dashboards > Verify that navigation and projection is working & Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58544",
+          "summary": "[Agent Contact View Widget] [Context menu]- Verify \"Columns\" option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55051",
+          "summary": "[Smoke] Dashboards > Interaction Summary > Interaction Summary with data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-50402",
+          "summary": "[Sanity] Dashboards > Call Arrival > Review when there is data for an agent with an active contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25376",
+          "summary": "[Dispositions widget]- Verify export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13418",
+          "summary": "[Smoke] Dashboards > Queue Counter review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43815",
+          "summary": "CV Dashboard > Agent List > Verify that the Agent List widget is displaying Working & Dialer state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21865",
+          "summary": "[Smoke] Dashboards > Call Arrival review when having data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13407",
+          "summary": "[Smoke] Dashboards > Agent State Summary review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28655",
+          "summary": "[Agent State Summary ] - Verify the Export funcationality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48978",
+          "summary": "Dashboards > Contact States by Skill review with Digital data generated for Skill on In Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46828",
+          "summary": "[25.2][Smoke][Real Time] Dashboards > Agent List review with agent's data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-53404",
+          "summary": "Dashboards > Service Level >  Verify SLA value when Short Abandon Threshold is enabled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46945",
+          "summary": "[25.2][Smoke] Dashboards > Agent State Counter review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-13356",
+          "summary": "Dashboards > Callback Request review with historical data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30491",
+          "summary": "[Smoke] Dashboards > Dispositions review without data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-4543",
+          "summary": "ACD - Contact List Widget - Quick Rename the module Name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46946",
+          "summary": "[25.2][Smoke] [Real Time] Dashboards > Agent State Counter review with agent data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-45309",
+          "summary": "CV Dashboard > Agent List > Verify that the combination of all filters is working correctly"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-50999",
+          "summary": "Dashboards > Contact States by Skill review with ACD data generated for Skill on In Queue state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29264",
+          "summary": "[Smoke][Real Time] Dashboards > Contact List > Contact Zoom > Review contact states displayed for Active Contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-79413",
+          "summary": "Dashboards > Queue Counter review with data for Lengest delay inqueue"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46955",
+          "summary": "[25.2][Smoke] Dashboards > Contact List review with contact data generated"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-46839",
+          "summary": "CV Dashboard > Agent List > Verify that the Agent List widget is displaying Working state with an ACD contact"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-74537",
+          "summary": "Daily Cache >E2E > TS ON ,GV Off Interaction Summary Widget with with Multiple Agent Filters >Data validation should reflect newly created transferred multi agent contact instantly from OS for date=today"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30493",
+          "summary": "[Smoke] Dashboards > Dispositions review with ACD data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43499",
+          "summary": "Dashboards > Agent State Counter > Verify Working Contacts & Dialer state is displayed for PC contacts"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21866",
+          "summary": "[Smoke] Dashboards > Call Arrival review without data"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Quality Evaluations widget": {
+    "total": 64,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-30533",
+          "summary": "[Quality Evaluations widget]- Verify user is able to export dashboard having Quality evaluation widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56156",
+          "summary": "[Quality Evaluations widget- settings]- Verify threshold bar UI resizes properly on different screen sizes."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56142",
+          "summary": "[Quality Evaluations widget- settings]- Verify default threshold values are 0 (min) and 100 (max)."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29324",
+          "summary": "[Quality Evaluations widget]- Verify play button for each evaluations details"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32408",
+          "summary": "[Quality evaluations widget]- Verify context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56152",
+          "summary": "[Quality Evaluations widget- settings]- Verify toggle between views rapidly without causing UI issues"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31712",
+          "summary": "[Quality Evaluations widget- settings]- Verify groups dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21461",
+          "summary": "[Quality evaluations widget]- Verify user can rearrange the position of columns widget grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56150",
+          "summary": "[Quality Evaluations widget- settings]- Verify application requires at least two thresholds to proceed."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21174",
+          "summary": "[Quality Evaluations Widget - Empty State ]- Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-62595",
+          "summary": "[Evaluation Question And Answer Summary] Report should be grouped by Section and section column should not be Expandable/collapseable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21452",
+          "summary": "[Quality Evaluations Widget ]- Verify date range on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56153",
+          "summary": "[Quality Evaluations widget- settings]- Verify toggle click when thresholds are not configured(default configuration)."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21455",
+          "summary": "[Quality Evaluations Widget]- Verify selected date range tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56145",
+          "summary": "[Quality Evaluations widget- settings]- Verify Emoticons reflect metric values based on configured thresholds"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21129",
+          "summary": "[Quality Evaluations Widget - Permissions ]- Verify widget is permission based"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21479",
+          "summary": "[Quality Evaluations]- Verify sorting of all the columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21457",
+          "summary": "[Quality Evaluations widget]- Verify user can select upto last 13 months dates"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21486",
+          "summary": "[Quality Evaluations widget]-  Verify user is able to duplicate the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31715",
+          "summary": "[Quality Evaluations widget]- E2E --> Data validation when Evaluations questions details report is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31714",
+          "summary": "[Quality Evaluations widget- Context menu]- Verify \"Columns\" option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21436",
+          "summary": "[Quality Evaluations widget]-Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-34035",
+          "summary": "[Quality Evaluations widget-Settings]- Verify \"Agent\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58495",
+          "summary": "[Evaluation by Section and Question Summary] Single Select Should be present for Form and Version Filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31198",
+          "summary": "[Quality Evaluations widget] - Verify data limit notification on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21146",
+          "summary": "[Quality Evaluation Widget]- Verify widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31713",
+          "summary": "[Quality Evaluations widget- settings]- Verify teams dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58493",
+          "summary": "[Evaluation by Section and Question Summary] Report should be grouped by Section and section column should be Expandable/collapseable"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-22121",
+          "summary": "[Quality Evaluations widget]- Verify default sorting for the grid columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21143",
+          "summary": "[Quality Evaluation Widget]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31196",
+          "summary": "[Quality Evaluations Widget - Settings]- Verify report dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32129",
+          "summary": "[Quality Evaluations widget- settings]- Verify on the fly evaluations dropdown in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56146",
+          "summary": "[Quality Evaluations widget- settings]- Verify All configurations persist across sessions"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56144",
+          "summary": "[Quality Evaluations widget- settings]- Verify Toggle available in legend banner to switch between numeric values and emoticons"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31711",
+          "summary": "[Quality Evaluations widget] - Verify data limit notification in exported file when dashboard is exported having QE widget with more than 100000 records"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43564",
+          "summary": "[Quality Evaluations widget-Settings]- Verify \"Skills\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21201",
+          "summary": "[Quality Evaluations Widget - Empty State] - Verify error messages"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58492",
+          "summary": "[Evaluation by Section and Question Summary] Report should be visible in the dropdown under settings in Quality Evaluation Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43575",
+          "summary": "[Quality Evaluations widget-Settings]- Verify \"Quality plan\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30545",
+          "summary": "[Quality Evaluations widget]- E2E --> Data validation when evaluations details report is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56143",
+          "summary": "[Quality Evaluations widget- settings]- Verify configured threshold ranges display in banner in widget UI"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-43565",
+          "summary": "[Quality Evaluations widget-Settings]- Verify \"Date paradigms\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48855",
+          "summary": "[Quality Evaluations widget][Questions details report]- Verify number and name of columns Quality evaluation widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21484",
+          "summary": "[Quality Evaluations widget]- Verify Grid header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29587",
+          "summary": "[Quality Evaluations Widget]- Verify Auto refresh functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-62836",
+          "summary": "[Evaluation Question And Answer Summary ] Report should have the mentioned columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21447",
+          "summary": "[Quality Evaluations widget -Settings ] - Verify \"Select All\" and \"Clear All\" functionality under teams and agents, skills and campaign drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21205",
+          "summary": "[Quality Evaluations Widget- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21209",
+          "summary": "[Quality Evaluations widget]- Verify export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21446",
+          "summary": "[Quality Evaluations - Settings ] - Verify search functionality under \"Teams\" , \"Agent\" and \"Skill\" and \"Campaign\" on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31224",
+          "summary": "[Quality Evaluations widget] - Verify data export limit popup when user export the widget having more than 100000 records"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58494",
+          "summary": "[Evaluation Question And Answer Summary] Report should be visible in the dropdown under settings in Quality Evaluation Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56138",
+          "summary": "[Quality Evaluations widget- settings]- Verify Threshold Setting section appears when the dataset is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31710",
+          "summary": "[Quality Evaluations widget-Export] - Verify data limit notification in exported file when user export the widget having more than 100000 records"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-62837",
+          "summary": "[Evaluation by Section and Question Summary] Report should be shown with mentioned colums"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56157",
+          "summary": "[Quality Evaluations widget- settings]- Verify keyboard navigation within threshold inputs."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-62594",
+          "summary": "[Evaluation Question And Answer Summary] Single Select Should be present for Form and Version Filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56154",
+          "summary": "[Quality Evaluations widget- settings]- Verify configuration persists after a long idle session."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56151",
+          "summary": "[Quality Evaluations widget- settings]- Verify Threshold values must be within the valid range (0–100)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56149",
+          "summary": "[Quality Evaluations widget- settings]- Verify overlapping threshold values are not allowed."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-32134",
+          "summary": "[Quality Evaluations widget-Settings]- Verify \"form name and form version\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56141",
+          "summary": "[Quality Evaluations widget- settings]- Verify that user can configure up to five threshold levels using threshold bar"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30474",
+          "summary": "[Quality Evaluations widget] - verify state after resize the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21207",
+          "summary": "[Quality Evaluations Widget - Context menu]- Verify manual refresh Functionality from Hamburger menu"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Quality Score Widget": {
+    "total": 47,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-27772",
+          "summary": "[Quality Score Widget]- Verify selected date range tooltip on widget display for all the views"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27611",
+          "summary": "[Quality Score widget- context menu]- Verify grid columns when widget is in evaluations or channel view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27616",
+          "summary": "[Quality Score widget-Table views] - Verify search functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36003",
+          "summary": "[Quality score widget- All views]- Verify Date paradigm dropdown on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29770",
+          "summary": "[Quality Score Widget - scoreboard view - Data validation]- verify average team score"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29013",
+          "summary": "[Quality Score widget- channel view]- Verify export functionality for channel view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27604",
+          "summary": "[Quality Score Widget- Table views]- Verify columns option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36006",
+          "summary": "[Quality score widget- All views]- Verify Form name & form version on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27606",
+          "summary": "[Quality Score- Settings- Widget view]- Verify widget view dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27599",
+          "summary": "[Quality Score Widget- All 3 views]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36005",
+          "summary": "[Quality score widget- All views]-Verify on the fly evaluations dropdown in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29818",
+          "summary": "[Quality Score Widget- all 3 views] - Verify widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29814",
+          "summary": "[Quality Score Widget- Data Validation]- Verify evaluation score of each team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29736",
+          "summary": "[Quality Score Widget- Scoreboard view ]- Verify  export functionality for scoreboard view when view by agent is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35983",
+          "summary": "[Quality score widget- Score board view]- Verify top/bottom and all tab data on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35841",
+          "summary": "[Quality Score widget- Common for 3 views]- Verify user can select upto last 25 months dates"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29683",
+          "summary": "[Quality Score widget- Channel view]- Verify sorting for all the columns when widget is in channel view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27618",
+          "summary": "[Quality Score widget-Settings]- Verify view by dropdown on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29686",
+          "summary": "[Quality Score widget]- Verify automatic refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27614",
+          "summary": "[Quality Score Widget]- Verify default view of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36007",
+          "summary": "[Quality score widget- all views] - Verify groups dropdown in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35982",
+          "summary": "[Quality score widget- Score board view]- Verify threshold functionality in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27773",
+          "summary": "[Quality Score widget- Evaluations view]- Verify export functionality for evaluation view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29735",
+          "summary": "[Quality Score Widget- Scoreboard view ]- Verify  export functionality for scoreboard view when view by team is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29684",
+          "summary": "[Quality Score widget- Table views]- Verify Grid header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36008",
+          "summary": "[Quality Score widget]- verify user is able to export a dashboard with Quality score widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36002",
+          "summary": "[Quality score widget- all views]-Verify agent dropdown on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29823",
+          "summary": "[Quality Score Widget- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29822",
+          "summary": "[Quality Score Widget - Context Menu] - Verify user is able to duplicate the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29824",
+          "summary": "[Quality Score Widget - Context menu]- Verify refresh Functionality from context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31232",
+          "summary": "[Quality Score- Evaluation view]- E2E --> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29783",
+          "summary": "[Quality Score Widget - Scoreboard View- Data validation]- Verify average agent score"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31244",
+          "summary": "[Quality Score- Channel view]- E2E --> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36000",
+          "summary": "[Quality score widget- all views]-Verify Team dropdown on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-35986",
+          "summary": "[Quality score widget- All views]- Verify widget when dashboard in projection"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29821",
+          "summary": "[Quality Score Widget - Empty State ]- Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27620",
+          "summary": "[Quality Score widget-Sorting ] - Verify default sorting for the grid columns when widget is in tabular format (Evaluations and Channel view)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30963",
+          "summary": "[Quality Score widget -Settings ] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent and groups dropdowns on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30960",
+          "summary": "[Quality Score widget - Settings ] - Verify search functionality of \"Teams\" , \"Agents\" and \"Groups\" on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27612",
+          "summary": "[Quality Score widget]- Verify team/agent accordion for evaluations and channel view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29715",
+          "summary": "[Quality Score Widget- Scoreboard view ]- Verify evaluations score tooltip when view by team is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27601",
+          "summary": "[Quality Score Widget- Context menu]- Verify context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27627",
+          "summary": "[Quality Score widget- Table view]- Verify sorting of all the columns when widget is in Evaluations view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29789",
+          "summary": "[Quality Score widget- Scoreboard view- Data validation]- Verify evaluation score of each agent"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-27770",
+          "summary": "[Quality Score Widget- all views]- Verify date range on widget display & settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29714",
+          "summary": "[Quality Score Widget- Scoreboard view ]- Verify  evaluations score tooltip when agent is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29760",
+          "summary": "[Quality Score Widget - Scoreboard view ]- Verify My zone link"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Coaching Status Widget": {
+    "total": 25,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-35593",
+          "summary": "[Coaching Status] - E2E data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-33094",
+          "summary": "[Coaching Status] - Verify  the status w.r.t \"Assigned to me\" Tab"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7299",
+          "summary": "[Coaching Status] -Verify coaching status widget export functionality."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-33092",
+          "summary": "[Coaching Status] - Verify Auto refresh of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7004",
+          "summary": "[CXCV-6547]Verify Permission for Coaching status widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7011",
+          "summary": "[Coaching Status] -Verify the Basic skeleton of Coaching Status widget.."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7212",
+          "summary": "[Coaching Status] - Verify the \"Coaching type\" filter in coaching Status Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7159",
+          "summary": "[Coaching Status] - Verify the Pie-chart for \"Owned by me \" and \"Assigned to me\" Tabs with legends and filters."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7881",
+          "summary": "[Coaching Status] - Verify the Empty states for coaching status widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7211",
+          "summary": "[Coaching Status] - Verify the \"Date Range\" drop down  in Coaching Status Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7389",
+          "summary": "[Coaching Status] - Verify the \"ToolTip\" data displayed on the pie-chart in coaching status widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7412",
+          "summary": "[Coaching Status] -Verify the widgets context menu when there is no permission."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7219",
+          "summary": "[Coaching Status] - Verify the \"Legend Position\" Functionality in coaching status widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7149",
+          "summary": "[Coaching Status] - Verify the Refresh Icon and its functionality of Coaching Status Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7089",
+          "summary": "[Coaching Status] - Verify the Coaching Status widget Header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7155",
+          "summary": "[Coaching Status] - Verify \"Assigned to me\" tab"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7152",
+          "summary": "[Coaching Status] - Verify \"View Coaching Sessions\" Navigation link w.r.t Assigned to me"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7215",
+          "summary": "[Coaching Status] - Verify the Settings Pop-up modal of coaching status widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7008",
+          "summary": "[Coaching Status] Verify user should be able to add the Coaching Status widget into the dashboard."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7151",
+          "summary": "[Coaching Status] - Verify \"View Coaching Manager\" Navigation link w.r.t Owned by me Tab."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7216",
+          "summary": "[Coaching Status] - Verify the \"Duplicate\" Functionality in coaching status widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7227",
+          "summary": "[Coaching Status] -Verify the \"Remove\" Functionality in coaching status widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-33093",
+          "summary": "[Coaching Status] - Verify  the status w.r.t \"Owned by me\" Tab"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7153",
+          "summary": "[Coaching Status] - Verify \"Owned by me\" Tab"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37122",
+          "summary": "[Coaching Status]- Verify Coaching Session Status dropdown on the settings modal"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Evaluations and Coaching Trends": {
+    "total": 21,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-16114",
+          "summary": "[Evaluation and Coaching Trend] - Verify the Date range dropdown of  evaluations and coaching trends"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16187",
+          "summary": "[Evaluation and Coaching Trend] - Verify the Evaluation and Coaching marks"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16029",
+          "summary": "[Evaluation and Coaching Trend] - Verify Duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16124",
+          "summary": "[Evaluation and Coaching Trend] - Verify export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16019",
+          "summary": "[Evaluation and Coaching Trend] - Verify the header options of Evaluation and Coaching Trend widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16024",
+          "summary": "[Evaluation and Coaching Trend] - [Settings] - Verify Team dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16189",
+          "summary": "[Evaluation and Coaching Trend] - Verify the Tooltip of Evaluation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16032",
+          "summary": "[Evaluation and Coaching Trend] - Verify remove functionality of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16186",
+          "summary": "[Evaluation and Coaching Trend] - Verify the color graph of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16184",
+          "summary": "[Evaluations and Coaching Trends] - Verify the agent funcationality  on the Evaluations and Coaching trends"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16137",
+          "summary": "[Evaluation and Coaching Trend] - Verify X-axis and Y-axis labels on the graph"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16021",
+          "summary": "[Evaluation and Coaching Trend] - Verify the state where No Agent is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16038",
+          "summary": "[Evaluation and Coaching Trend] - Verify Info icon of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16036",
+          "summary": "[Evaluation and Coaching Trend] - Verify manual refresh of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16027",
+          "summary": "[Evaluation and Coaching Trend] - [Settings] - Verify 'Save' and 'Cancel' and 'X' buttons on the settings popup modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16023",
+          "summary": "[Evaluation and Coaching Trend] - [Settings] - Verify the validations of display name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16026",
+          "summary": "[Evaluation and Coaching Trend] - [Settings] - Verify Group dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16191",
+          "summary": "[Evaluation and Coaching Trend] - Verify the Tooltip of both  Evaluation and Coaching"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16190",
+          "summary": "[Evaluation and Coaching Trend] - Verify the Tooltip of Coaching"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-16112",
+          "summary": "[Evaluation and Coaching Trend] -  Verify Agent dropdown in the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-15991",
+          "summary": "E2E - [Evaluation and Coaching Trend] - Verify user should  be able to add the Evaluation and Coaching Trend widget into the dashboard"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Evaluator Calibration Widget- Migration": {
+    "total": 20,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-30774",
+          "summary": "[Evaluator calibration widget] - Verify tooltip for evaluator name on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30777",
+          "summary": "[Evaluator calibration widget] - Verify default 6 of evaluators with highest variance on chart"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30744",
+          "summary": "[Evaluator Calibration widget] - Verify manual refresh from widget context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30773",
+          "summary": "[Evaluator calibration widget] - Verify my zone link"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30611",
+          "summary": "[Evaluator calibration widget]- verify date range tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30775",
+          "summary": "[Evaluator Calibration widget] - Verify x-axis and y-axis labels"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30771",
+          "summary": "[Evaluator calibration widget]- Verify remove widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31006",
+          "summary": "[Evaluator calibration widget] - Verify export dashboard with evaluator calibration widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30784",
+          "summary": "[Evaluator Calibration] - Verify widget export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30607",
+          "summary": "[Evaluator calibration widget]- Verify user is able to add the widget into the dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31007",
+          "summary": "[Evaluator Calibration widget] - Verify state of the widget after page refresh if resized"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30616",
+          "summary": "[Evaluator calibration widget]- Verify widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31004",
+          "summary": "[Evaluator calibration widget]- Verify user can select upto last 13 months dates"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30745",
+          "summary": "[Evaluator calibration] - Verify auto refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-31005",
+          "summary": "[Evaluator calibration widget] - E2E --> Validate evaluator variance data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30743",
+          "summary": "[Evaluator calibration widget]- Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30610",
+          "summary": "[Evaluator calibration widget] - Verify date range dropdown on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-36009",
+          "summary": "[Evaluator Calibration widget] - Verify evaluator dropdown in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30746",
+          "summary": "[Evaluator Calibration widget] - Verify duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30776",
+          "summary": "[Evaluator calibration widget] - Verify evaluator calibration variance in bar chart"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Forms Calibration widget - Migration": {
+    "total": 19,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-31045",
+          "summary": "[Forms calibration widget] - E2E --> Validate forms variance data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30901",
+          "summary": "[Forms Calibration widget] - Verify export dashboard with forms calibration widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37152",
+          "summary": "[Form Calibration]- Verify Form name & form version on the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30869",
+          "summary": "[Forms calibration widget] - Verify form calibration variance in bar chart"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30875",
+          "summary": "[Forms calibration widget] - Verify default 6 forms with highest variance on chart"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30859",
+          "summary": "[Forms calibration] - Verify auto refresh functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30853",
+          "summary": "[Forms calibration widget]- Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30868",
+          "summary": "[Forms Calibration widget] - Verify x-axis and y-axis labels"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30867",
+          "summary": "[Forms calibration widget] - Verify tooltip for form name on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30851",
+          "summary": "[Forms calibration widget]- Verify date range tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30852",
+          "summary": "[Forms calibration widget]- Verify widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30865",
+          "summary": "[Forms calibration widget] - Verify my zone link"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30902",
+          "summary": "[Forms Calibration widget] - Verify state of the widget after page refresh if resized"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30881",
+          "summary": "[Forms Calibration widget ] - Verify widget export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30785",
+          "summary": "[Forms calibration widget]- Verify user is able to add the widget into the dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30860",
+          "summary": "[Forms Calibration widget] - Verify duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30850",
+          "summary": "[Forms calibration widget] - Verify date range dropdown on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30861",
+          "summary": "[Forms calibration widget]- Verify remove widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-30854",
+          "summary": "[Forms Calibration widget] - Verify manual refresh from widget context menu"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/KPI Trends": {
+    "total": 59,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-28262",
+          "summary": "[KPI Trends- view by dropdown]- Verify data when user selects a team/agent/ skill/ campaign in view by dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7637",
+          "summary": "[KPI trend widget -Settings]- Verify select metric modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26069",
+          "summary": "[KPI Trends widget- View By]- Verify team/agent/skill/campaign dropdown is not display over the widget when Company option is selected In the view by dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7677",
+          "summary": "[KPI Trend Widget-Graph] - Verify X and Y axis values on the graph"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7224",
+          "summary": "[KPI Trend Widget]- Verify Prev <Data Duration> label"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7609",
+          "summary": "[KPI Trend Widget - Settings ]- Verify search functionality of \"Teams\" , \"Agent\", \"Campaign\", \"Skill\", and \"Media Type\" on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26156",
+          "summary": "[KPI trends widget - view by ]- Verify synchronization between widget display dropdown and settings dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21121",
+          "summary": "[KPI trends Objectives]- Verify the tooltip on the graph when an objectives is visible"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7174",
+          "summary": "[KPI Trend- Context Menu]- Verify widget display options (Compact and detailed view)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7439",
+          "summary": "[KPI Trend widget ]- Verify selected duration tooltip"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19291",
+          "summary": "[API-KPI trends objectives]- Verify direction"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7295",
+          "summary": "[KPI Trend Widget]- Verify date duration drop down"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21125",
+          "summary": "[KPI trends Objectives- Normalized metric] - Verify an objectives when user defined the objectives on agent(s)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56548",
+          "summary": "[KPI Trend Widget]: Verify Variance in exported files"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7178",
+          "summary": "[KPI Trend widget]- Verify automatic refresh rate"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7003",
+          "summary": "[KPI Trend Widget - Permissions ]- Verify widget is permission based"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26123",
+          "summary": "[KPI trends widget- view by]- Verify user can select other options in widget display dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21118",
+          "summary": "[KPI Trends Objectives] - Verify lower is better or higher is better label on the widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19293",
+          "summary": "[API-KPI trends objectives]- Verify objective property"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7161",
+          "summary": "[KPI Trend widget]- Verify the metric value for the previous date duration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7146",
+          "summary": "[KPI Trend Widget - Context Menu] - Verify user is able to duplicate the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21115",
+          "summary": "[KPI Trends Objectives]- Verify objective in the KPI trend widget is visible only when the PM license is enabled."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7142",
+          "summary": "[KPI Trend Widget] - Verify default size of the KPI trend widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21119",
+          "summary": "[KPI trends Objectives- Normalized metrics] - Verify vertical color bar for different ranges"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21128",
+          "summary": "[KPI trends Objectives- Normalized metric] - Verify an objectives when user defined the objectives on skill(s)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19290",
+          "summary": "[API-KPI trends objectives]- Verify Metric name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7010",
+          "summary": "[KPI Trend Widget]- Verify KPI Trend widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26393",
+          "summary": "[KPI Trends widget- view by]- Verify current and previous value on the widget display as per the option selected in the view by dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56544",
+          "summary": "[KPI Trend Widget]: Verify Variance for different data formats"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7148",
+          "summary": "[KPI Trend Widget]- Verify selected metric name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56542",
+          "summary": "[KPI Trend Widget]: Verify Variance is not displayed for Compact View"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7475",
+          "summary": "[KPI Trends widget]- Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21126",
+          "summary": "[KPI trends Objectives- Normalized metrics] - Verify an objectives when user defined the objectives on campaign(s)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7156",
+          "summary": "[KPI Trend Widget]- Verify Metric Value for selected date range"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19294",
+          "summary": "[API-KPI trends objectives]- Verify trend"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28420",
+          "summary": "[KPI Trend widget]- Verify export functionality when user select PNG option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26074",
+          "summary": "[KPI trends widget- View by ]- Verify team/agent/skill/ campaign dropdown is display over the widget when options are selected other than company in the view by filter/dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7171",
+          "summary": "[KPI Trend Widget - Context Menu] - Verify Hamburger menu options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56540",
+          "summary": "[KPI Trend Widget]: Verify Variance when its value is negative"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28454",
+          "summary": "[KPI Trend widget- view by]- Verify export functionality when user select a view by option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7186",
+          "summary": "[KPI Trend Widget - Empty State] - Verify error messages"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7144",
+          "summary": "[KPI Trend Widget - Empty State ] Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21122",
+          "summary": "[KPI trends Objectives- Normalized metric] - Verify objectives when user defined an objectives on Team"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21117",
+          "summary": "[KPI Trends Objectives] - Verify area of the trends when objectives is defined for applied filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7240",
+          "summary": "[KPI Trend Widget]- Verify trend value"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-19278",
+          "summary": "[API-KPI trends objectives]- Verify Status and status code of API response"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7143",
+          "summary": "[KPI Trend Widget]- Verify empty state"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7185",
+          "summary": "[KPI Trend Widget - Context menu]- Verify refresh Functionality from Hamburger menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26108",
+          "summary": "[KPI Trends widget- view by]- Verify view by dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7278",
+          "summary": "[KPI Trend]- Verify export functionality  when user select Excel/ CSV"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7006",
+          "summary": "[KPI Trend Widget]- Verify user is able to add widget into dashboard."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26079",
+          "summary": "[KPI Trends widget- view by ]- Verify legends"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-21116",
+          "summary": "[KPI trends Objectives] - Verify area of the trends when no objectives is defined for applied filters"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57880",
+          "summary": "[KPI Trend Widget]: Verify Variance when current data is not available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56244",
+          "summary": "[KPI Trend Widget]: Verify Variance when its value is positive"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7636",
+          "summary": "[KPI Trend widget -Settings ] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent, campaign, skill, media type drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26127",
+          "summary": "[KPI trends widget- view by]- Verify default view of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7184",
+          "summary": "[KPI Trend Widget- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-7298",
+          "summary": "[KPI trend Widget - Filters ]- Verify Interval drop down"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Gauge widget": {
+    "total": 19,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-8481",
+          "summary": "[Gauge widget] - Verify the widget if there is no objectives is defined"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8359",
+          "summary": "[Gauge widget] - Verify the Refresh Icon and its functionality of Gauge Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8400",
+          "summary": "[Gauge widget] - Verify \"Settings\" Options of Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8367",
+          "summary": "[Gauge widget] - Verify the Basic skeleton of  Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8372",
+          "summary": "[Gauge widget - Settings ]- Verify search functionality of \"Teams\" , \"Agent\", \"Campaign\", \"Skill\",  on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8363",
+          "summary": "[Gauge widget] - Verify the \"Duplicate\" Functionality in Gauge Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8429",
+          "summary": "[Gauge widget -  Empty State] - Verify error messages of Gauge widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8760",
+          "summary": "Verify the metric distribution for normal and hover mode of Gauge widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8633",
+          "summary": "Verify the \"ToolTip\" data of Info icon of Gauge widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8533",
+          "summary": "[Gauge widget  - Permissions ]- Verify widget is permission based"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8405",
+          "summary": "[Gauge widget] - Verify export functionality of Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8422",
+          "summary": "[Gauge widget] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent, campaign, skill, point of contact ,media type drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8371",
+          "summary": "[Gauge widget] - Verify the \"Date Range\" filter of Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8358",
+          "summary": "[Gauge widget] - Verify user should  be able to add the Gauge widget into the dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8482",
+          "summary": "[Gauge widget] - Verify the colors range of objectives for selected metric and value range"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8364",
+          "summary": "[Gauge widget] - Verify the \"Remove\" Functionality in Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8522",
+          "summary": "[Gauge widget - Context menu]- Verify refresh Functionality from Hamburger menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8428",
+          "summary": "[Gauge widget] - Verify empty state [skeleton] of Gauge Widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-8430",
+          "summary": "[Gauge widget] - Verify automatic refresh rate"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Metrics": {
+    "total": 27,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-56282",
+          "summary": "[Metric Breakdown - Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56280",
+          "summary": "[Metrics Interval Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58486",
+          "summary": "[KPI Trend Widget] Verify Export Functionality When 'Export as PNG' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-67607",
+          "summary": "Test to validate the Neutral values should be shown as \"blank\" in \"My Agent\" widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58483",
+          "summary": "[Metrics Review Widget] Verify Export Functionality When 'Export as Excel or CSV' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58482",
+          "summary": "[Metrics Interval Widget] Verify Export Functionality When 'Export as PNG' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56288",
+          "summary": "[KPI Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56277",
+          "summary": "[Metrics Review Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58484",
+          "summary": "[KPI Widget] Verify Export Functionality When 'Export as Excel or CSV' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58247",
+          "summary": "[Metrics Summary Widget] Verify Export Functionality When 'Export as PNG' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57700",
+          "summary": "[Enhance Threshold Configuration] - Validate system handles very large positive/negative values without performance degradation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58481",
+          "summary": "[Metrics Interval Widget] Verify Export Functionality When 'Export as Excel or CSV' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57678",
+          "summary": "[Enhance Threshold Configuration] - Verify system defaults to 5 threshold levels with proper initial distribution"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58240",
+          "summary": "[Gauge Widget] Verify Export Functionality When 'Export as Excel or CSV' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57699",
+          "summary": "[Enhance Threshold Configuration] - Test user-initiated upgrade from existing 3-threshold to 5-threshold configuration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57693",
+          "summary": "[Enhance Threshold Configuration] - Ensure system prevents invalid threshold configurations and provides appropriate error messages"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57682",
+          "summary": "[Enhance Threshold Configuration] - Verify default threshold values are 0 (min) and 100 (max)."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57690",
+          "summary": "[Enhance Threshold Configuration] - Validate users can define custom minimum and maximum values for metrics, with proportional threshold distribution"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56286",
+          "summary": "[KPI Trend Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57685",
+          "summary": "[Enhance Threshold Configuration] - Verify default threshold values are 0 (min) and 100 (max)."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57680",
+          "summary": "[Enhance Threshold Configuration] - Ensure existing 3-threshold configurations continue working without modification or data loss"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56269",
+          "summary": "[Metrics Summary Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56290",
+          "summary": "[Gauge Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58479",
+          "summary": "[Metrics Summary Widget] Verify Export Functionality When 'Export as Excel or CSV' is Selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57695",
+          "summary": "[Enhance Threshold Configuration] - Verify UI clearly displays all five threshold levels and allows intuitive configuration"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56284",
+          "summary": "[Leaderboard- Widget] Time format dropdown should include 'HH:mm:ss.SSS' option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57086",
+          "summary": "[Metrics]- E2E --> Data validation"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/OOA Cause widget": {
+    "total": 9,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-56505",
+          "summary": "[OOA cause widget] Tooltip should be visible on hover with defined data and design"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56513",
+          "summary": "[OOA cause widget] Validate Chart Filtering Based on Selection and Deselection of Multiple Drop down Values"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56503",
+          "summary": "[OOA cause] Verify correct activity count with labels visible on each child tile"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56531",
+          "summary": "Settings have additional Filter Scheduled activity and Unit Scheduled"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-57679",
+          "summary": "[OOA Cause Widget] - Verify widget when no activity is selected"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56506",
+          "summary": "[OOA cause] Verify Dropdown list is binded with API Data"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-55714",
+          "summary": "[OOA Cause Widget - E2E --> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56528",
+          "summary": "Verify Context menu should have \"Show Legend\""
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56502",
+          "summary": "[OOA cause widget] Verify Clicking on Each Activities should Drill down with Back Button on top"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Agent Adherence Variance": {
+    "total": 1,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-58568",
+          "summary": "Dashboard > Global export validation for dashboards"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Call Arrival Widget": {
+    "total": 22,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-11923",
+          "summary": "[Call arrival- settings]- verify Agent dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12271",
+          "summary": "[Call Arrival- Settings]- Verify date range and time field."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11920",
+          "summary": "[Call Arrival widget- Settings]- Verify display name"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11990",
+          "summary": "[Call arrival- settings]- verify save and cancel buttons"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11922",
+          "summary": "[Call Arrival Widget- Settings]- Verify Team dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11909",
+          "summary": "[Call Arrival Widget]- Verify error messages"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12001",
+          "summary": "[Call arrival widget]-Verify export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12000",
+          "summary": "[Call arrival widget]-Verify manual  and automatic refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11903",
+          "summary": "[Call Arrival Widget]- Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11877",
+          "summary": "[Call Arrival Widget]- Verify Widget header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11861",
+          "summary": "[Call Arrival widget]- Verify call arrival widget is permission based."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11991",
+          "summary": "[Call arrival widget]- Verify duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11989",
+          "summary": "[Call arrival- settings]- Verify POC dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11988",
+          "summary": "[Call arrival- settings]- verify skill dropdown"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12158",
+          "summary": "[Call Arrival widget]- Verify X-axis and Y-axis labels on the graph"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11869",
+          "summary": "[Call Arrival Widget]- Verify user is able to add the call arrival widget into the dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12281",
+          "summary": "[Call Arrival- Settings]- Verify \"Hours\" field"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12282",
+          "summary": "[Call Arrival widget]- Verify data presented on the graph after applying the filter."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12157",
+          "summary": "[Call Arrival widget]- Verify metrics filter of legend on the widget display."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-12156",
+          "summary": "[Call arrival widget]- Verify the default view of the widget when added into the dashboard."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11999",
+          "summary": "[Call arrival widget]- Verify remove widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-11987",
+          "summary": "[Call arrival- settings]- Verify campaign dropdown"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Contact States by Skill": {
+    "total": 17,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-42294",
+          "summary": "[Contact States by Skill] - OutQueue> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39027",
+          "summary": "[Contact States by Skill] - Verify the default column available in the grid of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39016",
+          "summary": "[Contact States by Skill  Widget- Context menu]- Verify context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42292",
+          "summary": "[Contact States by Skill] - PostQueue> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41924",
+          "summary": "[Contact States by Skill] - InQueue> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39025",
+          "summary": "[Contact States by Skill - Verify search functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39018",
+          "summary": "[Contact States by Skill] - Verify Duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39017",
+          "summary": "[Contact States by Skill ] - Verify manual refresh of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39028",
+          "summary": "[Contact States by Skill]-Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39019",
+          "summary": "[Contact States by Skill- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42524",
+          "summary": "[Contact States by Skill ]-Verify old dashboard having Contact States by Skill widget after migration to new arch"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39015",
+          "summary": "[Contact States by Skill] -  Verify the header options of Contact States by Skill widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41922",
+          "summary": "[Contact States by Skill] - PreQueue> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-41913",
+          "summary": "[Contact States by Skill - Verify Legend Status"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-42291",
+          "summary": "[Contact States by Skill] - WithAgent> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39014",
+          "summary": "[Contact States by Skill ]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-39020",
+          "summary": "[Contact States by Skill]- Verify automatic refresh"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Dispositions widget": {
+    "total": 30,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-37813",
+          "summary": "[Dispositions widget- Settings]- Verify Team filter"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25396",
+          "summary": "[Dispositions widget]- Verify automatic refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37623",
+          "summary": "[Disposition widget- table view]- Verify number and name of the columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25391",
+          "summary": "[Dispositions widget]- Verify user can select upto last 25 months dates"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25386",
+          "summary": "[Dispositions widget]- Verify Grid header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-28447",
+          "summary": "[Dispositions widget- context menu]- Verify Legend position"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25364",
+          "summary": "[Dispositions Widget - Settings ]- Verify search functionality of \"Teams\" , \"Agent\", \"Campaign\", \"Skill\", and \"Campaign\" on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25325",
+          "summary": "[Dispositions Widget - Context menu]- Verify refresh Functionality from Hamburger menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25387",
+          "summary": "[Dispositions widget]- Verify default sorting for the grid columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25377",
+          "summary": "[Dispositions widget]-Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25405",
+          "summary": "[Dispositions widget] - Verify legends when widget is in chart or table & chart view"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37807",
+          "summary": "[Dispositions widget- Chart view]- Verify data in chart or table & chart view."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25323",
+          "summary": "[Dispositions Widget- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25367",
+          "summary": "[Dispositions Widget - Settings]- Verify date range on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-29194",
+          "summary": "[Dispositions widget- Context menu] --> Verify columns option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25384",
+          "summary": "[Dispositions widget]- Verify sorting for all the columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25321",
+          "summary": "[Dispositions Widget - Empty State ]- Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25439",
+          "summary": "[Dispositions widget]- Verify widget display option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37818",
+          "summary": "[Disposition widget]- Verify old dashboard having disposition widget after migration to new arch"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25015",
+          "summary": "[Dispositions Widget]- Verify widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24919",
+          "summary": "[Dispositions Widget - Permissions ]- Verify widget is permission based"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25383",
+          "summary": "[Dispositions widget]- Verify user can rearrange the position of columns widget grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37655",
+          "summary": "[Dispositions widget]- E2E- Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25369",
+          "summary": "[Dispositions  Widget - Settings]- Verify selected date range tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25365",
+          "summary": "[Dispositions widget -Settings ] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent, campaign and skill drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-24921",
+          "summary": "[Dispositions Widget]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26391",
+          "summary": "[Dispositions widget]- Verify total rows in the table grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25322",
+          "summary": "[Dispositions Widget - Context Menu] - Verify user is able to duplicate the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-25393",
+          "summary": "[Dispositions widget] - Verify search functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-26392",
+          "summary": "[Dispositions widget]- verify user is able to export a dashboard with dispositions widget"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Agent List Widget": {
+    "total": 23,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-58903",
+          "summary": "[Agent List Widget]- Verify that the 'Expand All Row Groups' option should be visible and functional."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60908",
+          "summary": "Dashboard > Global export validation for dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56637",
+          "summary": "[Agent List Widget]- Force logout and Terminate option for any logged-in agent should be available for Supervisor"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60030",
+          "summary": "[Agent List Widget]- Verify toggle behavior with no qualifying agents."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60025",
+          "summary": "[Agent List Widget]- Verify real-time agent state changes with toggle ON."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61148",
+          "summary": "[Agent List Widget]- Verify that the 'Expand All Row Groups' option should be visible and functional for 10 agents with more than 10 contacts."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60023",
+          "summary": "[Agent List Widget]- Verify toggle only expands target states, ignores others."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61208",
+          "summary": "[Agent List Widget]- Verify the state persistence- Navigate in the other areas of the application and return."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60552",
+          "summary": "[Agent List Widget]- E2E --> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60037",
+          "summary": "[Agent List Widget]- Verify the behavior when session expires while toggle is active"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58919",
+          "summary": "[Agent List Widget]- Verify that the expanded state of the row groups has persisted throughout the session"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56636",
+          "summary": "[Agent List Widget]- Supervisors should have the ability to force logout an agent operation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60907",
+          "summary": "Dashboard > Global filter validation for dashboards"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56657",
+          "summary": "[Agent List widget]- Supervisors should have the ability to Terminate an agent operation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61151",
+          "summary": "[Agent List Widget]- Verify the Session persistence - for the original widget if agent duplicates the widget."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60036",
+          "summary": "[Agent List Widget]- Verify keyboard accessibility for toggle."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58916",
+          "summary": "[Agent List Widget]- Verify that the 'Expand All Row Groups' option should be visible and functional for large data set (eg. 100+ agents)."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-56665",
+          "summary": "[Agent List widget]- Force Logout and Terminate option of any logged in agent should not be available for Non Supervisor user"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61210",
+          "summary": "[Agent List Widget]- Verify expanded state persistence on dashboard projection even after Swipe between dashboards."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-61149",
+          "summary": "[Agent List Widget]- Verify that the 'Expand All Row Groups'  and 'Collapse All Row Groups' functionality should not affect the working of existing dashboard."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58913",
+          "summary": "[Agent List Widget]- Verify that the 'Collapse All Row Groups' option should be visible and functional."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-60027",
+          "summary": "[Agent List Widget]- Manual row expansion interaction with toggle."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58917",
+          "summary": "[Agent List Widget]- Verify that the 'Collapse All Row Groups' option should be visible and functional for large data set (eg. 100+ agents)."
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Agent Contact View": {
+    "total": 10,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-58546",
+          "summary": "[Agent Contact View Widget]  - verify the state of the widget after resize"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58519",
+          "summary": "[Agent Contact View Widget]- Verify user can rearrange the position of columns widget grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58505",
+          "summary": "[Agent Contact View Widget]- Verify context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58518",
+          "summary": "[Agent Contact View Widget] - Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58513",
+          "summary": "[Agent Contact View Widget]- Verify search functionality of \"Teams\" and \"Agent\"on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58502",
+          "summary": "[Agent Contact View Widget] -  Verify the header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58515",
+          "summary": "[Agent Contact View Widget] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58501",
+          "summary": "[Agent Contact View Widget]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58510",
+          "summary": "[Agent Contact View Widget] - Verify Search on the widget header"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-58507",
+          "summary": "[Agent Contact View Widget] - Verify Duplicate widget functionality"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Agent State Summary widget": {
+    "total": 7,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-37969",
+          "summary": "[Agent State Summary ] - Working Contacts [Outbound] > Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37965",
+          "summary": "[Agent State Summary ] - Available > Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38086",
+          "summary": "[Agent State Summary ]-Verify old dashboard having Agent State Summary widget after migration to new arch"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37967",
+          "summary": "[Agent State Summary ] - Unavailable State > Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38052",
+          "summary": "[Agent State Summary ] - Dialer > Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37970",
+          "summary": "[Agent State Summary ] - Working Contacts [Inbound] > Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-37850",
+          "summary": "[Agent State Summary] - Verify Info icon of the widget"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Interaction Summary Widget": {
+    "total": 31,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-47030",
+          "summary": "[Interaction Summary Widget]- Verify user is able to add a widget into the dashboard."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47715",
+          "summary": "[Interaction summary Widget] - Verify contact details report is open when click on interaction id"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47036",
+          "summary": "[Interaction Summary Widget - Empty State ]- Verify No Data available"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48523",
+          "summary": "[Interaction summary widget]- Verify widget context menu options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47445",
+          "summary": "[Interaction Summary Widget -Settings]- Verify \"Team\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47037",
+          "summary": "[Interaction Summary Widget - Context Menu] - Verify user is able to duplicate the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47534",
+          "summary": "[Interaction Summary Widget]- Verify skill tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47309",
+          "summary": "[Interaction Summary Widget]- Verify user can select upto previous 25 months date"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47712",
+          "summary": "Interaction Summary Widget - E2E- Verify date =! today -> Data validation data should get populated from snowflake"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47065",
+          "summary": "[Interaction Summary widget -Settings ] - Verify \"Select All\" and \"Clear All\" functionality for teams and agent, campaign, skill drop downs on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48847",
+          "summary": "[interaction summary Widget] - Verify accordion for interaction id"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47288",
+          "summary": "[Interaction Summary Widget - Settings]- Verify date range on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47535",
+          "summary": "[Interaction Summary widget- Permissions]- Verify widget is permission based."
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47317",
+          "summary": "[Interaction Summary Widget ]- Verify auto refresh functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47312",
+          "summary": "[Interaction Summary Widget ]- Verify sorting on columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47040",
+          "summary": "[Interaction Summary Widget - Context menu]- Verify refresh Functionality from context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48849",
+          "summary": "[Interaction Summary Widget -Settings]- Verify \"channel\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47448",
+          "summary": "[Interaction Summary Widget -Settings]- Verify \"Skills\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47039",
+          "summary": "[Interaction Summary Widget- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47032",
+          "summary": "[Interaction Summary Widget]- Verify features on the widget header (Title bar)"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47307",
+          "summary": "[Interaction Summary Widget - Settings]- Verify selected date range tooltip on widget display"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47446",
+          "summary": "[interaction Summary widget -Settings]- Verify \"Agent\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47533",
+          "summary": "[Interaction Summary Widget] - Verify number and name of columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47440",
+          "summary": "[Interaction Summary Widget ]- Verify user can change the default position of the columns of the widget grid"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47443",
+          "summary": "[Interaction Summary Widget ]- Verify Grid header options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47064",
+          "summary": "[Interaction Summary Widget - Settings ]- Verify search functionality of \"Teams\" , \"Agent\", \"Campaign\", \"Skill\" on settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47411",
+          "summary": "[Interaction Summary Widget - Context menu]- Verify \"Columns\" option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47063",
+          "summary": "[Interaction Summary widget]- Verify widget export functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-48844",
+          "summary": "[Interaction Summary Widget -Settings]- Verify \"Campaigns\" filter in the settings modal"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47311",
+          "summary": "[Interaction Summary Widget ]- Verify default sorting for the grid columns"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-47531",
+          "summary": "[Interaction Summary  Widget  - verify the state of the widget after resize"
+        }
+      }
+    ]
+  },
+  "/CXDV_20Mar2026/New widgets- Waves & Technocrats/Callback Request": {
+    "total": 15,
+    "results": [
+      {
+        "jira": {
+          "key": "CXDV-38256",
+          "summary": "[Callback Requests- context menu]- Verify Legend position"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38246",
+          "summary": "[Callback Requests] -  Verify the header options of Callback Requests widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38252",
+          "summary": "[Callback Requests]- Verify automatic refresh"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38327",
+          "summary": "[Callback Requests] - Callback InQueue> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38451",
+          "summary": "[Callback Requests] - Callback Success> Data validation"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38253",
+          "summary": "[Callback Requests]-Verify settings options"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38235",
+          "summary": "[Callback Request ]- Verify user is able to add widget into dashboard"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38463",
+          "summary": "[Callback Requests ]-Verify old dashboard having Callback Requests widget after migration to new arch"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38251",
+          "summary": "[Callback Requests- Context menu]- Verify remove widget option"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38248",
+          "summary": "[Callback Requests ] - Verify manual refresh of the widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38249",
+          "summary": "[Callback Requests] - Verify Duplicate widget functionality"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38326",
+          "summary": "[Callback Requests ] - Verify No data avaliable State of the Widget"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38247",
+          "summary": "[Callback Requests  Widget- Context menu]- Verify context menu"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38457",
+          "summary": "Dashboards > Callback Requests > Verify different status (success, failed and Inqueue by applying the Localization"
+        }
+      },
+      {
+        "jira": {
+          "key": "CXDV-38453",
+          "summary": "[Callback Requests] - Callback Failed> Data validation"
+        }
+      }
+    ]
+  }
+}

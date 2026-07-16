@@ -51,8 +51,13 @@ def load_config(path=CONFIG_FILE):
 
 load_config()  # must run before the env-derived constants below
 
-PMN_SHARED_DIR = os.environ.get("PMN_SHARED_DIR", r"C:\Code\cxone-cxdvi-pmn-shared")
-TESTBED_DIR = os.environ.get("TESTBED_DIR", r"C:\Code\sparkathon\cxdv-test-repository")
+# Test bed is BUNDLED in the repo (portable). Override only to point elsewhere.
+TESTBED_DIR = os.environ.get("TESTBED_DIR") or os.path.join(PROJECT_DIR, "testbed")
+# pmn-shared (code-RCA source) is cloned from its git repo into a local cache if missing —
+# no hardcoded machine path. Override PMN_SHARED_DIR to reuse an existing clone.
+PMN_SHARED_REPO = os.environ.get("PMN_SHARED_REPO", "https://github.com/nice-cxone/cxone-cxdvi-pmn-shared")
+PMN_SHARED_BRANCH = os.environ.get("PMN_SHARED_BRANCH", "develop")
+PMN_SHARED_DIR = os.environ.get("PMN_SHARED_DIR") or os.path.join(PROJECT_DIR, ".external", "cxone-cxdvi-pmn-shared")
 JIRA_SCRIPT = os.path.join(PROJECT_DIR, ".claude", "skills", "jira-get-issue", "scripts", "get_jira_issue.py")
 JIRA_BASE = os.environ.get("JIRA_BASE_URL", "https://nice-ce-cxone-prod.atlassian.net").rstrip("/")
 JIRA_BROWSE_BASE = JIRA_BASE + "/browse/"
@@ -124,6 +129,31 @@ def find_claude():
 
 
 CLAUDE_BIN = find_claude()
+
+
+def ensure_pmn_shared():
+    """Clone the pmn-shared source repo (code-RCA source) into PMN_SHARED_DIR if it's missing.
+    Returns True if the source is available. A failed clone (e.g. no GitHub access) is non-fatal:
+    code RCA is skipped/limited but every other stage still works."""
+    if os.path.isdir(PMN_SHARED_DIR) and os.listdir(PMN_SHARED_DIR):
+        return True
+    if not PMN_SHARED_REPO:
+        return False
+    os.makedirs(os.path.dirname(PMN_SHARED_DIR) or ".", exist_ok=True)
+    cmd = ["git", "clone", "--depth", "1"]
+    if PMN_SHARED_BRANCH:
+        cmd += ["--branch", PMN_SHARED_BRANCH]
+    cmd += [PMN_SHARED_REPO, PMN_SHARED_DIR]
+    sys.stderr.write(f"[triage] cloning pmn-shared ({PMN_SHARED_REPO} @ {PMN_SHARED_BRANCH or 'default'}) — one-time setup…\n")
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900)
+    except Exception as e:
+        sys.stderr.write(f"[triage] pmn-shared clone failed ({e}); code RCA will be limited.\n")
+        return False
+    if r.returncode != 0:
+        sys.stderr.write(f"[triage] pmn-shared clone failed; code RCA will be limited: {(r.stderr or '').strip()[:300]}\n")
+        return False
+    return True
 
 SCHEMA = """{
   "bug_summary": "<one-line restatement of the bug>",
@@ -251,14 +281,24 @@ def extract_json(text):
 def run_claude(prompt):
     if CLAUDE_BIN is None:
         raise TriageError("claude CLI not found. Set the CLAUDE_BIN env var to the full path of claude.exe.")
+    # Inject the RESOLVED locations so the agent never depends on any hardcoded path.
+    pmn = PMN_SHARED_DIR if os.path.isdir(PMN_SHARED_DIR) else "NOT AVAILABLE (repo not cloned — skip code RCA and say so)"
+    resources = (
+        "RESOURCE PATHS for this run (machine-specific — use these exact locations): "
+        f"team ownership map = {os.path.join(PROJECT_DIR, 'team-assignment.md')} ; "
+        f"test bed (widget-reference.md + raw-data/) = {TESTBED_DIR} ; "
+        f"test-case persona = {os.path.join(PROJECT_DIR, '.claude', 'testcase-creation.prompt1.md')} ; "
+        f"pmn-shared source repo (code RCA, read-only) = {pmn}."
+    )
     cmd = [
         CLAUDE_BIN, "-p", prompt,
         "--output-format", "json",
         "--agent", "cxone-swarm-sme",
-        "--append-system-prompt", SYSTEM_OVERRIDE,
-        "--add-dir", PMN_SHARED_DIR,
-        "--add-dir", TESTBED_DIR,
+        "--append-system-prompt", SYSTEM_OVERRIDE + "\n\n" + resources,
     ]
+    for d in (PMN_SHARED_DIR, TESTBED_DIR):
+        if os.path.isdir(d):
+            cmd += ["--add-dir", d]
     if ALLOW_DANGEROUS:
         cmd.append("--dangerously-skip-permissions")
     else:
@@ -564,8 +604,9 @@ def main():
     print(f" config       : {CONFIG_FILE if os.path.exists(CONFIG_FILE) else 'config.env NOT found — copy config.env.example → config.env'}")
     print(f" claude.exe   : {CLAUDE_BIN or 'NOT FOUND — set CLAUDE_BIN'}")
     print(f" project dir  : {PROJECT_DIR}")
-    print(f" pmn-shared   : {PMN_SHARED_DIR} ({'ok' if os.path.isdir(PMN_SHARED_DIR) else 'MISSING'})")
     print(f" test bed     : {TESTBED_DIR} ({'ok' if os.path.isdir(TESTBED_DIR) else 'MISSING'})")
+    pmn_ok = ensure_pmn_shared()  # clone the code-RCA source if missing (one-time, non-fatal)
+    print(f" pmn-shared   : {PMN_SHARED_DIR} ({'ok' if pmn_ok else 'unavailable — code RCA limited'})")
     missing = [k for k in ("XRAY_CLIENT_ID", "XRAY_CLIENT_SECRET", "CONFLUENCE_USERNAME", "CONFLUENCE_TOKEN")
                if not os.environ.get(k)]
     print(f" creds        : {'all set' if not missing else 'MISSING ' + ', '.join(missing)}")

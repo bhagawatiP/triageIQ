@@ -20,7 +20,8 @@ Two files, no build step, no `pip install`:
 - **Python 3.9+** — invoke as `python` (this machine's `python3` is a broken Store alias).
 - **Claude CLI** — auto-detected from the VS Code extension (`…/anthropic.claude-code-*/resources/native-binary/claude.exe`) or `PATH`; override with `CLAUDE_BIN`.
 - **Credentials** — all live in one file, **`config.env`** (see below).
-- The **pmn-shared** clone at `C:\Code\cxone-cxdvi-pmn-shared` and the **test-bed** snapshot at `C:\Code\sparkathon\cxdv-test-repository` (both auto-added to the agent's allowed dirs).
+- **Test bed** — bundled in the repo at `testbed/`; nothing to fetch.
+- **pmn-shared** (code-RCA source) — **auto-cloned** on first run from `https://github.com/nice-cxone/cxone-cxdvi-pmn-shared` into `.external/` (needs GitHub access to the private nice-cxone org). Set `PMN_SHARED_DIR` in `config.env` to reuse an existing local clone instead.
 
 ## Configuration — one file for all credentials
 
@@ -28,7 +29,7 @@ Every token and setting lives in a single file, **`config.env`** (next to `triag
 To set it up on any machine:
 
 ```powershell
-cd C:\Code\sparkathon\ps2-triage-commander\webapp
+cd webapp
 copy config.env.example config.env      # then edit config.env and paste your tokens
 ```
 
@@ -44,7 +45,7 @@ back to a real environment variable if one is set.
 ## Run
 
 ```powershell
-cd C:\Code\sparkathon\ps2-triage-commander\webapp
+cd webapp
 python triage_server.py
 ```
 
@@ -101,8 +102,10 @@ the `XRAY_CLIENT_ID/SECRET` env vars.
 | `TRIAGE_PORT` | `8756` | Web server port. |
 | `TRIAGE_TIMEOUT` | `1200` | Max seconds per triage before the backend gives up. |
 | `TRIAGE_ALLOW_DANGEROUS` | *(off)* | `1` → run the agent with `--dangerously-skip-permissions`. |
-| `PMN_SHARED_DIR` | `C:\Code\cxone-cxdvi-pmn-shared` | Source repo for code RCA. |
-| `TESTBED_DIR` | `C:\Code\sparkathon\cxdv-test-repository` | Cached CXDV Xray snapshot. |
+| `PMN_SHARED_REPO` | `github.com/nice-cxone/cxone-cxdvi-pmn-shared` | Code-RCA source repo (auto-cloned). |
+| `PMN_SHARED_BRANCH` | `develop` | Branch to clone. |
+| `PMN_SHARED_DIR` | `<project>/.external/cxone-cxdvi-pmn-shared` | Local clone path (override to reuse an existing clone). |
+| `TESTBED_DIR` | `<project>/testbed` | Bundled Xray test-bed snapshot. |
 | `JIRA_BASE_URL` | `https://nice-ce-cxone-prod.atlassian.net` | Base for building existing-test links. |
 
 ## How it works

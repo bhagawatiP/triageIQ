@@ -10,7 +10,7 @@ workflow (`TeamAssignment` phase) to route a triaged bug to its owning engineeri
 ## Code-RCA-eligible teams
 
 Only bugs owned by **Titans**, **Sapphire**, or **Waves** trigger the code-level RCA
-step (§18 / `CodeRCA` phase) against `C:\Code\cxone-cxdvi-pmn-shared`. For any other
+step (§18 / `CodeRCA` phase) against the pmn-shared source repo. For any other
 team (Agni, Dragonfly, Hornet) the triage stops at team routing — no code inspection.
 
 ## Resolution rule (apply in order — never guess)
@@ -75,7 +75,7 @@ A widget whose Team cell reads *deprecated* is not owned by a live team — repo
 
 ## Provenance & re-sync
 
-- **Source of truth:** `C:\Users\bhagawatip\OneDrive - NICE Ltd\Work\Testing\Sparkathon.xlsx`
+- **Source of truth:** the team's `Sparkathon.xlsx` workbook (Testing folder)
   (`Sheet1`; Table 1 = rows 2–34 widget→team, Table 2 = rows 37–43 area→team).
 - **Jira Team fields:** *read* from `customfield_10040`; *written* by `xray-create-test --team` to `customfield_10098`. Pass the Table-A/B team name as `--team` when creating coverage.
 - **Cleaning applied vs source:** normalized casing (`waves`→`Waves`), trimmed trailing
