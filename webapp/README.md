@@ -1,4 +1,4 @@
-# CXone Swarm Triage — Web App
+# TriageIQ (Bugs to Quality Coverage) — Web App
 
 A single-page app to triage a Dashboard/CXCV bug. Enter a **Bug ID** and/or a
 **description**; the app runs the enhanced `cxone-swarm-sme` agent and returns:

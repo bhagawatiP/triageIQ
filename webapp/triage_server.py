@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-CXone Swarm Triage — local web backend (stdlib only, no Flask).
+TriageIQ (Bugs to Quality Coverage) — local web backend (stdlib only, no Flask).
 
 Serves the single-page UI (index.html) and exposes POST /triage, which runs the
 enhanced `cxone-swarm-sme` agent headless via the bundled claude.exe to triage a
@@ -663,7 +663,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def main():
     print("=" * 68)
-    print(" CXone Swarm Triage — local backend")
+    print(" TriageIQ (Bugs to Quality Coverage) — local backend")
     print("=" * 68)
     print(f" URL          : http://localhost:{PORT}")
     print(f" config       : {CONFIG_FILE if os.path.exists(CONFIG_FILE) else 'config.env NOT found — copy config.env.example → config.env'}")
