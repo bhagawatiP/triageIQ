@@ -34,6 +34,17 @@ can **create the drafted test cases** in Xray and **post the RCA back** to the J
 
 ## Setup — required to run
 
+### Easiest — one click (no commands)
+
+1. Download/clone the repo and open the `triageIQ` folder.
+2. **Windows:** double-click **`start.bat`**.  **macOS/Linux:** run `./start.sh`.
+3. The first time, it creates `config.env` and opens it — paste your **4 tokens** (see the table below), **save**, and run it again.
+4. When the window shows `URL : http://localhost:8756`, open that link in your browser.
+
+That's it. The test bed is bundled and the code-RCA source downloads itself on first run.
+
+### Or the manual steps
+
 ```bash
 # 1. Clone
 git clone https://github.com/bhagawatiP/triageIQ
