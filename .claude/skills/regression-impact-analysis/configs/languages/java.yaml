@@ -1,0 +1,124 @@
+# =============================================================================
+# Java entry-point detection rules
+# =============================================================================
+# Validated on the EEM codebase: ~617 candidates, 93% reduction.
+# All Java-specific patterns live HERE — none in Python code.
+# =============================================================================
+
+language:
+  name: "java"
+  display_name: "Java/Spring Boot"
+  extensions:
+    - ".java"
+    - ".kt"
+
+method_declaration:
+  # Captures methods with at least one modifier. {METHOD} is substituted by
+  # the candidate name (already regex-escaped).
+  regex: '(?:public|protected|private|static|final|synchronized|abstract|native|default)\s+[\w<>\[\],\s\?]+\s+{METHOD}\s*\('
+  # Window (chars after declaration start) used to inspect modifiers.
+  modifier_window: 200
+
+class_declaration:
+  regex: '(?:public|protected|private|static|final|abstract)?\s*(?:class|interface|enum|record)\s+(\w+)'
+
+# -----------------------------------------------------------------------------
+# Universal filters (applied to every Java method)
+# -----------------------------------------------------------------------------
+filters:
+
+  # 1. private — Java visibility prevents external framework dispatch.
+  private:
+    type: "modifier_keyword"
+    keywords:
+      - "private"
+
+  # 2. abstract — abstract methods have no body; they're invoked via
+  #    concrete overrides which the trace will reach naturally.
+  abstract:
+    type: "modifier_keyword"
+    keywords:
+      - "abstract"
+
+  # 3. constructor — name == enclosing class name.
+  constructor:
+    type: "name_equals_class"
+
+  # 4. trivial getters/setters/is*/has* with tiny bodies.
+  trivial_getter_setter:
+    type: "regex_pattern"
+    patterns:
+      - '^get[A-Z]\w*$'
+      - '^set[A-Z]\w*$'
+      - '^is[A-Z]\w*$'
+      - '^has[A-Z]\w*$'
+    and:
+      body_lines:
+        max: 3
+
+  # 5. Object boilerplate.
+  object_boilerplate:
+    type: "name_pattern"
+    patterns:
+      - '^toString$'
+      - '^hashCode$'
+      - '^equals$'
+      - '^compareTo$'
+      - '^clone$'
+      - '^finalize$'
+
+  # 6. Test paths — exclude test-tree files entirely.
+  test_paths:
+    type: "path_pattern"
+    patterns:
+      - "/test/"
+      - "/tests/"
+      - "src/test/"
+      - "src/it/"
+      - "*Test.java"
+      - "*Tests.java"
+      - "*IT.java"
+      - "*TestCase.java"
+
+  # 7. Vendor / generated / build artefacts.
+  vendor_paths:
+    type: "path_pattern"
+    patterns:
+      - "/target/"
+      - "/build/"
+      - "/.m2/"
+      - "/.gradle/"
+      - "/generated-sources/"
+      - "/generated/"
+      - "/out/"
+      - "/bin/"
+      - ".github/skills/"
+      - ".github/agents/"
+      - ".github/RIA_INPUT/"
+      - ".github/RIA_OUTPUT/"
+      - "node_modules/"
+
+# -----------------------------------------------------------------------------
+# Java-specific filters (kept separate so adding new ones is intent-preserving)
+# -----------------------------------------------------------------------------
+language_specific_filters:
+
+  # 8. main(String[]) debug stubs — only true entry when the class advertises
+  #    a CLI marker (handled by the entry-point markers list, not here).
+  #    We reject bare main() here; a class with @SpringBootApplication or
+  #    CommandLineRunner will be matched as an entry point via the marker
+  #    pathway in the unified detector and bypass this filter when configured.
+  debug_main_without_marker:
+    type: "name_pattern"
+    patterns:
+      - '^main$'
+    # NOTE: this is enforced by the upper-level detector when no class-level
+    # entry-point marker is present. Kept here so authors can see it.
+
+  # 9. lambda / synthetic helper names produced by some compilers.
+  synthetic:
+    type: "regex_pattern"
+    patterns:
+      - '^lambda\$\w+'
+      - '^access\$\d+$'
+      - '\$\$\w+'

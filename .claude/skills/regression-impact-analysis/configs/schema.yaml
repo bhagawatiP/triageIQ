@@ -1,0 +1,129 @@
+# =============================================================================
+# Entry Point Detection Config Schema (v1.0)
+# =============================================================================
+#
+# This file documents the schema for per-language YAML configs that drive the
+# universal entry-point detector. ZERO hardcoded patterns live in Python; ALL
+# language-specific rules live in `configs/languages/<lang>.yaml`.
+#
+# To add a new language:
+#   1. Drop a `<lang>.yaml` file into `configs/languages/`.
+#   2. Match the schema below.
+#   3. (No Python code changes required.)
+#
+# =============================================================================
+# Top-level keys
+# =============================================================================
+#
+# language:                 Required. Identity block.
+#   name: <string>          Canonical key (e.g. "java", "python").
+#   display_name: <string>  Human-friendly label (e.g. "Java/Spring Boot").
+#   extensions: [<string>]  File extensions (incl. dot, e.g. ".java").
+#
+# method_declaration:       Required. How to find a method declaration.
+#   regex: <string>         A regex with `{METHOD}` placeholder. The detector
+#                           substitutes the candidate name (already escaped).
+#   modifier_window: <int>  Bytes before `{METHOD}` in which modifier filters
+#                           (private/abstract/...) look for keywords.
+#                           Default: 200.
+#
+# class_declaration:        Optional. Used by `name_equals_class` (constructors).
+#   regex: <string>         Captures the enclosing class name in group(1).
+#
+# filters:                  Required. Universal filters applied to every method.
+# language_specific_filters: Optional. Same shape, but conceptually language-only.
+#
+# Both blocks are an ORDERED MAP of {filter_name: filter_spec}. A method is
+# rejected as soon as any filter returns True. Order matters only for speed.
+#
+# =============================================================================
+# Filter spec (shared shape)
+# =============================================================================
+#
+# Every filter has a `type` and type-specific keys. Supported types:
+#
+# ---------------------------------------------------------------------------
+# type: modifier_keyword
+# ---------------------------------------------------------------------------
+# Matches if any of `keywords` appears as a standalone word in the method
+# signature window (modifier_window bytes from declaration start).
+#
+#   keywords: [<string>]    e.g. ["private"], ["abstract"]
+#
+# ---------------------------------------------------------------------------
+# type: regex_pattern
+# ---------------------------------------------------------------------------
+# Matches a candidate's *name* against any of `patterns`. Optional `exclude`
+# patterns short-circuit (used for things like __init__).
+#
+#   patterns: [<regex>]     e.g. ["^get[A-Z]\\w*$", "^set[A-Z]\\w*$"]
+#   exclude:  [<regex>]     Optional. If matched, filter does NOT trigger.
+#   and:                    Optional AND-conditions (must ALSO be true):
+#     body_lines: {max: N}    Method body shorter than N lines.
+#
+# ---------------------------------------------------------------------------
+# type: path_pattern
+# ---------------------------------------------------------------------------
+# Matches the file path against any of `patterns`. Two pattern dialects
+# are supported:
+#   - Substring: any pattern containing no `*` is treated as a substring
+#     check (e.g. "/test/", "node_modules/").
+#   - Glob: patterns containing `*` are matched with fnmatch on the full
+#     repo-relative path (e.g. "*Test.java", "**/__mocks__/*.js").
+#
+#   patterns: [<string>]
+#
+# ---------------------------------------------------------------------------
+# type: name_equals_class
+# ---------------------------------------------------------------------------
+# Matches when the method name equals the enclosing class name (Java-style
+# constructor). Uses `class_declaration.regex` to find the enclosing class.
+# (No additional fields.)
+#
+# ---------------------------------------------------------------------------
+# type: name_pattern
+# ---------------------------------------------------------------------------
+# Pure name check. Matches if name regexes match. Same shape as regex_pattern
+# minus the `and` block (kept distinct for clarity/intent).
+#
+#   patterns: [<regex>]
+#   exclude:  [<regex>]
+#
+# ---------------------------------------------------------------------------
+# type: file_extension
+# ---------------------------------------------------------------------------
+# Rejects files whose path ends with any of `extensions`. Used e.g. for
+# TypeScript declaration files (.d.ts).
+#
+#   extensions: [<string>]
+#
+# =============================================================================
+# Universal algorithm (NOT in YAML — implemented in core/detector.py)
+# =============================================================================
+#
+#   FOR each method m in file f:
+#     IF call_graph.has_internal_callers(m, f): NOT_ENTRY_POINT
+#     FOR each filter in (filters + language_specific_filters):
+#       IF filter.matches(m, f, content): NOT_ENTRY_POINT
+#     ENTRY_POINT
+#
+# =============================================================================
+# Walker pruning (derived; NOT manually configured)
+# =============================================================================
+#
+# `EntryPointDetector.detect_entry_points_in_repo` prunes `os.walk` for
+# performance. The skip-dir set is DERIVED from every loaded language
+# config's `path_pattern` filters: any non-glob pattern that resolves to a
+# bare directory token is treated as a skip-dir (e.g. `/node_modules/` ->
+# `node_modules`, `target/` -> `target`). NO patterns are hardcoded in
+# Python; editing a YAML automatically updates the walker.
+#
+# =============================================================================
+# Authoring tips
+# =============================================================================
+#
+# - Patterns are language-DSL agnostic — only Python regex syntax is used.
+#   Escape `\w`, `\d` as `\\w`, `\\d` in YAML double-quoted strings, OR
+#   use single-quoted strings to keep them as-is.
+# - Keep filter names descriptive; they appear in detector debug logs.
+# - Run `python3 core/detector.py --self-test <repo>` after edits.

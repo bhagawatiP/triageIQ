@@ -1,0 +1,9 @@
+2026-06-11T16:38:02Z INFO  api  request POST /v1/reports/export id=rep_5521 range=2026-13-01..2026-13-31
+2026-06-11T16:38:02Z WARN  reports  date filter parsed to invalid month=13, coercing to empty range
+2026-06-11T16:38:02Z INFO  reports  query returned 0 rows for rep_5521
+2026-06-11T16:38:02Z INFO  api  request rep_5521 succeeded status=200 rows=0
+2026-06-11T16:38:05Z INFO  api  request GET /v1/orders id=ord_9012 succeeded status=200
+2026-06-11T16:39:10Z INFO  api  request POST /v1/reports/export id=rep_5522 range=2026-13-01..2026-13-31
+2026-06-11T16:39:10Z WARN  reports  date filter parsed to invalid month=13, coercing to empty range
+2026-06-11T16:39:10Z INFO  reports  query returned 0 rows for rep_5522
+2026-06-11T16:39:10Z INFO  api  request rep_5522 succeeded status=200 rows=0

@@ -1,0 +1,126 @@
+{
+  "_comment": "Smart-classification rules for dependency changes. NO hardcoded artifact names: every signal is computed from how the dependency is used.",
+  "weights": {
+    "usage_pct": [
+      {
+        "gte": 0.3,
+        "delta": 4
+      },
+      {
+        "gte": 0.15,
+        "delta": 2
+      },
+      {
+        "gte": 0.05,
+        "delta": 1
+      }
+    ],
+    "centrality": [
+      {
+        "gte": 0.7,
+        "delta": 3
+      },
+      {
+        "gte": 0.4,
+        "delta": 2
+      },
+      {
+        "gte": 0.2,
+        "delta": 1
+      }
+    ],
+    "module_concentration": [
+      {
+        "gte": 0.8,
+        "delta": -2
+      },
+      {
+        "lte": 0.2,
+        "delta": 2
+      }
+    ],
+    "api_surface_entropy": [
+      {
+        "gte": 4.0,
+        "delta": 2
+      },
+      {
+        "gte": 2.0,
+        "delta": 1
+      }
+    ],
+    "scope_test": -6,
+    "scope_provided": -2,
+    "scope_compile": 1,
+    "in_plugin_block": -6,
+    "in_build_extensions": -3,
+    "version_bump_major": 3,
+    "version_bump_minor": 1,
+    "version_bump_patch": 0,
+    "lexicon_infrastructure": 2,
+    "lexicon_build": -3,
+    "lexicon_domain": 3,
+    "lexicon_test": -4,
+    "no_usage": -8
+  },
+  "thresholds": {
+    "skip_max": -5,
+    "ria_max": 5,
+    "targeted_max": 10
+  },
+  "lexicons": {
+    "infrastructure": [
+      "log",
+      "slf",
+      "metric",
+      "trace",
+      "cache",
+      "auth",
+      "security",
+      "crypto",
+      "serialize",
+      "json",
+      "xml",
+      "http",
+      "rpc",
+      "grpc",
+      "spring",
+      "servlet",
+      "jetty",
+      "tomcat",
+      "netty",
+      "kafka",
+      "redis",
+      "mongo"
+    ],
+    "build": [
+      "plugin",
+      "maven",
+      "gradle",
+      "compiler",
+      "lint",
+      "sonar",
+      "checkstyle",
+      "jacoco",
+      "surefire",
+      "failsafe",
+      "assembly",
+      "shade",
+      "spotless",
+      "spotbugs"
+    ],
+    "test": [
+      "junit",
+      "testng",
+      "mockito",
+      "spock",
+      "cucumber",
+      "jest",
+      "mocha",
+      "pytest",
+      "selenium",
+      "wiremock"
+    ],
+    "domain": "FROM_COMPONENT_MAP"
+  }
+}

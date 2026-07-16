@@ -1,0 +1,28 @@
+# RIA Pipeline Dependencies
+# Install with: pip install -r requirements.txt
+#
+# PYTHON VERSION REQUIREMENT: Python 3.10 or higher
+#
+# NOTE: RIA's LLM reasoning is performed by the GitHub Copilot agent directly
+# (the pipeline pauses at each reasoning stage and the agent fills that stage's
+# output file; see scripts/agent_reasoning.py). There is NO AWS Bedrock
+# dependency and NO cloud LLM SDK to install.
+
+# HTTP client for JIRA/Xray API calls
+httpx>=0.27.2
+
+# Sentence embeddings (optional - for semantic similarity)
+sentence-transformers>=2.2.0
+
+# Code parsing
+tree-sitter>=0.20.0
+tree-sitter-java>=0.20.0
+
+# YAML config loader (PORTABILITY FIX #3: language-specific verb seeds)
+pyyaml>=6.0.1
+
+# Part-of-Speech tagging for synonym verb extraction (Fix #2 in v7.5 audit)
+# Required by build_synonym_groups.py to filter VERBs from nouns/adjectives.
+# After installing the package, also run:
+#   python3 -m spacy download en_core_web_sm
+spacy>=3.0.0

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CXone Swarm Triage</title>
+<style>
+  :root{
+    --bg:#0f1420; --bg2:#161d2e; --card:#1b2437; --card2:#212c44;
+    --line:#2c3855; --text:#e8edf7; --muted:#9aa8c4; --faint:#6b7793;
+    --accent:#4f8cff; --accent2:#33d3a3; --shadow:0 10px 30px rgba(0,0,0,.35);
+    --p1:#ff5670; --p2:#ff9f43; --p3:#ffd23f; --p4:#7f8db0;
+    --ok:#33d3a3; --warn:#ffd23f; --bad:#ff5670; --info:#4f8cff;
+  }
+  :root[data-theme="light"]{
+    --bg:#eef1f7; --bg2:#e4e9f2; --card:#ffffff; --card2:#f5f7fb;
+    --line:#dce2ee; --text:#1b2437; --muted:#586179; --faint:#8b93a7;
+    --shadow:0 10px 30px rgba(30,50,90,.12);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+       background:radial-gradient(1200px 600px at 80% -10%,var(--bg2),var(--bg)) fixed;
+       color:var(--text);min-height:100vh;line-height:1.5}
+  a{color:var(--accent)}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+  header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+        display:grid;place-items:center;font-size:20px;box-shadow:var(--shadow)}
+  h1{font-size:20px;margin:0;letter-spacing:.2px}
+  .sub{color:var(--muted);font-size:13px;margin-top:2px}
+  .status{font-size:12px;color:var(--faint);display:flex;align-items:center;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--faint)}
+  .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)}
+  .theme-btn{background:var(--card);border:1px solid var(--line);color:var(--muted);border-radius:9px;
+        padding:7px 11px;cursor:pointer;font-size:13px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+  .panel{padding:20px}
+  form .row{display:grid;grid-template-columns:210px 1fr;gap:14px}
+  @media(max-width:640px){form .row{grid-template-columns:1fr}}
+  label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:600;letter-spacing:.3px}
+  input,textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:11px;color:var(--text);
+        padding:12px 13px;font-size:14px;font-family:inherit;resize:vertical}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(79,140,255,.18)}
+  textarea{min-height:120px}
+  .hint{color:var(--faint);font-size:12px;margin-top:8px}
+  .actions{display:flex;gap:12px;align-items:center;margin-top:16px}
+  .btn{background:linear-gradient(135deg,var(--accent),#3f74e0);color:#fff;border:none;border-radius:11px;
+        padding:12px 22px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
+  .btn:disabled{opacity:.55;cursor:not-allowed}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--muted);box-shadow:none}
+  section.out{margin-top:24px;display:none}
+  section.out.show{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  .block{padding:18px 20px}
+  .block h2{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin:0 0 14px;
+        display:flex;align-items:center;gap:9px}
+  .block h2 .ic{font-size:15px}
+  .chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 12px;font-size:13px;
+        font-weight:600;border:1px solid var(--line);background:var(--card2)}
+  .chip.big{font-size:15px;padding:7px 15px}
+  .chip.p1{background:rgba(255,86,112,.16);color:var(--p1);border-color:rgba(255,86,112,.4)}
+  .chip.p2{background:rgba(255,159,67,.16);color:var(--p2);border-color:rgba(255,159,67,.4)}
+  .chip.p3{background:rgba(255,210,63,.16);color:var(--p3);border-color:rgba(255,210,63,.4)}
+  .chip.p4{background:rgba(127,141,176,.16);color:var(--p4);border-color:rgba(127,141,176,.4)}
+  .chip.ok{background:rgba(51,211,163,.16);color:var(--ok);border-color:rgba(51,211,163,.4)}
+  .chip.warn{background:rgba(255,210,63,.16);color:var(--warn);border-color:rgba(255,210,63,.4)}
+  .chip.bad{background:rgba(255,86,112,.16);color:var(--bad);border-color:rgba(255,86,112,.4)}
+  .chip.info{background:rgba(79,140,255,.16);color:var(--accent);border-color:rgba(79,140,255,.4)}
+  .chip.muted{color:var(--faint)}
+  .chiprow{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+  .lead{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.3px}
+  .kv{color:var(--muted);font-size:13px;margin-top:12px}
+  .kv b{color:var(--text);font-weight:600}
+  ul.rca{margin:0;padding-left:18px} ul.rca li{margin:7px 0}
+  .summary{font-size:15px;color:var(--text);margin:0 0 4px;font-weight:600}
+  .bugref{color:var(--faint);font-size:13px}
+  .testcard{border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin-top:12px;background:var(--bg)}
+  .testcard .tt{font-weight:600;font-size:14px;margin-bottom:8px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .testcard ol{margin:6px 0 6px 18px;padding:0} .testcard ol li{margin:4px 0;font-size:13px}
+  .testcard .lab{font-size:12px;color:var(--muted);margin-top:8px}
+  .exist{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+  .exist a.tk{display:inline-flex;gap:8px;align-items:center;font-weight:600;text-decoration:none}
+  .exist .al{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .gatebar{margin-top:14px;font-size:12px;color:var(--faint);border-top:1px solid var(--line);padding-top:12px}
+  .createzone{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+  .btn.create{background:linear-gradient(135deg,var(--accent2),#1fae86)}
+  .confirm-box{border:1px solid var(--line);border-radius:11px;padding:14px;background:var(--bg);font-size:13.5px}
+  .confirm-box code{background:var(--card2);padding:1px 6px;border-radius:6px;font-size:12px}
+  .creating{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:14px}
+  .spinner.sm{width:20px;height:20px;border-width:3px;margin:0}
+  .created-ok{color:var(--ok);font-weight:600;margin-bottom:8px}
+  .err-inline{color:var(--bad);font-size:13px;border:1px solid rgba(255,86,112,.4);border-radius:10px;padding:12px;background:rgba(255,86,112,.08)}
+  /* loading */
+  .loading{display:none;padding:26px 20px;text-align:center}
+  .loading.show{display:block}
+  .spinner{width:42px;height:42px;border-radius:50%;border:4px solid var(--line);border-top-color:var(--accent);
+        margin:0 auto 16px;animation:spin 1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .stage{font-size:15px;font-weight:600;min-height:22px}
+  .elapsed{color:var(--faint);font-size:12px;margin-top:6px}
+  .steps-mini{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:16px}
+  .steps-mini span{font-size:11px;color:var(--faint);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+  .steps-mini span.done{color:var(--ok);border-color:rgba(51,211,163,.4)}
+  .steps-mini span.now{color:var(--accent);border-color:var(--accent)}
+  .err{border-color:rgba(255,86,112,.5)}
+  .err .block{color:var(--bad)}
+  pre.raw{white-space:pre-wrap;word-break:break-word;font-size:12.5px;color:var(--text);
+        background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;max-height:520px;overflow:auto;margin:0}
+  .foot{color:var(--faint);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">🛰️</div>
+      <div>
+        <h1>CXone Swarm Triage</h1>
+        <div class="sub">Bug → owning team · test coverage · RCA · priority</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="status" id="status"><span class="dot" id="statusDot"></span><span id="statusText">checking backend…</span></div>
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">◐ Theme</button>
+    </div>
+  </header>
+
+  <div class="card panel" id="diskBanner" style="display:none;border-color:var(--warn);margin-bottom:16px">
+    <div class="block"><h2><span class="ic">⚠️</span>Open via the server, not the file</h2>
+      <div class="kv">This page was opened directly from disk, so it can't reach the triage backend. Start it with <code>python triage_server.py</code> and open <a href="http://localhost:8756">http://localhost:8756</a>.</div>
+    </div>
+  </div>
+
+  <div class="card panel">
+    <form id="form">
+      <div class="row">
+        <div>
+          <label for="bugId">Bug ID (optional)</label>
+          <input id="bugId" placeholder="e.g. CXDV-80765" autocomplete="off">
+          <div class="hint">Fetched live from Jira.</div>
+        </div>
+        <div>
+          <label for="desc">Bug details / description</label>
+          <textarea id="desc" placeholder="Paste the symptom, observed vs expected, repro, evidence…"></textarea>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="go" type="submit">Triage bug</button>
+        <button class="btn ghost" id="clearBtn" type="button">Clear</button>
+        <span class="hint" style="margin:0">Enter a Bug ID, a description, or both.</span>
+      </div>
+    </form>
+  </div>
+
+  <div class="card loading" id="loading" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <div class="stage" id="stage">Starting triage…</div>
+    <div class="elapsed" id="elapsed">0s elapsed</div>
+    <div class="steps-mini" id="miniSteps"></div>
+    <div class="hint" style="margin-top:14px">A full triage runs the 7-step framework, team routing, test-bed search and code RCA — this can take a few minutes.</div>
+  </div>
+
+  <section class="out" id="out" role="status" aria-live="polite"></section>
+
+  <div class="foot">Runs the <code>cxone-swarm-sme</code> agent locally · draft-only (no Jira/Xray writes) · read-only code RCA</div>
+</div>
+
+<script>
+const PHASES = ["Reading the ticket","Classifying severity","Root-cause analysis","Routing to team",
+                "Searching the test bed","Inspecting source code","Composing report"];
+const $ = id => document.getElementById(id);
+let timer=null, phaseTimer=null, t0=0;
+
+/* Backend base URL: same-origin when served over http(s); fall back to localhost when the
+   page is opened straight from disk (file://), where relative URLs like "/triage" cannot be
+   parsed. Override with ?api=http://host:port . */
+const API = (()=>{
+  const q = new URLSearchParams(location.search).get("api");
+  if(q) return q.replace(/\/+$/,"");
+  return (location.protocol==="http:"||location.protocol==="https:") ? "" : "http://localhost:8756";
+})();
+const fromDisk = location.protocol==="file:";
+if(fromDisk){ const b=document.getElementById("diskBanner"); if(b) b.style.display="block"; }
+
+/* theme */
+$("themeBtn").onclick = () => {
+  const r=document.documentElement, next=r.getAttribute("data-theme")==="dark"?"light":"dark";
+  r.setAttribute("data-theme",next); try{localStorage.setItem("triage-theme",next)}catch(e){}
+};
+try{const s=localStorage.getItem("triage-theme"); if(s)document.documentElement.setAttribute("data-theme",s)}catch(e){}
+
+/* backend health */
+fetch(API+"/health").then(r=>r.json()).then(h=>{
+  const ok = h.ok && h.claude_found;
+  $("statusDot").className = "dot " + (ok?"ok":"bad");
+  $("statusText").textContent = ok ? "backend ready" : (h.claude_found ? "backend up" : "claude.exe not found (set CLAUDE_BIN)");
+}).catch(()=>{
+  $("statusDot").className="dot bad";
+  $("statusText").textContent = "backend offline — run: python triage_server.py" + (fromDisk?" (then reload)":"");
+});
+
+/* mini step tracker */
+function renderMini(active){
+  $("miniSteps").innerHTML = PHASES.map((p,i)=>{
+    const cls = i<active?"done":(i===active?"now":"");
+    return `<span class="${cls}">${i<active?"✓ ":""}${p}</span>`;
+  }).join("");
+}
+function startLoading(){
+  $("out").classList.remove("show"); $("out").innerHTML="";
+  $("loading").classList.add("show");
+  t0=Date.now(); let phase=0; $("stage").textContent=PHASES[0]+"…"; renderMini(0);
+  timer=setInterval(()=>{ $("elapsed").textContent=Math.round((Date.now()-t0)/1000)+"s elapsed"; },1000);
+  phaseTimer=setInterval(()=>{ phase=Math.min(phase+1,PHASES.length-1); $("stage").textContent=PHASES[phase]+"…"; renderMini(phase); },7000);
+}
+function stopLoading(){ clearInterval(timer); clearInterval(phaseTimer); $("loading").classList.remove("show"); }
+
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+/* Only allow http(s) links — blocks javascript:/data:/vbscript: XSS via a crafted test URL. */
+const safeUrl = u => { try{ const p=new URL(u, location.origin); return (p.protocol==="http:"||p.protocol==="https:")?p.href:"#"; }catch(e){ return "#"; } };
+const asArr = v => Array.isArray(v)?v:(v==null||v===""?[]:[v]);
+const pClass = lvl => ({P1:"p1",P2:"p2",P3:"p3",P4:"p4"}[String(lvl||"").toUpperCase()]||"muted");
+const vClass = v => ({covered:"ok",partial:"warn",gap:"bad"}[String(v||"").toLowerCase()]||"info");
+
+function renderResults(d){
+  if(d.error){
+    $("out").innerHTML = `<div class="card err panel"><div class="block"><h2><span class="ic">⚠️</span>Triage error</h2><div>${esc(d.error)}</div>${d.detail?`<pre class="raw" style="margin-top:12px">${esc(d.detail)}</pre>`:""}</div></div>`;
+    $("out").classList.add("show"); return;
+  }
+  if(d.raw && !d.team){
+    $("out").innerHTML = `<div class="card panel"><div class="block"><h2><span class="ic">📄</span>Triage output</h2><pre class="raw">${esc(d.raw)}</pre></div></div>`;
+    $("out").classList.add("show"); return;
+  }
+  const team=d.team||{}, pr=d.priority||{}, tc=d.test_coverage||{}, code=d.code_rca||{};
+  const bugId = d.bugId || (d.jira&&d.jira.key) || "";
+  const eligible = team.code_rca_eligible===true;
+
+  // header
+  let html = `<div class="card block" style="margin-bottom:16px">
+    <div class="summary">${esc(d.bug_summary||"Triage result")}</div>
+    <div class="bugref">${bugId?("🔖 "+esc(bugId)):"free-text bug"}${d.jira&&d.jira.status?" · "+esc(d.jira.status):""}</div>
+  </div><div class="grid">`;
+
+  // 1. TEAM + PRIORITY
+  html += `<div class="card block"><h2><span class="ic">👥</span>Owning Team &amp; Priority</h2>
+    <div class="chiprow">
+      <span class="chip big info">${esc(team.owning_team||"Unresolved")}</span>
+      <span class="chip ${eligible?"ok":"muted"}">${eligible?"✔ Code-RCA eligible":"Code-RCA n/a"}</span>
+      ${team.confidence?`<span class="chip muted">confidence: ${esc(team.confidence)}</span>`:""}
+    </div>
+    ${team.match_basis?`<div class="kv">Matched by <b>${esc(team.match_basis)}</b></div>`:""}
+    <div class="chiprow" style="margin-top:12px">
+      <span class="lead">🚦 Priority</span>
+      <span class="chip big ${pClass(pr.level)}">${esc(pr.level||"—")}</span>
+      ${pr.severity?`<span class="chip">Severity: ${esc(pr.severity)}</span>`:""}
+    </div>
+    ${pr.justification?`<div class="kv">${esc(pr.justification)}</div>`:""}
+    ${eligible&&(code.suspect_paths||code.proposed_fix)?renderCode(code):""}
+  </div>`;
+
+  // 2. TEST CASES
+  const existing = asArr(tc.existing_tests), proposed = asArr(tc.proposed_tests);
+  html += `<div class="card block"><h2><span class="ic">🧪</span>Test Case Coverage</h2>
+    <div class="chiprow"><span class="chip ${vClass(tc.verdict)}">${esc(tc.verdict||"Unknown")}</span>
+      ${tc.xray_folder?`<span class="chip muted">${esc(tc.xray_folder)}</span>`:""}</div>`;
+  if(existing.length){
+    html += `<div class="kv">Existing test${existing.length>1?"s":""}:</div><div class="exist">` +
+      existing.map(t=>`<div><a class="tk" href="${esc(safeUrl(t.url||"#"))}" target="_blank" rel="noopener">🔗 ${esc(t.key)}</a>
+        <span class="al">${esc(t.alignment||"")}</span> ${t.summary?"<span class='bugref'>"+esc(t.summary)+"</span>":""}</div>`).join("") + `</div>`;
+  }
+  if(proposed.length){
+    html += `<div class="kv">${existing.length?"Additional ":""}Proposed test case${proposed.length>1?"s":""} <span style="color:var(--faint)">(draft — not created)</span>:</div>` +
+      proposed.map(renderTest).join("") +
+      `<div id="createZone" class="createzone"></div>`;
+  }
+  if(!existing.length && !proposed.length){ html += `<div class="kv">No coverage detail returned.</div>`; }
+  html += `</div>`;
+
+  // 3. RCA (Priority now lives in the Owning Team card above)
+  const rca = Array.isArray(d.rca)?d.rca:(d.rca?[d.rca]:[]);
+  html += `<div class="card block"><h2><span class="ic">🔍</span>Root Cause Analysis</h2>
+    ${rca.length?`<ul class="rca">${rca.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<div class="kv">Not determined.</div>`}
+    <div id="rcaZone" class="createzone"></div></div>`;
+
+  html += `</div>`;
+  $("out").innerHTML = html;
+  $("out").classList.add("show");
+  if(proposed.length) mountCreate(proposed, team.owning_team||"", bugId, tc.xray_folder||"");
+  if(bugId && rca.length) mountRca(rca, code, bugId);
+}
+function mountCreate(proposed, team, bugId, folder){
+  const zone=$("createZone"); if(!zone) return;
+  const n=proposed.length;
+  zone.innerHTML = `<button class="btn create" id="createBtn">🧪 Create ${n} test case${n>1?"s":""} in Xray</button>
+    <span class="hint" style="margin-left:10px">Nothing is written to Jira/Xray until you confirm.</span>`;
+  $("createBtn").onclick = ()=>{
+    zone.innerHTML = `<div class="confirm-box">Create <b>${n}</b> test case${n>1?"s":""} in Jira/Xray — project <b>CXDV</b>${team?", team <b>"+esc(team)+"</b>":""}${folder?", folder <code>"+esc(folder)+"</code>":""}${bugId?", linked to <b>"+esc(bugId)+"</b>":""}?
+      <div style="margin-top:12px;display:flex;gap:10px">
+        <button class="btn" id="confirmCreate">Yes, create</button>
+        <button class="btn ghost" id="cancelCreate">Cancel</button>
+      </div></div>`;
+    $("cancelCreate").onclick = ()=> mountCreate(proposed, team, bugId, folder);
+    $("confirmCreate").onclick = ()=> doCreate(proposed, team, bugId, folder);
+  };
+}
+async function doCreate(proposed, team, bugId, folder){
+  const zone=$("createZone"); if(!zone) return;
+  zone.innerHTML = `<div class="creating"><span class="spinner sm"></span> Creating ${proposed.length} test case${proposed.length>1?"s":""} in Xray…</div>`;
+  try{
+    const res = await fetch(API+"/create-tests",{method:"POST",headers:{"Content-Type":"application/json"},
+                 body:JSON.stringify({proposed_tests:proposed, team, bugId, folder})});
+    const data = await res.json();
+    if(data.error){ zone.innerHTML = `<div class="err-inline">⚠️ ${esc(data.error)}</div>`; return; }
+    const created=asArr(data.created), warns=asArr(data.warnings);
+    zone.innerHTML = `<div class="created-ok">✅ Created ${created.length} test case${created.length!==1?"s":""} in Xray</div>`
+      + `<div class="exist">` + created.map(c=>`<div><a class="tk" href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">🔗 ${esc(c.key)}</a> <span class="bugref">${esc(c.title||"")}</span></div>`).join("") + `</div>`
+      + (warns.length?`<div class="hint" style="margin-top:8px">Notes: ${warns.map(esc).join("; ")}</div>`:"");
+  }catch(err){
+    zone.innerHTML = `<div class="err-inline">⚠️ Create failed: ${esc(err.message)}. Is the backend running?</div>`;
+  }
+}
+function renderTest(t){
+  // Strip any leading "1. " / "2) " so the <ol> doesn't double-number the step.
+  const stripNum = s => String(s).replace(/^\s*\d+\s*[.)]\s*/, "");
+  const toStr = s => (s && typeof s==="object") ? esc([s.action,s.data,s.result].filter(Boolean).join(" — ") || JSON.stringify(s)) : esc(stripNum(s));
+  const steps=asArr(t.steps).map(s=>`<li>${toStr(s)}</li>`).join("");
+  const exp=asArr(t.expected_results).filter(x=>x!=null&&x!=="").map(s=>`<li>${toStr(s)}</li>`).join("");
+  return `<div class="testcard">
+    <div class="tt">${esc(t.title||"Test case")} ${t.priority?`<span class="chip ${pClass(t.priority)}">${esc(t.priority)}</span>`:""}</div>
+    ${t.preconditions?`<div class="lab"><b>Preconditions:</b> ${esc(t.preconditions)}</div>`:""}
+    ${steps?`<div class="lab"><b>Steps</b></div><ol>${steps}</ol>`:""}
+    ${exp?`<div class="lab"><b>Expected results</b></div><ol>${exp}</ol>`:""}
+    ${t.labels?`<div class="lab"><b>Labels:</b> ${esc(t.labels)}</div>`:""}
+  </div>`;
+}
+function toBullets(text){
+  // Split a blob into bullet items: prefer newlines, else "; " separators; strip any bullet glyph.
+  let items = String(text).split(/\r?\n+/).map(s=>s.trim().replace(/^[-*•]\s*/,"")).filter(Boolean);
+  if(items.length<=1) items = String(text).split(/\s*;\s+/).map(s=>s.trim()).filter(Boolean);
+  return items.map(s=>`<li>${esc(s)}</li>`).join("");
+}
+function renderCode(code){
+  const paths=asArr(code.suspect_paths).map(p=>`<li>${esc(p)}</li>`).join("");
+  return `<div class="gatebar"><b>Code RCA</b> — suspect source in pmn-shared (read-only):
+    ${paths?`<div class="lab" style="margin-top:6px"><b>Suspect paths</b></div><ul class="rca">${paths}</ul>`:""}
+    ${code.proposed_fix?`<div class="lab" style="margin-top:8px"><b>Proposed fix</b></div><ul class="rca">${toBullets(code.proposed_fix)}</ul>`:""}</div>`;
+}
+function mountRca(rca, code, bugId){
+  const zone=$("rcaZone"); if(!zone||!bugId||!rca.length) return;
+  zone.innerHTML = `<button class="btn create" id="rcaBtn">📝 Add this RCA to ${esc(bugId)}</button>
+    <span class="hint" style="margin-left:10px">Posts the RCA as a comment on the Jira bug.</span>`;
+  $("rcaBtn").onclick = ()=>{
+    zone.innerHTML = `<div class="confirm-box">Add this RCA (and code-fix suggestion, if any) as a comment on <b>${esc(bugId)}</b> in Jira?
+      <div style="margin-top:12px;display:flex;gap:10px">
+        <button class="btn" id="rcaConfirm">Yes, add to bug</button>
+        <button class="btn ghost" id="rcaCancel">Cancel</button>
+      </div></div>`;
+    $("rcaCancel").onclick = ()=> mountRca(rca, code, bugId);
+    $("rcaConfirm").onclick = ()=> doAddRca(rca, code, bugId);
+  };
+}
+async function doAddRca(rca, code, bugId){
+  const zone=$("rcaZone"); if(!zone) return;
+  zone.innerHTML = `<div class="creating"><span class="spinner sm"></span> Adding RCA to ${esc(bugId)}…</div>`;
+  try{
+    const res = await fetch(API+"/add-rca",{method:"POST",headers:{"Content-Type":"application/json"},
+                 body:JSON.stringify({bugId, rca, code_rca:code})});
+    const data = await res.json();
+    if(data.error){ zone.innerHTML = `<div class="err-inline">⚠️ ${esc(data.error)}</div>`; return; }
+    zone.innerHTML = `<div class="created-ok">✅ RCA added as a comment on <a class="tk" href="${esc(safeUrl(data.url))}" target="_blank" rel="noopener">${esc(bugId)}</a></div>`;
+  }catch(err){
+    zone.innerHTML = `<div class="err-inline">⚠️ Failed: ${esc(err.message)}. Is the backend running?</div>`;
+  }
+}
+
+/* submit */
+$("form").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const bugId=$("bugId").value.trim(), description=$("desc").value.trim();
+  if(!bugId && !description){ alert("Enter a bug ID or a description."); return; }
+  $("go").disabled=true; startLoading();
+  const ctrl=new AbortController(); const kill=setTimeout(()=>ctrl.abort(), 25*60*1000);
+  try{
+    const res = await fetch(API+"/triage",{method:"POST",headers:{"Content-Type":"application/json"},
+                 body:JSON.stringify({bugId,description}),signal:ctrl.signal});
+    const data = await res.json();
+    stopLoading(); renderResults(data);
+  }catch(err){
+    stopLoading();
+    const msg = err.name==="AbortError"
+      ? "Triage timed out in the browser (25 min)."
+      : "Cannot reach the triage backend at "+(API||location.origin)+". Start it with  python triage_server.py  in the webapp folder"+(fromDisk?", or open http://localhost:8756 instead of the file.":".");
+    renderResults({error: msg});
+  }finally{ clearTimeout(kill); $("go").disabled=false; }
+});
+$("clearBtn").onclick=()=>{ $("bugId").value=""; $("desc").value=""; $("out").classList.remove("show"); $("out").innerHTML=""; };
+</script>
+</body>
+</html>

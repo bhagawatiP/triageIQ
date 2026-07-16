@@ -1,0 +1,185 @@
+# =============================================================================
+# TypeScript entry-point detection rules
+# =============================================================================
+# All TS-specific patterns live HERE — none in Python code.
+# =============================================================================
+
+language:
+  name: "typescript"
+  display_name: "TypeScript/Angular/NestJS"
+  extensions:
+    - ".ts"
+    - ".tsx"
+    - ".mts"
+    - ".cts"
+
+method_declaration:
+  # TypeScript declaration shapes:
+  #   public foo(args): RetType {     |  private async foo<T>(): Promise<T> {
+  #   foo(args): RetType {            |  static foo() {
+  regex: '(?:public|private|protected|static|async|readonly|abstract)?\s*{METHOD}\s*[<(]'
+  modifier_window: 220
+
+class_declaration:
+  regex: '(?:export\s+)?(?:abstract\s+)?(?:class|interface)\s+(\w+)'
+
+filters:
+
+  # 1. private — TS visibility prevents external dispatch.
+  private:
+    type: "modifier_keyword"
+    keywords:
+      - "private"
+
+  # 2. abstract — implementations dispatch via concrete overrides.
+  abstract:
+    type: "modifier_keyword"
+    keywords:
+      - "abstract"
+
+  # 3. constructor.
+  constructor:
+    type: "name_pattern"
+    patterns:
+      - '^constructor$'
+
+  # 4. Trivial accessor methods.
+  trivial_getter_setter:
+    type: "regex_pattern"
+    patterns:
+      - '^get[A-Z]\w*$'
+      - '^set[A-Z]\w*$'
+      - '^is[A-Z]\w*$'
+      - '^has[A-Z]\w*$'
+    and:
+      body_lines:
+        max: 3
+
+  # 5. Test paths.
+  test_paths:
+    type: "path_pattern"
+    patterns:
+      - "/__tests__/"
+      - "/__mocks__/"
+      - "/test/"
+      - "/tests/"
+      - "/spec/"
+      - "*.test.ts"
+      - "*.test.tsx"
+      - "*.spec.ts"
+      - "*.spec.tsx"
+      - "*.e2e-spec.ts"
+
+  # 6. Vendor / build paths.
+  vendor_paths:
+    type: "path_pattern"
+    patterns:
+      - "node_modules/"
+      - "/node_modules/"
+      - "/dist/"
+      - "dist/"
+      - "/build/"
+      - "build/"
+      - "/.next/"
+      - "/.nuxt/"
+      - "/coverage/"
+      - "/out/"
+      - ".github/skills/"
+      - ".github/agents/"
+      - ".github/RIA_INPUT/"
+      - ".github/RIA_OUTPUT/"
+
+language_specific_filters:
+
+  # 7. .d.ts declaration files have no implementations — never entry points.
+  declaration_files:
+    type: "file_extension"
+    extensions:
+      - ".d.ts"
+
+  # 8. Compiler / framework helper names.
+  compiler_helpers:
+    type: "regex_pattern"
+    patterns:
+      - '^__decorate$'
+      - '^__metadata$'
+      - '^__param$'
+      - '^__assign$'
+      - '^__rest$'
+      - '^__awaiter$'
+      - '^__generator$'
+      - '^__values$'
+
+  # 9. NgZone / Angular lifecycle / framework symbols not user-callable.
+  reserved_names:
+    type: "name_pattern"
+    patterns:
+      - '^ngOnChanges$'
+      - '^ngOnInit$'
+      - '^ngDoCheck$'
+      - '^ngAfterContentInit$'
+      - '^ngAfterContentChecked$'
+      - '^ngAfterViewInit$'
+      - '^ngAfterViewChecked$'
+      - '^ngOnDestroy$'
+    # NOTE: these ARE framework dispatch entries; we treat them as
+    # NOT-user-entries here because they're invoked via Angular lifecycle
+    # and are exhaustively covered by the marker pathway already. Author
+    # may flip this list off (delete it) if their RIA pipeline wants to
+    # surface lifecycle hooks individually.
+
+  # 10. TypeScript reserved words / control-flow keywords that the loose
+  #     regex can spuriously match (if(, for(, while(, ...).
+  reserved_words:
+    type: "name_pattern"
+    patterns:
+      - '^if$'
+      - '^else$'
+      - '^for$'
+      - '^while$'
+      - '^do$'
+      - '^switch$'
+      - '^case$'
+      - '^break$'
+      - '^continue$'
+      - '^return$'
+      - '^throw$'
+      - '^try$'
+      - '^catch$'
+      - '^finally$'
+      - '^new$'
+      - '^delete$'
+      - '^typeof$'
+      - '^in$'
+      - '^of$'
+      - '^void$'
+      - '^yield$'
+      - '^await$'
+      - '^async$'
+      - '^class$'
+      - '^extends$'
+      - '^import$'
+      - '^export$'
+      - '^from$'
+      - '^as$'
+      - '^var$'
+      - '^let$'
+      - '^const$'
+      - '^null$'
+      - '^undefined$'
+      - '^true$'
+      - '^false$'
+      - '^function$'
+      - '^debugger$'
+      - '^with$'
+      - '^interface$'
+      - '^type$'
+      - '^enum$'
+      - '^namespace$'
+      - '^declare$'
+      - '^public$'
+      - '^private$'
+      - '^protected$'
+      - '^readonly$'
+      - '^abstract$'
+      - '^static$'

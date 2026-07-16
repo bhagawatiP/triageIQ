@@ -1,0 +1,148 @@
+# =============================================================================
+# Python entry-point detection rules
+# =============================================================================
+# All Python-specific patterns live HERE — none in Python code.
+# =============================================================================
+
+language:
+  name: "python"
+  display_name: "Python"
+  extensions:
+    - ".py"
+
+method_declaration:
+  # `def` or `async def` followed by the method name.
+  regex: '^\s*(?:async\s+)?def\s+{METHOD}\s*\('
+  modifier_window: 200
+
+class_declaration:
+  regex: '^\s*class\s+(\w+)'
+
+filters:
+
+  # 1. Constructor — Python's __init__ is invoked via class instantiation,
+  #    not via direct method calls, and is always filtered.
+  constructor:
+    type: "name_pattern"
+    patterns:
+      - '^__init__$'
+
+  # 2. Conventional-private (single-underscore prefix) — Pythonic non-public.
+  #    Two-underscore prefix is name-mangled by the interpreter and cannot
+  #    be invoked by frameworks that don't know the mangle.
+  private_convention:
+    type: "regex_pattern"
+    patterns:
+      - '^_[A-Za-z]\w*$'      # _foo, _Bar — by-convention private
+      - '^__[A-Za-z]\w*(?<!__)$'  # __foo (mangled) but NOT __dunder__
+    exclude:
+      - '^_$'                 # bare underscore is conventional throwaway
+
+  # 2. Trivial property-style getters/setters (rare in Python but common
+  #    in dataclass-flavoured wrappers).
+  trivial_getter_setter:
+    type: "regex_pattern"
+    patterns:
+      - '^get_[a-z]\w*$'
+      - '^set_[a-z]\w*$'
+      - '^is_[a-z]\w*$'
+      - '^has_[a-z]\w*$'
+    and:
+      body_lines:
+        max: 3
+
+  # 3. Test paths.
+  test_paths:
+    type: "path_pattern"
+    patterns:
+      - "/tests/"
+      - "/test/"
+      - "tests/"
+      - "test_*"
+      - "*_test.py"
+      - "*_tests.py"
+      - "conftest.py"
+
+  # 4. Vendor / virtual-env / build paths.
+  vendor_paths:
+    type: "path_pattern"
+    patterns:
+      - "/.venv/"
+      - "/venv/"
+      - "/env/"
+      - "/site-packages/"
+      - "/__pycache__/"
+      - "/.tox/"
+      - "/build/"
+      - "/dist/"
+      - "/.eggs/"
+      - "*.egg-info/"
+      - ".github/skills/"
+      - ".github/agents/"
+      - ".github/RIA_INPUT/"
+      - ".github/RIA_OUTPUT/"
+
+language_specific_filters:
+
+  # 5. Dunder methods (__add__, __iter__, __enter__, ...) — invoked by the
+  #    Python runtime, but in the entry-point sense they're "called from
+  #    outside the user's call graph" already and would explode the report.
+  #    We treat them as filtered (NOT entry points). __init__ excluded
+  #    because it's already filtered by `name_equals_class`-style logic
+  #    via Python's class lookup — still, be explicit.
+  dunder_methods:
+    type: "regex_pattern"
+    patterns:
+      - '^__\w+__$'
+    exclude:
+      - '^__init__$'   # constructor — covered separately by callers
+      - '^__main__$'   # only meaningful as a module guard
+
+  # 6. Stub / typing-only function names.
+  stub_methods:
+    type: "name_pattern"
+    patterns:
+      - '^_unused$'
+      - '^_dummy$'
+
+  # 7. Python reserved words. Python's `def` regex won't normally match
+  #    these, but some adapters use a looser bare `name(` template; this
+  #    filter is a defensive belt-and-braces.
+  reserved_words:
+    type: "name_pattern"
+    patterns:
+      - '^if$'
+      - '^elif$'
+      - '^else$'
+      - '^for$'
+      - '^while$'
+      - '^try$'
+      - '^except$'
+      - '^finally$'
+      - '^with$'
+      - '^as$'
+      - '^pass$'
+      - '^break$'
+      - '^continue$'
+      - '^return$'
+      - '^yield$'
+      - '^raise$'
+      - '^from$'
+      - '^import$'
+      - '^class$'
+      - '^def$'
+      - '^lambda$'
+      - '^None$'
+      - '^True$'
+      - '^False$'
+      - '^and$'
+      - '^or$'
+      - '^not$'
+      - '^in$'
+      - '^is$'
+      - '^global$'
+      - '^nonlocal$'
+      - '^del$'
+      - '^assert$'
+      - '^async$'
+      - '^await$'

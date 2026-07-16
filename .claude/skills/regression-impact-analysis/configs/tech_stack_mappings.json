@@ -1,0 +1,80 @@
+{
+  "_comment": "Per-stack overrides for dependency-coordinate -> import-prefix mapping. Used by parsers when the default rule does not match how source files import the artifact.",
+  "maven": {
+    "_comment": "group:artifact -> Java package overrides",
+    "com.fasterxml.jackson.core:jackson-databind": [
+      "com.fasterxml.jackson"
+    ],
+    "com.fasterxml.jackson.core:jackson-core": [
+      "com.fasterxml.jackson"
+    ],
+    "com.fasterxml.jackson.core:jackson-annotations": [
+      "com.fasterxml.jackson"
+    ],
+    "javax.servlet:javax.servlet-api": [
+      "javax.servlet"
+    ],
+    "jakarta.servlet:jakarta.servlet-api": [
+      "jakarta.servlet"
+    ]
+  },
+  "gradle": {
+    "_comment": "Gradle uses Maven coordinates"
+  },
+  "npm": {
+    "_comment": "npm packages whose import path differs",
+    "node-fetch": [
+      "node-fetch"
+    ],
+    "lodash.merge": [
+      "lodash.merge",
+      "lodash/merge"
+    ]
+  },
+  "pip": {
+    "_comment": "Distribution name -> import name",
+    "beautifulsoup4": [
+      "bs4"
+    ],
+    "pyyaml": [
+      "yaml"
+    ],
+    "pillow": [
+      "PIL"
+    ],
+    "scikit-learn": [
+      "sklearn"
+    ],
+    "scikit-image": [
+      "skimage"
+    ],
+    "opencv-python": [
+      "cv2"
+    ],
+    "msgpack-python": [
+      "msgpack"
+    ],
+    "python-dateutil": [
+      "dateutil"
+    ],
+    "google-cloud-storage": [
+      "google.cloud.storage",
+      "google.cloud"
+    ],
+    "protobuf": [
+      "google.protobuf"
+    ],
+    "grpcio": [
+      "grpc"
+    ]
+  },
+  "nuget": {
+    "_comment": "PackageId -> root namespace overrides",
+    "Microsoft.Extensions.Logging.Abstractions": [
+      "Microsoft.Extensions.Logging"
+    ],
+    "Microsoft.AspNetCore.Mvc.Core": [
+      "Microsoft.AspNetCore.Mvc"
+    ]
+  }
+}

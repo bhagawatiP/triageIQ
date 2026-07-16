@@ -1,0 +1,159 @@
+# =============================================================================
+# JavaScript entry-point detection rules
+# =============================================================================
+# All JS-specific patterns live HERE — none in Python code.
+# =============================================================================
+
+language:
+  name: "javascript"
+  display_name: "JavaScript/NodeJS"
+  extensions:
+    - ".js"
+    - ".jsx"
+    - ".mjs"
+    - ".cjs"
+
+method_declaration:
+  # Three precise shapes we recognise as a JS method/function definition:
+  #   1. function NAME(...)          — classic function declaration
+  #   2. (const|let|var) NAME = (...) => …
+  #   3. (const|let|var) NAME = function(...)
+  #   4. NAME(args) {                — class-body / object-shorthand method
+  #                                    (anchored to start of line + indent)
+  # Variable assignments without a function/arrow on the right are NOT
+  # matched, so noise like `var x = 1;` or `if (...)` is dropped.
+  regex: '(?:function\s+{METHOD}\s*\(|(?:const|let|var)\s+{METHOD}\s*=\s*(?:async\s+)?(?:function\b|\([^)]*\)\s*=>|[A-Za-z_]\w*\s*=>)|^\s*(?:async\s+)?{METHOD}\s*\([^)]*\)\s*\{)'
+  modifier_window: 200
+
+class_declaration:
+  regex: '(?:export\s+)?class\s+(\w+)'
+
+filters:
+
+  # 1. Anonymous-callback names (compiler-generated). These appear in some
+  #    bundles as "anonymous", "<anonymous>", etc. We reject them so the
+  #    detector doesn't surface them as entry points.
+  anonymous_callbacks:
+    type: "name_pattern"
+    patterns:
+      - '^anonymous$'
+      - '^<anonymous>$'
+      - '^_default$'
+      - '^default$'
+
+  # 2. Trivial getters/setters (Object.defineProperty / class accessors that
+  #    just return a field).
+  trivial_getter_setter:
+    type: "regex_pattern"
+    patterns:
+      - '^get[A-Z]\w*$'
+      - '^set[A-Z]\w*$'
+      - '^is[A-Z]\w*$'
+      - '^has[A-Z]\w*$'
+    and:
+      body_lines:
+        max: 3
+
+  # 3. Constructor.
+  constructor:
+    type: "name_pattern"
+    patterns:
+      - '^constructor$'
+
+  # 4. Test paths.
+  test_paths:
+    type: "path_pattern"
+    patterns:
+      - "/__tests__/"
+      - "/__mocks__/"
+      - "/test/"
+      - "/tests/"
+      - "/spec/"
+      - "*.test.js"
+      - "*.test.jsx"
+      - "*.spec.js"
+      - "*.spec.jsx"
+
+  # 5. Vendor / build paths.
+  vendor_paths:
+    type: "path_pattern"
+    patterns:
+      - "node_modules/"
+      - "/node_modules/"
+      - "/dist/"
+      - "dist/"
+      - "/build/"
+      - "build/"
+      - "/.next/"
+      - "/.nuxt/"
+      - "/coverage/"
+      - "/out/"
+      - ".min.js"
+      - ".bundle.js"
+      - ".github/skills/"
+      - ".github/agents/"
+      - ".github/RIA_INPUT/"
+      - ".github/RIA_OUTPUT/"
+
+language_specific_filters:
+
+  # 6. Polyfill / shim helpers compiled by Babel/TS.
+  compiler_helpers:
+    type: "regex_pattern"
+    patterns:
+      - '^_(?:createClass|classCallCheck|inherits|interopRequireDefault|extends|defineProperty|toConsumableArray|slicedToArray|asyncToGenerator|regeneratorRuntime)'
+      - '^__esModule$'
+      - '^__webpack_'
+
+  # 7. Reserved internal names.
+  reserved_names:
+    type: "name_pattern"
+    patterns:
+      - '^arguments$'
+      - '^this$'
+      - '^super$'
+
+  # 8. JS reserved words / control-flow keywords that the loose regex
+  #    above can match if they appear as `if(`, `for(`, etc.
+  reserved_words:
+    type: "name_pattern"
+    patterns:
+      - '^if$'
+      - '^else$'
+      - '^for$'
+      - '^while$'
+      - '^do$'
+      - '^switch$'
+      - '^case$'
+      - '^break$'
+      - '^continue$'
+      - '^return$'
+      - '^throw$'
+      - '^try$'
+      - '^catch$'
+      - '^finally$'
+      - '^new$'
+      - '^delete$'
+      - '^typeof$'
+      - '^in$'
+      - '^of$'
+      - '^void$'
+      - '^yield$'
+      - '^await$'
+      - '^async$'
+      - '^class$'
+      - '^extends$'
+      - '^import$'
+      - '^export$'
+      - '^from$'
+      - '^as$'
+      - '^var$'
+      - '^let$'
+      - '^const$'
+      - '^null$'
+      - '^undefined$'
+      - '^true$'
+      - '^false$'
+      - '^function$'
+      - '^debugger$'
+      - '^with$'

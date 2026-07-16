@@ -1,0 +1,22 @@
+# === Credentials — NEVER commit ===
+config.env
+*.env
+!*.env.example
+webapp/config.env
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# === OS / editor ===
+.DS_Store
+Thumbs.db
+.idea/
+
+# === Runtime / scratch artifacts ===
+*.log
+reports/*-triage.tmp
