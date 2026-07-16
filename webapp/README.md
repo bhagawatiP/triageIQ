@@ -21,7 +21,7 @@ Two files, no build step, no `pip install`:
 - **Claude CLI** — auto-detected from the VS Code extension (`…/anthropic.claude-code-*/resources/native-binary/claude.exe`) or `PATH`; override with `CLAUDE_BIN`.
 - **Credentials** — all live in one file, **`config.env`** (see below).
 - **Test bed** — bundled in the repo at `testbed/`; nothing to fetch.
-- **pmn-shared** (code-RCA source) — kept as a lightweight, **always-current cache** in `.external/`: a blobless + sparse partial clone of only the widget subtrees, refreshed to the latest `develop` HEAD on each start (a `git ls-remote` check skips the download when nothing changed, so it's near-instant). Needs GitHub access to the private nice-cxone org. Set `PMN_SHARED_DIR` in `config.env` to reuse an existing full clone instead (used read-only).
+- **pmn-shared** (code-RCA source) — kept as a lightweight, **always-current cache** in `.external/`: a blobless + sparse partial clone of only the widget subtrees, refreshed to the latest `develop` HEAD on each start (a `git ls-remote` check skips the download when nothing changed, so it's near-instant). Needs GitHub access to the private nice-cxone org. Set `PMN_SHARED_DIR` in `config.env` to reuse an existing full clone instead (used read-only). **On Windows, clone TriageIQ to a short path** (e.g. `C:\triageIQ`) — pmn-shared has deeply-nested files near the 260-char `MAX_PATH` limit; the cache clones with `core.longpaths=true`, and a short base keeps the checked-out paths readable.
 
 ## Configuration — one file for all credentials
 

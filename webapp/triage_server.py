@@ -189,7 +189,10 @@ def ensure_pmn_shared():
             os.makedirs(os.path.dirname(PMN_SHARED_DIR) or ".", exist_ok=True)
             _log(f"setting up pmn-shared cache ({'sparse, ' if use_sparse else ''}blobless) "
                  f"from {PMN_SHARED_REPO}@{PMN_SHARED_BRANCH} — one-time…")
-            clone = ["clone", "--filter=blob:none", "--depth", "1", "--branch", PMN_SHARED_BRANCH]
+            # core.longpaths=true: pmn-shared has deeply-nested files that exceed Windows'
+            # 260-char MAX_PATH; without this the checkout aborts with "Filename too long".
+            clone = ["clone", "-c", "core.longpaths=true",
+                     "--filter=blob:none", "--depth", "1", "--branch", PMN_SHARED_BRANCH]
             if use_sparse:
                 clone.append("--sparse")
             clone += [PMN_SHARED_REPO, PMN_SHARED_DIR]
